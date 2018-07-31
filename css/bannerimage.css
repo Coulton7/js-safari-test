@@ -232,6 +232,11 @@ text-decoration:none;
 	vertical-align: super;
 }
 
+.fade_text{
+	display:none;
+	color:#ffffff;
+}
+
 .socialmedia{
 	width: 100%;
 	height: 7.57em;
