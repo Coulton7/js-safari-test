@@ -87,6 +87,14 @@ li{
 	flex-wrap:wrap;
 }
 
+.textlogo{
+	background:#ffffff;
+	position:fixed;
+	width:10.75em!important;
+	height:auto;
+	border-bottom:none;
+	z-index:1031;
+}
 
 .prod-selector{
 		display: none;
