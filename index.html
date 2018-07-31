@@ -1,166 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-	   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-     <link href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-	   <link rel="stylesheet" type="text/css" href="css/bannerimage.css">
-     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/solid.js" integrity="sha384-YmNA3b9AQuWW8KZguYfqJa/YhKNTwGVD5pQc1cN0ZAVRudFFtR17HR7rooNcVXe4" crossorigin="anonymous"></script>
-     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js" integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID" crossorigin="anonymous"></script>
-     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js" integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1" crossorigin="anonymous"></script>
-	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <script src="js/contact-icon.js"></script>
-     <script src="fade-text.js"></script>
-     <script sc="logoscroll.js"></script>
-     <script src="css/jquery.flexslider.js"></script>
-     <script type="text/javascript" charset="utf-8">
-     (function($){
-       $(window).load(function() {
-         $('.flexslider').flexslider({
-           controlNav: false,
-           directionNav: false
-         });
-       })
-     })(jQuery);
-     </script>
-   </head>
-
-<header>
-    <div class="container-fluid bannercontainer">
-    	<div class="row bannerimage">
-    		<div class="row waveupper row-eq-height">
-    			<div class="col-lg-2 col-md-2 col-xs-1 fullscreen">
-          <img class= "uppercurve" src = "Images\wave-upper.svg" img alt ="uppercurve"></img>
-
-          <img class= "textonlylogo" class= "img-responsive" src="Images\textonlylogo.png" img alt="textonlylgo" alt="image-responsive"></img>
-
-            <div class="wavelogo">
-              <img class="wavelogo" src = "Images\logo.svg" img alt ="logo">
-            </div>
-    			</div>
-
-
-    		<div class="col-sm-10 col-xs-11 fullscreen">
-          <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-              </div>
-            </div>
-            <div class="navbar-collapse collapse">
-              <div class="container-fluid navbar-container">
-                <nav role="navigation">
-                  <ul class="menu nav navbar-nav">
-                    <li><a href="#" id="ind-selector">Industry</a></li>
-                    <li><a href="#" id="prod-selector">Product</a></li>
-                    <li><a href="#">Media Centre</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us Us</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </header>
-    		</div>
-    	</div>
-
-				<div class="row wavecenter">
-          <div class="col-sm-12">
-            <div class="gap">
-            </div>
-          </div>
-							<div class="col-sm-8">
-								<div class="text">
-									<h1>Global</h1>
-									<p>We Operate from 230 locations worldwide, and supply customers in all sectors,
-									and in some 104 countries</p>
-								</div>
-							</div>
-				</div>
-
-			<div class="row wavelower row-eq-height">
-				<div class="col-sm-9 col-xs-2 no-padding">
-            <div class="bottom-gap">
-            </div>
-            <div class="social-id">
-              <p class="fade_text">Find Us</p>
-              <p class="fade_text">Follow Us</p>
-              <p class="fade_text">Contact Us</p>
-            </div>
-				</div>
-
-				<div class="col-sm-3 col-xs-8 no-padding">
-
-					<img class="curve-down" src = "Images\wave-lower.svg" img alt ="curve-down"></img>
-
-
-          <div class="socialmedia text-center">
-          <ul>
-          <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
-          <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
-          <li class="contact_icon"> <a href="/contact-us" target="_self" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
-          <li class="contact_icon" style="display:none"> <a href="/contact-us" target="_self" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
-          <li> <a href="/locations" target="_self" title="Browse all Locations"> <i class="fas fa-globe"></i></a></li>
-          <li> <a href="/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View UK Headquarters"> <i class="fas fa-map-marker-alt"></i></a></li>
-          </ul>
-          </div>
-
-				</div>
-			</div>
-
-	</div>
-</div>
-<script>
-function myFunction() {
-    var x = document.getElementById("myNavigation");
-    if (x.className === "navigation") {
-        x.className += " responsive";
-    } else {
-        x.className = "navigation";
-    }
-}
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+<link rel="stylesheet" type="text/css" href="css/bannerimage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="js/menu-dropdown.js"></script>
+<script src="css/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+(function($){
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      controlNav: false,
+      directionNav: false
+    });
+  })
+})(jQuery);
 </script>
-</header>
 
-&nbsp;
+  <div class="container-fluid bannercontainer">
+  	<div class="row bannerimage">
+  		<div class="row waveupper row-eq-height">
+  			<div class="col-lg-2 col-md-2 col-xs-1 fullscreen">
+        <img class= "uppercurve" src = "Images\wave-upper.svg" img alt ="uppercurve"></img>
 
-<body>
+        <img class= "textonlylogo" class= "img-responsive" src="Images\textonlylogo.png" img alt="textonlylgo" alt="image-responsive"></img>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+          <div class="wavelogo">
+            <img class="wavelogo" src = "Images\logo.svg" img alt ="logo">
+          </div>
+  			</div>
 
-				<div class="row">
-					<div class="col-sm-12">
-            <div class="content-blockthick">
 
+  		<div class="col-sm-10 col-xs-11 fullscreen">
+        <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
             </div>
-
-						<div class="content-block">
-
-						</div>
-
-            <div class="content-blockthin">
-
+          </div>
+          <div class="navbar-collapse collapse">
+            <div class="container-fluid navbar-container">
+              <nav role="navigation">
+                <ul class="menu nav navbar-nav">
+                  <li><a href="#" id="ind-selector">Industry</a></li>
+                  <li><a href="#" id="prod-selector">Product</a></li>
+                  <li><a href="#">Media Centre</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About Us Us</a></li>
+                </ul>
+              </nav>
             </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-<footer>
-  <div class="container-fluid">
-		<div class="row">
-      <div class="col-sm-12">
-  <div class="footer">
-    <p>Footer info here</p>
+          </div>
+        </header>
+  		</div>
+  	</div>
+
+
+
+
+      <div class="preface front__flex-margin">
+        <div class="flex-container">
+
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="css/images/AESGlobal.png" class="img-responsive " alt="Global">
+              </li>
+  	         </div>
+           </div>
+         </div>
+
+    <div class="row wavelower row-eq-height">
+      <div class="col-sm-9 col-xs-2 no-padding">
+          <div class="bottom-gap">
+          </div>
+      </div>
+
+      <div class="col-sm-3 col-xs-8 no-padding">
+
+        <img class="curve-down" src = "Images\wave-lower.svg" img alt ="curve-down"></img>
+
+
+        <div class="socialmedia text-center">
+        <ul>
+        <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"> <i class="fa fa-twitter "></i></a></li>
+        <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"> <i class="fa fa-linkedin-square "></i></a></li>
+        <li class="contact_icon"> <a href="/en/contact-us" target="_self" title="Contact Us"> <i class="fa fa-phone-square "></i></a></li>
+        <li class="contact_icon" style="display:none"> <a href="/contact-us" target="_self" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
+        <li> <a href="/en/locations/" target="_self" title="Browse all Locations"> <i class="fa fa-globe"></i></a></li>
+        <li> <a href="/en/locations/europe/gb/syk/aesseal-plc-headquarters" target="_self" title="View UK Headquarters"> <i class="fa fa-map-marker"></i></a></li>
+        </ul>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </div>
-</div>
-</div>
-</footer>
-</html>
+
+  <body>
+
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+
+  				<div class="row">
+  					<div class="col-sm-12">
+              <div class="content-blockthick">
+
+              </div>
+
+  						<div class="content-block">
+
+  						</div>
+
+              <div class="content-blockthin">
+
+              </div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </body>
+  <footer>
+    <div class="container-fluid">
+  		<div class="row">
+        <div class="col-sm-12">
+    <div class="footer">
+      <p>Footer info here</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </footer>
+  </html>
