@@ -77,7 +77,8 @@ li{
 }
 
 .shadow-back{
-		height: 3.25em;
+	margin:-4.3em 0 0 0;
+	height: 3.25em;
 	background: rgba(0,0,0,0.5);
 	position: absolute;
 	width:100%;
