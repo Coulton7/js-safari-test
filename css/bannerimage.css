@@ -232,6 +232,13 @@ text-decoration:none;
 	vertical-align: super;
 }
 
+.social-id{
+	position:absolute;
+	top:-3.8em;
+	left:-10em;
+	z-index:2;
+}
+
 .fade_text{
 	display:none;
 	color:#ffffff;
