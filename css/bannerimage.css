@@ -151,6 +151,7 @@ text-decoration:none;
 
 .socialmedia ul li:nth-child(1) a:hover{
 	color:#1a90d9;
+	background: none;
 }
 
 .socialmedia ul li:nth-child(2) a{
@@ -161,6 +162,7 @@ text-decoration:none;
 
 .socialmedia ul li:nth-child(2) a:hover{
 	color:#006ba2;
+	background: none;
 }
 
 .socialmedia ul li:nth-child(3) a{
@@ -171,6 +173,7 @@ text-decoration:none;
 
 .socialmedia ul li:nth-child(3) a:hover{
 	color:#bd4030;
+	background: none;
 }
 
 .socialmedia ul li:nth-child(4) a{
@@ -181,6 +184,7 @@ text-decoration:none;
 
 .socialmedia ul li:nth-child(4) a:hover{
 	color:#bd4030;
+	background: none;
 }
 
 .socialmedia ul li:nth-child(5) a{
@@ -191,6 +195,7 @@ text-decoration:none;
 
 .socialmedia ul li:nth-child(5) a:hover{
 	color:#004a8c;
+	background: none;
 }
 
 .socialmedia ul li:nth-child(6) a{
@@ -201,6 +206,7 @@ text-decoration:none;
 
 .socialmedia ul li:nth-child(6) a:hover{
 	color:#bd4030;
+	background: none;
 }
 
 .curve-down{
