@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <script type="text/javascript">
-
+(function($) {
 $( document ).ready(function() {
 $(".form-select").chosen({
   disable_search_threshold: 10,
   no_results_text: "Sorry, no results found."
 })
-});
-
+})
+})(jQuery);
 
 </script>
 <head>
@@ -25,7 +25,7 @@ $(".form-select").chosen({
 <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js" integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js" integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1" crossorigin="anonymous"></script>
 </head>
-<script src="js/contact-icon.js"></script>
+<script src="js/contact-icon.min.js"></script>
 <script src="js/fade-text.js"></script>
 <script src="js/logoscroll.js"></script>
 <script src="css/jquery.flexslider.js"></script>
