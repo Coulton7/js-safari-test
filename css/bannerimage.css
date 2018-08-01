@@ -58,6 +58,10 @@ li{
 	border-bottom:none;
 }
 
+a{
+	color: #dd1e25;
+}
+
 p a[target="_blank"]:after {
     font-family: 'FontAwesome';
     content: " \f08e";
