@@ -62,9 +62,13 @@ a{
 	color: #dd1e25;
 }
 
+a:hover{
+	color: #dd1e25;
+}
+
 p a[target="_blank"]:after {
-    font-family: 'FontAwesome';
-    content: " \f08e";
+	font-family: "Font Awesome 5 Free";
+  content: " \f35d";
 }
 
 .row-eq-height{
