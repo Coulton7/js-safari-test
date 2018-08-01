@@ -89,6 +89,17 @@ p a[target="_blank"]:after {
 	height:inherit;
 }
 
+.lang-switch{
+	padding:6px 12px;
+height:34px;
+background: #888c8f;
+color:#ffffff;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+border: 1px solid #ccc;
+line-height: initial;
+}
+
 .shadow-back{
 	margin:-4em 0 0 0;
 	height: 3.25em;
