@@ -89,7 +89,7 @@ p a[target="_blank"]:after {
 	height:inherit;
 }
 
-.lang-switch{
+.lang-switch .chosen-container-single .chosen-single{
 	padding:6px 12px;
 height:34px;
 background: #888c8f;
