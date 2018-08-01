@@ -70,6 +70,7 @@ p a[target="_blank"]:after {
 	font-family: "Font Awesome 5 Free";
   content: "\f35d";
 	font-weight: 900;
+	display:none;
 }
 
 .row-eq-height{
