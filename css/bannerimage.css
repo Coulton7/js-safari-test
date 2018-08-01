@@ -94,6 +94,7 @@ li{
 	height:auto;
 	border-bottom:none;
 	z-index:1031;
+	top:-0.1em;
 }
 
 .prod-selector{
