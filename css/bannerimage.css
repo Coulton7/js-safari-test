@@ -79,9 +79,9 @@ p a[target="_blank"]:after {
 }
 
 .flex-header{
-	padding-left:1em;
+	padding-left:0.5em;
 	color:#dd1e25;
-	bottom:3em;
+	bottom:2.2em;
 	position:absolute;
 }
 
