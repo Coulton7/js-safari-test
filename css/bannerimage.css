@@ -633,6 +633,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d8e8f', end
 	background:none;
 	border:none;
 	}
+	.flex-header{
+		font-size: 3em;
+		line-height: 58px;
+	}
+
+	.flex-caption{
+		font-size: 1.5em;
+		line-height:30px;
+	}
 	h1{
 		font-size:34px;
 		line-height:55px;
