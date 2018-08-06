@@ -30,3 +30,17 @@ Drupal.behaviors.formSingleSubmit = {
       .on('submit.singleSubmit', 'form:not([method~="GET"])', onFormSubmit);
   }
 };
+
+$(function () {
+    var clickCount = 0;
+    $("#edit-published").click(function(event){
+        if(clickCount++ > 0) {
+            event.preventDefault()
+        }
+    });
+    $("#edit-submit").click(function(event){
+        if(clickCount++ > 0) {
+            event.preventDefault()
+        }
+      });
+});
