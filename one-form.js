@@ -54,4 +54,6 @@ $(function (){
   });
 });
 
+function aesinternational_onFormSubmit (e) {
 drupal_add_js(drupal_get_path('aesinternational','js').'one-form.js')
+};
