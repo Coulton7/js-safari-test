@@ -19,11 +19,6 @@ Drupal.behaviors.formSingleSubmit = {
 
 $(function () {
     var clickCount = 0;
-    $("#edit-published").click(function(event){
-        if(clickCount++ > 0) {
-            event.preventDefault()
-        }
-    });
     $("#edit-submit").click(function(event){
         if(clickCount++ > 0) {
             event.preventDefault()
