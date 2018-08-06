@@ -44,3 +44,12 @@ $(function () {
         }
       });
 });
+
+$(function (){
+  var clickCoun t= 0
+  $('form').submit(function(event){
+    if (clickCount++ > 0){
+      event.preventDefault();
+    }
+  });
+});
