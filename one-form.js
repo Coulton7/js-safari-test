@@ -1,17 +1,3 @@
-jQuery.fn.preventDoubleSubmission = function(){
-  $($this).on('submit', function(e){
-    var $form =$(this);
-
-    if($form.data('submitted')===true){
-      e.preventDefault();
-    } else{
-      $form.data('submitted', tue);
-      }
-    });
-    return this;
-};
-
-
 Drupal.behaviors.formSingleSubmit = {
   attach: function (){
     function onFormSubmit (e) {
@@ -45,15 +31,6 @@ $(function () {
       });
 });
 
-$(function (){
-  var clickCoun t= 0
-  $('form').submit(function(event){
-    if (clickCount++ > 0){
-      event.preventDefault();
-    }
-  });
-});
-
-function aesinternational_onFormSubmit (e) {
+function aesinternational_form_alter(&$form, &$form_state, &$form_id) {
 drupal_add_js(drupal_get_path('aesinternational','js').'one-form.js')
 };
