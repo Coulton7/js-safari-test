@@ -54,9 +54,4 @@ $(function (){
   });
 });
 
-function aesinternational_preprocess_page(&$vars, $hook){
-drupal_add_js(drupal_get_path('aesinternational','js').'one-form.js', array(
-  'type' =>'file'
-  'group' => JS_THEME
-));
-}
+drupal_add_js(drupal_get_path('aesinternational','js').'one-form.js')
