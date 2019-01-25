@@ -486,7 +486,10 @@ p a[target="_blank"]:after {
   position: relative;
 }
 
-.css-fade-twitter:hover {
+.css-fade-twitter:hover,
+.css-fade-instagram:hover,
+.css-fade-youtube:hover,
+.css-fade-linkedin {
   opacity: 0;
 }
 
