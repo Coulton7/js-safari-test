@@ -469,6 +469,8 @@ p a[target="_blank"]:after {
 
 .css-fade-twitter {
   background-image: url('/js-safari-test/Images/twitter-panel.png');
+	margin-left: auto;
+	margin-right: auto;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
