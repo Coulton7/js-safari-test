@@ -505,6 +505,10 @@ p a[target="_blank"]:after {
   opacity: 0;
 }
 
+.panel .panel-heading .social-body{
+	margin-bottom: 0;
+}
+
 .css-fade{
 	background-color: #b5b6b9;
 }
