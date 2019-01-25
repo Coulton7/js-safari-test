@@ -432,9 +432,6 @@ text-decoration:none;
 
 .css-fade-twitter {
   background-image: url('Images/twitter-panel.png');
-}
-
-.css-fade-twitter{
 	opacity: 1;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
