@@ -453,7 +453,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-youtube {
-  background-image: url('/js-safari-test//Images/youtube-panel.png');
+  background-image: url('/js-safari-test/Images/youtube-panel.png');
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
