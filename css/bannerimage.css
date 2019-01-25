@@ -501,7 +501,7 @@ p a[target="_blank"]:after {
   opacity: 0;
 }
 
-.css-fade-twitter:hover ~ .css-fade{
+.css-fade .css-fade-twitter:hover{
 	background-color: #ffffff;
 }
 
