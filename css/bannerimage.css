@@ -397,6 +397,11 @@ text-decoration:none;
 	display: inline-block;
 }
 
+.social-body{
+	background:#ffffff;
+	padding:5px 15px 12px;
+}
+
 .widget-flex {
   display: flex !important;
   flex-direction: column;
