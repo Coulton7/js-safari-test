@@ -422,6 +422,10 @@ p a[target="_blank"]:after {
   justify-content: center;
 }
 
+.css-fade {
+  position: relative;
+}
+
 .css-fade-linkedin {
   background-image: url('/js-safari-test/Images/linkedin-panel.png');
 	background-size: contain;
@@ -488,10 +492,6 @@ p a[target="_blank"]:after {
   top: 0;
   height: 100%;
   width: 100%;
-}
-
-.css-fade {
-  position: relative;
 }
 
 .css-fade-twitter:hover,
