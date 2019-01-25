@@ -419,19 +419,19 @@ text-decoration:none;
 }
 
 .css-fade-linkedin {
-  background-image: url('Images/linkedin-panel-over.png');
+  background-image: url('/Images/linkedin-panel-over.png');
 }
 
 .css-fade-instagram {
-  background-image: url('Images/instagram-panel-over.png');
+  background-image: url('/Images/instagram-panel-over.png');
 }
 
 .css-fade-youtube {
-  background-image: url('Images/youtube-panel-over.png');
+  background-image: url('/Images/youtube-panel-over.png');
 }
 
 .css-fade-twitter {
-  background-image: url('Images/twitter-panel.png');
+  background-image: url('/Images/twitter-panel.png');
 	opacity: 1;
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
