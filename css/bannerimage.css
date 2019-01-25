@@ -445,20 +445,12 @@ text-decoration:none;
 	width:100%;
 }
 
+.css-fade{
+	position: relative;
+}
+
 .css-fade-twitter:hover{
 	opacity:0;
-}
-
-.css-fade img {
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-.css-fade img:hover {
-  opacity: 0;
 }
 
 .content-blockthick{
