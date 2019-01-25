@@ -493,7 +493,7 @@ p a[target="_blank"]:after {
 .css-fade-twitter:hover,
 .css-fade-instagram:hover,
 .css-fade-youtube:hover,
-.css-fade-linkedin {
+.css-fade-linkedin:hover {
   opacity: 0;
 }
 
