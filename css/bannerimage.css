@@ -397,6 +397,64 @@ text-decoration:none;
 	display: inline-block;
 }
 
+.widget-flex {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.css-fade-linkedin {
+  background-image: url('/sites/aesseal.com/files/icon/linkedin-panel-over.png');
+}
+
+.css-fade-instagram {
+  background-image: url('/sites/aesseal.com/files/icon/instagram-panel-over.png');
+}
+
+.css-fade-youtube {
+  background-image: url('/sites/aesseal.com/files/icon/youtube-panel-over.png');
+}
+
+.css-fade-twitter {
+  background-image: url('/sites/aesseal.com/files/icon/twitter-panel.png');
+}
+
+.css-fade-twitter{
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	left:0;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+}
+
+.css-fade-twitter:hover{
+	opacity:0;
+}
+
+.css-fade img {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.css-fade img:hover {
+  opacity: 0;
+}
+
 .content-blockthick{
 	background: #8d8e8f;
 background: -moz-linear-gradient(-45deg, #8d8e8f 0%, #5c5f60 84%, #a6aaad 100%);
