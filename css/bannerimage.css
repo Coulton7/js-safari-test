@@ -423,7 +423,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-linkedin {
-  background-image: url('/js-safari-test/Images/linkedin-panel-over.png');
+  background-image: url('/js-safari-test/Images/linkedin-panel.png');
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -438,7 +438,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-instagram {
-  background-image: url('/js-safari-test/Images/instagram-panel-over.png');
+  background-image: url('/js-safari-test/Images/instagram-panel.png');
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -453,7 +453,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-youtube {
-  background-image: url('/js-safari-test//Images/youtube-panel-over.png');
+  background-image: url('/js-safari-test//Images/youtube-panel.png');
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
