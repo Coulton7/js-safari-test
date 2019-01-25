@@ -481,6 +481,7 @@ p a[target="_blank"]:after {
   background-image: url('/js-safari-test/Images/twitter-panel.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-color: #f5f5f5;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -501,8 +502,8 @@ p a[target="_blank"]:after {
   opacity: 0;
 }
 
-.css-fade > .css-fade-twitter:hover{
-	background-color: #ffffff;
+.css-fade{
+	background-color: #b5b6b9;
 }
 
 .content-blockthick {
