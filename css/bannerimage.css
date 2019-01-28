@@ -424,6 +424,7 @@ p a[target="_blank"]:after {
 
 .css-fade {
   position: relative;
+	background-color: #b5b6b9;
 }
 
 .css-fade-linkedin {
@@ -507,10 +508,6 @@ p a[target="_blank"]:after {
 
 .panel .panel-heading .social-body{
 	margin-bottom: 0;
-}
-
-.css-fade{
-	background-color: #b5b6b9;
 }
 
 .content-blockthick {
