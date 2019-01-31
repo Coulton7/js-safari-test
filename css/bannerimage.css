@@ -414,9 +414,14 @@ p a[target="_blank"]:after {
   display: flex;
 }
 
+.panel-heading{
+  height: 100%
+;}
+
 .widget-flex {
   display: flex !important;
   flex-direction: column;
+  height: 97%
 }
 
 .center-vertical {
