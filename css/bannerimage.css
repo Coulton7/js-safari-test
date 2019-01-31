@@ -414,10 +414,6 @@ p a[target="_blank"]:after {
   display: flex;
 }
 
-.panel-default > .panel-heading{
-  height: 100%;
-}
-
 .widget-flex {
   display: flex !important;
   flex-direction: column;
@@ -433,7 +429,6 @@ p a[target="_blank"]:after {
 .css-fade {
   position: relative;
 	background-color: #b5b6b9;
-  height: 100%;
 }
 
 .css-fade-linkedin {
