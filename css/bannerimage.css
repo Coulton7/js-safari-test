@@ -414,6 +414,10 @@ p a[target="_blank"]:after {
   display: flex;
 }
 
+.widget-height{
+    height:97%;
+}
+
 .widget-flex {
   display: flex !important;
   flex-direction: column;
