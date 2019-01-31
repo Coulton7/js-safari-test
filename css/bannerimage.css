@@ -421,7 +421,7 @@ p a[target="_blank"]:after {
 .widget-flex {
   display: flex !important;
   flex-direction: column;
-  height: 97%
+  height: 93%
 }
 
 .center-vertical {
