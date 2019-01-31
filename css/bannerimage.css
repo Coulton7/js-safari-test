@@ -410,8 +410,12 @@ p a[target="_blank"]:after {
   padding: 5px 15px 12px;
 }
 
-.social-widget{
+.flex {
   display: flex;
+}
+
+.panel-default > .panel-heading{
+  height: 100%;
 }
 
 .widget-flex {
@@ -429,6 +433,7 @@ p a[target="_blank"]:after {
 .css-fade {
   position: relative;
 	background-color: #b5b6b9;
+  height: 100%;
 }
 
 .css-fade-linkedin {
