@@ -414,14 +414,6 @@ p a[target="_blank"]:after {
   display: flex;
 }
 
-.widget-height{
-    height:87.5%;
-}
-
-.panel-body{
-  height: 22%
-}
-
 .widget-flex {
   display: flex !important;
   flex-direction: column;
