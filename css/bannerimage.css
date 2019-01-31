@@ -434,6 +434,7 @@ p a[target="_blank"]:after {
 .css-fade {
   position: relative;
 	background-color: #b5b6b9;
+  height: 100%;
 }
 
 .css-fade-linkedin {
