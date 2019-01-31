@@ -415,7 +415,11 @@ p a[target="_blank"]:after {
 }
 
 .widget-height{
-    height:97%;
+    height:93%;
+}
+
+.panel-body{
+  height: 27%
 }
 
 .widget-flex {
