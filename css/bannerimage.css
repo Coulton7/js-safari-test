@@ -407,8 +407,8 @@ p a[target="_blank"]:after {
 }
 
 .panel-heading{
-  height: 100%
-;}
+  height: 100%;
+}
 
 .widget-flex {
   display: flex !important;
