@@ -420,6 +420,9 @@ p a[target="_blank"]:after {
   object-fit: contain;
   vertical-align: bottom;
   object-position: bottom;
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
 }
 
 .center-vertical {
