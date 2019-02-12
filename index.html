@@ -197,10 +197,10 @@
                     <p class="panel-body social-body">Follow us on Twitter</p>
                     <div class="panel-heading no-padding">
                       <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter">
-                      <div class="css-fade">
-                        <img class="img-responsive center-block widget-object" src="Images/twitter-panel-over.png" alt="twitter page link">
-                        <div class="css-fade-twitter"></div>
-                      </div>
+                        <div class="css-fade">
+                          <img class="img-responsive center-block widget-object" src="Images/twitter-panel-over.png" alt="twitter page link">
+                          <div class="css-fade-twitter"></div>
+                        </div>
                       </a>
                     </div>
                   </div>
@@ -212,11 +212,11 @@
                     <p class="panel-body social-body">Subscribe to our YouTube Channel</p>
                     <div class="panel-heading no-padding">
                       <a href="https://www.youtube.com/channel/UCgMnROdfT9mJcgCbIkZWjQA" target="_self" title="AESEEAL YouTube">
-                      <div class="css-fade">
-                        <img class="img-responsive center-block widget-object" src="Images/youtube-panel-over.png" alt="youtube channel link">
-                        <div class="css-fade-youtube">
+                        <div class="css-fade">
+                          <img class="img-responsive center-block widget-object" src="Images/youtube-panel-over.png" alt="youtube channel link">
+                          <div class="css-fade-youtube">
+                          </div>
                         </div>
-                      </div>
                       </a>
                     </div>
                   </div>
@@ -227,27 +227,28 @@
                     <p class="panel-body social-body">Keep up to date on LinkedIn</p>
                     <div class="panel-heading no-padding">
                       <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin">
-                      <div class="css-fade">
-                        <img class="img-responsive center-block widget-object" src="Images/linkedin-panel-over.png" alt="LinkedIn company link">
-                        <div class="css-fade-linkedin">
+                        <div class="css-fade">
+                          <img class="img-responsive center-block widget-object" src="Images/linkedin-panel-over.png" alt="LinkedIn company link">
+                          <div class="css-fade-linkedin">
+                          </div>
                         </div>
-                      </div>
                       </a>
                     </div>
                   </div>
                 </div>
 
-              <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default widget-flex  margin-bottom">
-                  <p class="panel-body social-body">Get the full picture</p>
-                  <div class="panel-heading no-padding">
-                    <a href="https://www.instagram.com/aesseal_plc/" target="_self" title="AESEEAL Instagram">
-                    <div class="css-fade">
-                      <img class="img-responsive center-block widget-object" src="Images/instagram-panel-over.png" alt="instagram page link">
-                      <div class="css-fade-instagram">
-                      </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="panel panel-default widget-flex  margin-bottom">
+                    <p class="panel-body social-body">Get the full picture</p>
+                    <div class="panel-heading no-padding">
+                      <a href="https://www.instagram.com/aesseal_plc/" target="_self" title="AESEEAL Instagram">
+                        <div class="css-fade">
+                          <img class="img-responsive center-block widget-object" src="Images/instagram-panel-over.png" alt="instagram page link">
+                          <div class="css-fade-instagram">
+                          </div>
+                        </div>
+                      </a>
                     </div>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -255,7 +256,65 @@
           </div>
         </div>
       </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Twitter image</a>
+            <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Linkedin image</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Twitter Image</h4>
+            </div>
+            <div class="modal-body">
+              <p><img src="Images/twitter-panel-over.png" class="img-responsive" /></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Linkedin Image</h4>
+            </div>
+            <div class="modal-body">
+              <p><img src="Images/linkedin-panel-over.png" class="img-responsive" /></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Modals -->
     </div>
+    <script>
+    $('.product-image').on('click', function(e){
+
+   e.preventDefault();
+
+    var content = $(this).find('p').text();
+
+    $('.modal-body').html(content);
+
+    });
+    </script>
+  </div>
   </div>
   </div>
   <footer class="container-fluid">
