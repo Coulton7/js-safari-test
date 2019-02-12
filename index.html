@@ -275,7 +275,7 @@
               <h4 class="modal-title">Twitter Image</h4>
             </div>
             <div class="modal-body">
-              <p><img src="Images/twitter-panel-over.png" class="img-responsive" /></p>
+              <img src="Images/twitter-panel-over.png" class="img-responsive" />
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -293,7 +293,7 @@
               <h4 class="modal-title">Linkedin Image</h4>
             </div>
             <div class="modal-body">
-              <p><img src="Images/linkedin-panel-over.png" class="img-responsive" /></p>
+              <img src="Images/linkedin-panel-over.png" class="img-responsive" />
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -308,7 +308,7 @@
 
    e.preventDefault();
 
-    var content = $(this).find('p').text();
+    var content = $(this).find('img').text();
 
     $('.modal-body').html(content);
 
