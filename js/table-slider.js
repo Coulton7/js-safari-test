@@ -18,7 +18,7 @@ $(document).ready(function() {
         // in this function we can define what happens when a user changes the sliders
         $("#amount").val(ui.values[0] + " - " + ui.values[1] + "mm");
 
-        var table = document.getElementsByClassName("metric-table tablefield");
+        var table = document.getElementById("#metric-table");
         for (var i = 1, row; row = table.rows[i]; i++) {
           //iterate through rows (we SKIP the first row: counter starts at 1!)
           for (var j = 0, col; col = row.cells[j]; j++) {
