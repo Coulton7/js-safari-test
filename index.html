@@ -268,7 +268,7 @@
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
 
             <div id="metric-table" class="metric-table tab-pane fade in active">
 
@@ -335,65 +335,22 @@
                 </div>
               </div>
 
-
-
-
-
-
-
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Twitter image <img src="Images/twitter-panel-over.png" class="img-responsive" /></a>
-                    <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Linkedin image <img src="Images/linkedin-panel-over.png" class="img-responsive" /></a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Modals -->
-              <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Product Image</h4>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Modals -->
             </div>
-            <script>
-              $('.product-image').on('click', function(e) {
-
-                e.preventDefault();
-
-                var content = $(this).find('img').text();
-
-                $('.modal-body').html(content);
-
-              });
-            </script>
           </div>
         </div>
       </div>
-      <footer class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="footer">
-              <p>Footer info here</p>
-            </div>
-          </div>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="footer">
+          <p>Footer info here</p>
         </div>
-      </footer>
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2248916.js"></script>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2248916.js"></script>
 </body>
 
 </html>
