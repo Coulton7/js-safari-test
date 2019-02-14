@@ -406,7 +406,7 @@ p a[target="_blank"]:after {
   display: flex;
 }
 
-.panel-heading{
+.panel-heading {
   height: 100%;
 }
 
@@ -416,7 +416,7 @@ p a[target="_blank"]:after {
   height: 97%
 }
 
-.widget-object{
+.widget-object {
   object-fit: contain;
   vertical-align: bottom;
   object-position: bottom;
@@ -434,15 +434,15 @@ p a[target="_blank"]:after {
 
 .css-fade {
   position: relative;
-	background-color: #b5b6b9;
+  background-color: #b5b6b9;
   height: 100%;
 }
 
 .css-fade-linkedin {
   background-image: url('/js-safari-test/Images/linkedin-panel.png');
-	background-size: contain;
-	background-color: #f5f5f5;
-	background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
   background-position: bottom;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
@@ -459,9 +459,9 @@ p a[target="_blank"]:after {
 
 .css-fade-instagram {
   background-image: url('/js-safari-test/Images/instagram-panel.png');
-	background-size: contain;
-	background-color: #f5f5f5;
-	background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
   background-position: bottom;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
@@ -478,9 +478,9 @@ p a[target="_blank"]:after {
 
 .css-fade-youtube {
   background-image: url('/js-safari-test/Images/youtube-panel.png');
-	background-size: contain;
-	background-color: #f5f5f5;
-	background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
   background-position: bottom;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
@@ -497,9 +497,9 @@ p a[target="_blank"]:after {
 
 .css-fade-twitter {
   background-image: url('/js-safari-test/Images/twitter-panel.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-color: #f5f5f5;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
   background-position: bottom;
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
@@ -521,8 +521,8 @@ p a[target="_blank"]:after {
   opacity: 0;
 }
 
-.panel .panel-heading .social-body{
-	margin-bottom: 0;
+.panel .panel-heading .social-body {
+  margin-bottom: 0;
 }
 
 .content-blockthick {
@@ -556,6 +556,147 @@ p a[target="_blank"]:after {
   height: 180px;
   width: 100%;
   margin-top: 4em;
+}
+
+.table,
+.tablefield {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td,
+.tablefield>thead>tr>th,
+.tablefield>tbody>tr>th,
+.tablefield>tfoot>tr>th,
+.tablefield>thead>tr>td,
+.tablefield>tbody>tr>td,
+.tablefield>tfoot>tr>td {
+  padding: 8px;
+  line-height: 1.6;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table>caption+thead>tr:first-child>th,
+table>colgroup+thead>tr:first-child>th,
+table>thead:first-child>tr:first-child>th,
+table>caption+thead>tr:first-child>td,
+table>colgroup+thead>tr:first-child>td,
+table>thead:first-child>tr:first-child>td {
+  border-top: 0 none;
+}
+
+table>tbody+tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered>thead>tr>th,
+.table-bordered>thead>tr>td {
+  border-bottom-width: 2px;
+}
+
+.tablefield>tbody>tr:nth-child(2n + 1)>td,
+.tablefield>tbody>tr:nth-child(2n + 1)>th {
+  background-color: #f9f9f9;
+}
+
+.tablefield>tbody>tr:hover>td,
+.tablefield>tbody>tr:hover>th {
+  background-color: #f5f5f5;
+}
+
+table col[class*="col-"] {
+  display: table-column;
+  float: none;
+}
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  display: table-cell;
+  float: none;
+}
+
+table>thead>tr>td.active,
+table>tbody>tr>td.active,
+table>tfoot>tr>td.active,
+table>thead>tr>th.active,
+table>tbody>tr>th.active,
+table>tfoot>tr>th.active,
+table>thead>tr.active>td,
+table>tbody>tr.active>td,
+table>tfoot>tr.active>td,
+table>thead>tr.active>th,
+table>tbody>tr.active>th,
+table>tfoot>tr.active>th {
+  background-color: #f5f5f5;
+}
+
+.field-name-field-sizes-table .size-slider,
+.field-name-field-imperial-sizes-table .size-slider {
+  padding-bottom: 10px;
+}
+
+.field-name-field-sizes-table .ui-slider,
+.field-name-field-imperial-sizes-table .ui-slider {
+  padding-bottom: 10px;
+}
+
+#slider-range,
+#slider-range2,
+#slider-range-imp {
+  width: 300px;
+  margin-top: 10px;
+}
+
+#slider-range2.ui-slider-horizontal {
+  border: 0 none;
+}
+
+#slider-range2.ui-slider-horizontal .ui-slider-range,
+#slider-range2.ui-slider-horizontal .ui-slider-handle {
+  background: url("http://unbug.ru/examples/jquery/slider/slide.png") repeat scroll 0 0 transparent;
+}
+
+#slider-range2.ui-slider-horizontal .ui-slider-range {
+  background-position: 0 -42px;
+  background-repeat: repeat-x;
+  height: 21px;
+}
+
+#slider-range2.ui-slider-horizontal .ui-slider-handle {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: 0 none;
+  height: 21px;
+  top: 0;
+  width: 21px;
+}
+
+#slider-range2.ui-slider-horizontal .ui-slider-handle:focus {
+  outline: 0 none;
+}
+
+#slider-range2.ui-slider-horizontal .ui-slider-handle+.ui-slider-handle {
+  background-position: -21px 0;
 }
 
 @media screen and (max-width: 767px) {

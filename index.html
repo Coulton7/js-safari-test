@@ -21,6 +21,16 @@
   <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script>
+    $(function() {
+      $("#slider-range").slider();
+    });
+  </script>
   <script type="text/javascript">
     (function($) {
       $(document).ready(function() {
@@ -259,56 +269,131 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
-            <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Twitter image <img src="Images/twitter-panel-over.png" class="img-responsive" /></a>
-            <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Linkedin image <img src="Images/linkedin-panel-over.png" class="img-responsive" /></a>
+
+            <div id="metric-table" class="metric-table tab-pane fade in active">
+
+              <p class="size-slider">
+                <label for="amount">Shaft Size (d1):</label>
+                <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" value="0">
+              </p>
+
+              <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                <div class="ui-slider-range ui-widget-header ui-corner-all" style="width: 100%; left: 0%;"></div>
+                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a>
+              </div>
+
+              <div class="field field-name-field-sizes-table field-type-tablefield field-label-hidden table table-striped table-responsive">
+                <div class="field-items">
+                  <div class="field-item even">
+                    <div id="tablefield-wrapper-node-2537-field-sizes-table-0" class="tablefield-wrapper">
+                      <table class="sticky-header" style="position: fixed; top: 0px; left: 390px; visibility: hidden;">
+                        <thead style="">
+                          <tr>
+                            <th class="row_0 col_0" scope="col">Size</th>
+                            <th class="row_0 col_1" scope="col">d1</th>
+                            <th class="row_0 col_2" scope="col">d3</th>
+                            <th class="row_0 col_3" scope="col">d7</th>
+                            <th class="row_0 col_4" scope="col">I1</th>
+                            <th class="row_0 col_5" scope="col">I4</th>
+                          </tr>
+                        </thead>
+                      </table>
+                      <table id="tablefield-node-2537-field_sizes_table-0 tablefield-0" class="tablefield  tablefield-columns-6 table sticky-enabled tableheader-processed sticky-table">
+                        <caption></caption>
+                        <thead>
+                          <tr>
+                            <th class="row_0 col_0" scope="col">Size</th>
+                            <th class="row_0 col_1" scope="col">d1</th>
+                            <th class="row_0 col_2" scope="col">d3</th>
+                            <th class="row_0 col_3" scope="col">d7</th>
+                            <th class="row_0 col_4" scope="col">I1</th>
+                            <th class="row_0 col_5" scope="col">I4</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="odd">
+                            <td class="row_1 col_0">0250</td>
+                            <td class="row_1 col_1">25.0</td>
+                            <td class="row_1 col_2">38.8</td>
+                            <td class="row_1 col_3">40.0</td>
+                            <td class="row_1 col_4">24.5</td>
+                            <td class="row_1 col_5">7.0</td>
+                          </tr>
+                          <tr class="even">
+                            <td class="row_2 col_0">0300-B</td>
+                            <td class="row_2 col_1">30.0</td>
+                            <td class="row_2 col_2">43.7</td>
+                            <td class="row_2 col_3">45.0</td>
+                            <td class="row_2 col_4">27.1</td>
+                            <td class="row_2 col_5">7.6</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Twitter image <img src="Images/twitter-panel-over.png" class="img-responsive" /></a>
+                    <a href="#" class="product-image" data-toggle="modal" data-target="#myModal">Linkedin image <img src="Images/linkedin-panel-over.png" class="img-responsive" /></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modals -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Product Image</h4>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Modals -->
+            </div>
+            <script>
+              $('.product-image').on('click', function(e) {
+
+                e.preventDefault();
+
+                var content = $(this).find('img').text();
+
+                $('.modal-body').html(content);
+
+              });
+            </script>
           </div>
         </div>
       </div>
-
-      <!-- Modals -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Product Image</h4>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer">
+              <p>Footer info here</p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End of Modals -->
-    </div>
-    <script>
-    $('.product-image').on('click', function(e){
-
-   e.preventDefault();
-
-    var content = $(this).find('img').text();
-
-    $('.modal-body').html(content);
-
-    });
-    </script>
-  </div>
-  </div>
-  </div>
-  <footer class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="footer">
-          <p>Footer info here</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2248916.js"></script>
+      </footer>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2248916.js"></script>
 </body>
 
 </html>
