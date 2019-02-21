@@ -267,67 +267,138 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="row">
 
-            <div id="metric-table" class="metric-table tab-pane fade in active">
+              <ul class="nav nav-tabs" roll="tablist">
 
-              <p class="size-slider">
-                <label for="amount">Shaft Size (d1):</label>
-                <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" value="0">
-              </p>
+                <li role="tab" class=""><a data-toggle="tab" href="#metric-table" aria-expanded="false">Metric</a></li>
+                <li role="tab" class="active"><a data-toggle="tab" href="#imperial-table" aria-expanded="true">Imperial</a></li>
+              </ul>
 
-              <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                <div class="ui-slider-range ui-widget-header ui-corner-all" style="width: 100%; left: 0%;"></div>
-                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
-                <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a>
-              </div>
+              <div class="tab-content">
 
-              <div class="field field-name-field-sizes-table field-type-tablefield field-label-hidden table table-striped table-responsive">
-                <div class="field-items">
-                  <div class="field-item even">
-                    <div id="tablefield-wrapper-node-2537-field-sizes-table-0" class="tablefield-wrapper">
-                      <table class="sticky-header" style="position: fixed; top: 0px; left: 390px; visibility: hidden;">
-                        <thead style="">
-                          <tr>
-                            <th class="row_0 col_0" scope="col">Size</th>
-                            <th class="row_0 col_1" scope="col">d1</th>
-                            <th class="row_0 col_2" scope="col">d3</th>
-                            <th class="row_0 col_3" scope="col">d7</th>
-                            <th class="row_0 col_4" scope="col">I1</th>
-                            <th class="row_0 col_5" scope="col">I4</th>
-                          </tr>
-                        </thead>
-                      </table>
-                      <table id="tablefield-node-2537-field_sizes_table-0 tablefield-0" class="tablefield  tablefield-columns-6 table sticky-enabled tableheader-processed sticky-table">
-                        <caption></caption>
-                        <thead>
-                          <tr>
-                            <th class="row_0 col_0" scope="col">Size</th>
-                            <th class="row_0 col_1" scope="col">d1</th>
-                            <th class="row_0 col_2" scope="col">d3</th>
-                            <th class="row_0 col_3" scope="col">d7</th>
-                            <th class="row_0 col_4" scope="col">I1</th>
-                            <th class="row_0 col_5" scope="col">I4</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="odd">
-                            <td class="row_1 col_0">0250</td>
-                            <td class="row_1 col_1">25.0</td>
-                            <td class="row_1 col_2">38.8</td>
-                            <td class="row_1 col_3">40.0</td>
-                            <td class="row_1 col_4">24.5</td>
-                            <td class="row_1 col_5">7.0</td>
-                          </tr>
-                          <tr class="even">
-                            <td class="row_2 col_0">0300-B</td>
-                            <td class="row_2 col_1">30.0</td>
-                            <td class="row_2 col_2">43.7</td>
-                            <td class="row_2 col_3">45.0</td>
-                            <td class="row_2 col_4">27.1</td>
-                            <td class="row_2 col_5">7.6</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <div id="metric-table" class="tab-pane fade">
+
+                  <p class="size-slider">
+                    <label for="amount">Shaft Size (d1):</label>
+                    <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" value="0" />
+                  </p>
+
+
+                  <div id="slider-range"></div>
+
+                  <div class="field field-name-field-sizes-table field-type-tablefield field-label-hidden table table-striped table-responsive">
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <div id="tablefield-wrapper-node-2537-field-sizes-table-0" class="tablefield-wrapper">
+                          <table class="sticky-header" style="position: fixed; top: 0px; left: 0px; visibility: hidden;">
+                            <thead style="">
+                              <tr>
+                                <th class="row_0 col_0" scope="col">Size</th>
+                                <th class="row_0 col_1" scope="col">d1</th>
+                                <th class="row_0 col_2" scope="col">d3</th>
+                                <th class="row_0 col_3" scope="col">d7</th>
+                                <th class="row_0 col_4" scope="col">I1</th>
+                                <th class="row_0 col_5" scope="col">I4</th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <table id="tablefield-node-2537-field_sizes_table-0" class="tablefield  tablefield-columns-6 table sticky-enabled tableheader-processed sticky-table">
+                            <caption></caption>
+                            <thead>
+                              <tr>
+                                <th class="row_0 col_0" scope="col">Size</th>
+                                <th class="row_0 col_1" scope="col">d1</th>
+                                <th class="row_0 col_2" scope="col">d3</th>
+                                <th class="row_0 col_3" scope="col">d7</th>
+                                <th class="row_0 col_4" scope="col">I1</th>
+                                <th class="row_0 col_5" scope="col">I4</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="odd">
+                                <td class="row_1 col_0">0250</td>
+                                <td class="row_1 col_1">25.0</td>
+                                <td class="row_1 col_2">38.8</td>
+                                <td class="row_1 col_3">40.0</td>
+                                <td class="row_1 col_4">24.5</td>
+                                <td class="row_1 col_5">7.0</td>
+                              </tr>
+                              <tr class="even">
+                                <td class="row_2 col_0">0300-B</td>
+                                <td class="row_2 col_1">30.0</td>
+                                <td class="row_2 col_2">43.7</td>
+                                <td class="row_2 col_3">45.0</td>
+                                <td class="row_2 col_4">27.1</td>
+                                <td class="row_2 col_5">7.6</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="imperial-table" class="tab-pane fade active in">
+
+                  <p class="size-slider">
+                    <label for="amount-imp">Shaft Size (d1):</label>
+                    <input type="text" id="amount-imp" style="border: 0; color: #f6931f; font-weight: bold;" />
+                  </p>
+
+
+                  <div id="slider-range-imp"></div>
+
+                  <div class="field field-name-field-imperial-sizes-table field-type-tablefield field-label-hidden table table-striped table-responsive">
+                    <div class="field-items">
+                      <div class="field-item even">
+                        <div id="tablefield-wrapper-node-2537-field-imperial-sizes-table-0" class="tablefield-wrapper">
+                          <table class="sticky-header" style="position: fixed; top: 0px; left: 390px; visibility: hidden;">
+                            <thead style="">
+                              <tr>
+                                <th class="row_0 col_0" scope="col">Size</th>
+                                <th class="row_0 col_1" scope="col">d1</th>
+                                <th class="row_0 col_2" scope="col">d3</th>
+                                <th class="row_0 col_3" scope="col">d7</th>
+                                <th class="row_0 col_4" scope="col">I1</th>
+                                <th class="row_0 col_5" scope="col">I4</th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <table id="tablefield-node-2537-field_imperial_sizes_table-0" class="tablefield  tablefield-columns-6 table sticky-enabled tableheader-processed sticky-table">
+                            <caption></caption>
+                            <thead>
+                              <tr>
+                                <th class="row_0 col_0" scope="col">Size</th>
+                                <th class="row_0 col_1" scope="col">d1</th>
+                                <th class="row_0 col_2" scope="col">d3</th>
+                                <th class="row_0 col_3" scope="col">d7</th>
+                                <th class="row_0 col_4" scope="col">I1</th>
+                                <th class="row_0 col_5" scope="col">I4</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="odd">
+                                <td class="row_1 col_0">0250</td>
+                                <td class="row_1 col_1">0.984</td>
+                                <td class="row_1 col_2">1.528</td>
+                                <td class="row_1 col_3">1.575</td>
+                                <td class="row_1 col_4">0.965</td>
+                                <td class="row_1 col_5">0.276</td>
+                              </tr>
+                              <tr class="even">
+                                <td class="row_2 col_0">0300-B</td>
+                                <td class="row_2 col_1">1.181</td>
+                                <td class="row_2 col_2">1.720</td>
+                                <td class="row_2 col_3">1.772</td>
+                                <td class="row_2 col_4">1.067</td>
+                                <td class="row_2 col_5">0.299</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
