@@ -53,7 +53,7 @@ $(document).ready(function() {
       range: true,
       min: impminVal,
       max: impmaxVal,
-      step: 0.05,
+      step: 0.01,
       values: [impminVal, impmaxVal],
       slide: function(event, ui) {
         var table = document.getElementById("imperial-table").getElementsByClassName("tablefield")[0];
