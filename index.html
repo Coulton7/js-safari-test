@@ -82,11 +82,22 @@
               <div class="block-block-123">
                 <script>
                 $(document).ready(function(){
-                  vex.dialog.confirm({
+                  vex.dialog.prompt({
                   message: "The can't find what you are looking for maybe try going to aesseal.com"
+                  buttons: [
+                    $.extend({}, vex.dialog.buttons.YES, {className:'btn-primary', text:'Go to aesseal.com', click:function(){
+                      window.location.href = 'https://www.aesseal.com/'
+                    }}),
+                    $.extend({}, vex.dialog.buttons.NO, {className:'btn-default', text:'Go to aesseal.com', click:function(){
+                      vex.close
+                    }})
+                  ]
+                  callback: function (value){
+                    console.log(value);
+                  }
 
-                })
-            });
+                  })
+                });
                 </script>
               </div>
             </div>
