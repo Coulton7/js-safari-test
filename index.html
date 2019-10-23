@@ -83,7 +83,7 @@
                 <script>
                 $(document).ready(function(){
                   vex.dialog.open({
-                  message: [{className:'col-sm-12',text: "Can't find what you are looking for maybe try going to aesseal.com"
+                  message: [$.extend({}, {className:'col-sm-12',text: "Can't find what you are looking for maybe try going to aesseal.com"})
                   ],
                   buttons: [
                     $.extend({}, vex.dialog.buttons.YES, {className:'col-sm-6 btn-primary', text:'Go to aesseal.com', click:function(){
