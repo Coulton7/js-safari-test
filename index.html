@@ -84,6 +84,8 @@
                 $(document).ready(function(){
                   vex.dialog.open({
                   message: "Can't find what you are looking for maybe try going to aesseal.com",
+                  contentClassName:'row',
+                  closeClassName:'row',
                   buttons: [
                     $.extend({}, vex.dialog.buttons.YES, {className:'col-sm-6 btn-primary', text:'Go to aesseal.com', click:function(){
                       window.location.href = 'https://www.aesseal.com/'
