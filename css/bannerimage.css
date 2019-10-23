@@ -529,6 +529,11 @@ p a[target="_blank"]:after {
   width: 100%!important;
 }
 
+.vex-dialog-button{
+  -webkit-animation:none!important;
+  animation: none!important;
+}
+
 .content-blockthick {
   background: #8d8e8f;
   background: -moz-linear-gradient(-45deg, #8d8e8f 0%, #5c5f60 84%, #a6aaad 100%);
