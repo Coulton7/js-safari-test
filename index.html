@@ -84,13 +84,12 @@
                 $(document).ready(function(){
                   vex.dialog.open({
                   message: "Can't find what you are looking for maybe try going to aesseal.com",
-                  contentClassName:'row',
-                  closeClassName:'row',
+                  contentClassName:'text-center',
                   buttons: [
-                    $.extend({}, vex.dialog.buttons.YES, {className:'col-sm-6 btn-primary', text:'Go to aesseal.com', click:function(){
+                    $.extend({}, vex.dialog.buttons.YES, {className:'col-sm-5 col-sm-pull-1 btn-primary', text:'Go to aesseal.com', click:function(){
                       window.location.href = 'https://www.aesseal.com/'
                     }}),
-                    $.extend({}, vex.dialog.buttons.NO, {className:'col-sm-6 btn-default', text:'Remain on this site', })
+                    $.extend({}, vex.dialog.buttons.NO, {className:'col-sm-5 col-sm-pull-1 btn-default', text:'Remain on this site', })
                   ],
                   })
                 });
