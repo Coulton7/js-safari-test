@@ -525,8 +525,8 @@ p a[target="_blank"]:after {
   margin-bottom: 0;
 }
 
-.vex-content{
-  width: 100%;
+.vex-theme-top .vex-content.text-center{
+  width: 100%!important;
 }
 
 .content-blockthick {
