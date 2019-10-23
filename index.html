@@ -86,10 +86,10 @@
                   message: "Can't find what you are looking for maybe try going to aesseal.com",
                   contentClassName:'text-center',
                   buttons: [
-                    $.extend({}, vex.dialog.buttons.YES, {className:'col-lg-4 col-lg-pull-2 col-sm-5 col-sm-pull-1 btn-red', unsafeText:'Go to aesseal.com<i class="fas fa-external-link-alt"></i>', click:function(){
+                    $.extend({}, vex.dialog.buttons.YES, {className:'col-lg-4 col-lg-pull-2 col-sm-5 col-sm-pull-1 btn-red', text:'Go to aesseal.com', click:function(){
                       window.location.href = 'https://www.aesseal.com/'
                     }}),
-                    $.extend({}, vex.dialog.buttons.NO, {className:'col-sm-5 col-sm-pull-1 col-lg-4 col-lg-pull-2 btn-default', unsafeText:'<i class="fas fa-times"></i>Remain on this site', })
+                    $.extend({}, vex.dialog.buttons.NO, {className:'col-sm-5 col-sm-pull-1 col-lg-4 col-lg-pull-2 btn-default', text:'Remain on this site', })
                   ],
                   })
                 });
