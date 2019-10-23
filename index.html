@@ -82,13 +82,13 @@
               <div class="block-block-123">
                 <script>
                 $(document).ready(function(){
-                  vex.dialog.prompt({
+                  vex.dialog.open({
                   message: "The can't find what you are looking for maybe try going to aesseal.com",
                   buttons: [
-                    $.extend({}, vex.dialog.buttons.YES, {className:'btn-primary', text:'Go to aesseal.com', click:function(){
+                    $.extend({}, vex.dialog.buttons.YES, {className:'col-sm-6 btn-primary', text:'Go to aesseal.com', click:function(){
                       window.location.href = 'https://www.aesseal.com/'
                     }}),
-                    $.extend({}, vex.dialog.buttons.NO, {className:'btn-default', text:'Go to aesseal.com', click:function(){
+                    $.extend({}, vex.dialog.buttons.NO, {className:'col-sm-6 btn-default', text:'Remain', click:function(){
                       vex.close
                     }})
                   ],
