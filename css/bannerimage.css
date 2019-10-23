@@ -562,7 +562,7 @@ p a[target="_blank"]:after {
 .vex-theme-top .vex-content.text-center{
   width: 100%!important;
   border-radius: 0!important;
-  color:#ffffff!important;
+  background-color: #ffffff!important;
 }
 
 .vex-dialog-button{
