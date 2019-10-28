@@ -574,7 +574,7 @@ p a[target="_blank"]:after {
 .web-banner{
   width: 100%!important;
   border-radius: 0!important;
-  background-color: #f2f2f2!important;
+  background: #fcfcfc!important;
 }
 
 .vex-dialog-button{
