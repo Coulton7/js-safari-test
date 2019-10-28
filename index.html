@@ -81,20 +81,9 @@
             <div class="col-sm-12">
               <div class="block-block-123">
                 <script>
-                $(document).ready(function() {
-                  function checkCookie() {
-                    function getParameterByName(name) {
-                      var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-                      return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-                    }
-                    var _hsq = window._hsq = window._hsq || [];
-                    _hsq.push(["identify", {
-                      id: user.id,
-                      vexClose: closed
-                    }]);
-                    if (vexClose === closed) {
-                      return;
-                    } else {
+                (function($) {
+                $(document).ready(function(){
+                  if(localStorage.getItem('vexClosed') != 'closed'){
                       vex.dialog.open({
                         message: "Can't find what you are looking for maybe try going to aesseal.com",
                         contentClassName: 'text-center',
@@ -112,15 +101,12 @@
                           })
                         ],
                         afterClose: function() {
-                          _hsq.push(['trackEvent', {
-                            id: 'vexClose',
-                            value: closed
-                          }]);
+                          localStorage.setItem('vexClosed','closed');
                         }
                       });
                     }
-                  }
-                });
+                  });
+                })(jQuery);
                 </script>
               </div>
             </div>
