@@ -565,7 +565,7 @@ p a[target="_blank"]:after {
   font-weight: 900;
 }
 
-.vex-close:after{
+.vex-closes:after{
   font-family: 'Font Awesome 5 Free';
   content:" \f00d";
   font-weight: 900;
