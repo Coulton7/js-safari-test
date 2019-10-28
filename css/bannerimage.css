@@ -571,10 +571,10 @@ p a[target="_blank"]:after {
   font-weight: 900;
 }
 
-.vex-theme-top .vex-content.text-center{
+.web-banner{
   width: 100%!important;
   border-radius: 0!important;
-  background-color: #ffffff!important;
+  background-color: #f2f2f2!important;
 }
 
 .vex-dialog-button{
