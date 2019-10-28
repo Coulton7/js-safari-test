@@ -559,6 +559,18 @@ p a[target="_blank"]:after {
   color: #535354;
 }
 
+.vex-ext:after{
+  font-family: 'Font Awesome 5 Free';
+  content: " \f35d";
+  font-weight: 900;
+}
+
+.vex-close:after{
+  font-family: 'Font Awesome 5 Free';
+  content:" \f00d";
+  font-weight: 900;
+}
+
 .vex-theme-top .vex-content.text-center{
   width: 100%!important;
   border-radius: 0!important;
