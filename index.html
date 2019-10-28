@@ -83,7 +83,7 @@
                 <script>
                 (function($) {
                 $(document).ready(function(){
-                  if(localStorage.getItem('vexClosed') != 'closed'){
+                  if(sessionStorage.getItem('vexClosed') != 'closed'){
                       vex.dialog.open({
                         message: "Can't find what you are looking for maybe try going to aesseal.com",
                         contentClassName: 'text-center',
@@ -101,7 +101,7 @@
                           })
                         ],
                         afterClose: function() {
-                          localStorage.setItem('vexClosed','closed');
+                          sessionStorage.setItem('vexClosed','closed');
                         }
                       });
                     }
