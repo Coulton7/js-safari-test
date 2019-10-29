@@ -83,7 +83,12 @@
                 <script>
                 (function($) {
                 $(document).ready(function(){
-                  if(sessionStorage.getItem('vexClosed') != 'closed'){
+                  if(sessionStorage.getItem('vexClosed') === 'closed')
+                  {
+                    return null
+                  }
+                  else
+                  {
                       vex.dialog.open({
                         message: "Can't find what you are looking for maybe try going to aesseal.com",
                         contentClassName: 'web-banner text-center',
