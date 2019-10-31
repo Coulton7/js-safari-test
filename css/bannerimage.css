@@ -844,6 +844,10 @@ max-width: 25%;
     display: none;
   }
 
+  .wavelogo{
+    display: none;
+  }
+
   .socialmedia {
     text-align: center;
     background-color: transparent;
