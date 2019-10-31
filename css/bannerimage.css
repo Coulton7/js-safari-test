@@ -926,6 +926,7 @@ max-width: 25%;
   .sustain-nav{
     white-space: nowrap;
     overflow-x: scroll;
+    display: flex;
   }
 }
 
