@@ -760,6 +760,10 @@ table>tfoot>tr.active>th {
   max-width: 100%;
 }
 
+.float-right{
+  float: right;
+}
+
 .img-25{
 max-width: 25%;
 }
