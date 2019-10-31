@@ -756,6 +756,19 @@ table>tfoot>tr.active>th {
   background-position: -21px 0;
 }
 
+.img-25{
+max-width: 25%;
+}
+
+.img-50{
+  max-width: 50%;
+}
+
+.img-75{
+  max-width: 75%;
+}
+
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 30px;
