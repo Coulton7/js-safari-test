@@ -927,9 +927,15 @@ max-width: 25%;
   .bottom-gap {
     height: 8em;
   }
-  .sustain-nav{
-    white-space: nowrap;
-    overflow-x: scroll;
+
+  .sustain-nav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  }
+  .sustain-nav>li {
+  float: none;
   }
 }
 
@@ -1023,9 +1029,14 @@ max-width: 25%;
   .bottom-gap {
     display: none;
   }
-  .sustain-nav{
-    white-space: wrap;
-    overflow: auto;
+  .sustain-nav {
+    overflow-x: initial;
+    overflow-y: initial;
+    display: initial;
+    display: initial;
+  }
+  .sustain-nav>li {
+    float: left;
   }
 }
 
