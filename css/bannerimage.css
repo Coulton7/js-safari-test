@@ -921,6 +921,7 @@ max-width: 25%;
   }
   .sustain-nav{
     white-space: nowrap;
+    overflow-x: scroll;
   }
 }
 
@@ -1016,6 +1017,7 @@ max-width: 25%;
   }
   .sustain-nav{
     white-space: wrap;
+    overflow: auto;
   }
 }
 
