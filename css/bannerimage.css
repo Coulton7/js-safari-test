@@ -760,13 +760,18 @@ table>tfoot>tr.active>th {
   max-width: 100%;
 }
 
-.sustain-nav li.active{
+.sustain-nav li.active, .sustain-nav li.active:hover{
   opacity: 1;
 }
 
 .sustain-nav li{
   opacity: 0.3;
 }
+
+.sustain-nav li:hover{
+  opacity: 0.6;
+}
+
 
 .sustain-nav>li.active>a, .sustain-nav>li.active>a:hover{
   border: none;
