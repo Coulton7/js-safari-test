@@ -782,6 +782,12 @@ table>tfoot>tr.active>th {
   border: none;
 }
 
+.next-arrow{
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
 .btn-red[aria-expanded="true"]{
   display: none;
 }
@@ -943,7 +949,7 @@ max-width: 25%;
   float: none;
   }
   #arrowNav{
-    display: block;
+    display: flex;
   }
 }
 
