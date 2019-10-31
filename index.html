@@ -202,6 +202,15 @@
               <li role="tab" class="col-sm-3 col-xs-4"><a data-toggle="tab" href="#cli"><img class="img-responsive" src="Images/sdg-icons/E-WEB-Goal-13.png" /></a></li>
             </ul>
 
+            <div id="arrowNav">
+              <div id="prev">
+                <i class="fas fa-caret-left fa-3x prev-arrow"></i>
+              </div>
+              <div id="next">
+                <i class="fas fa-caret-right fa-3x prev-arrow"></i>
+              </div>
+
+
             <div class="tab-content">
               <div class="tab-pane" id="edu">
                 <div class="row">
@@ -683,6 +692,19 @@
     </div>
   </footer>
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2248916.js"></script>
+  <script type="text/javascript">
+  $('#prev').on('click', function() {
+  $('.sustain-nav').animate({
+    scrollLeft: '-=100'
+  }, 300, 'swing');
+  });
+
+  $('#next').on('click', function() {
+  $('sustain-nav').animate({
+    scrollLeft: '+=100'
+    }, 300, 'swing');
+  });
+</script>
 </body>
 
 </html>
