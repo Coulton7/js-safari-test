@@ -756,6 +756,10 @@ table>tfoot>tr.active>th {
   background-position: -21px 0;
 }
 
+.sustain-nav>li>a>img{
+  max-width: 100%;
+}
+
 .img-25{
 max-width: 25%;
 }
