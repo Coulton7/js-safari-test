@@ -760,6 +760,10 @@ table>tfoot>tr.active>th {
   max-width: 100%;
 }
 
+.btn-red[aria-expanded="true"]{
+  display: none;
+}
+
 .float-right{
   float: right;
 }
