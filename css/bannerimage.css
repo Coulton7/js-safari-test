@@ -782,6 +782,10 @@ table>tfoot>tr.active>th {
   border: none;
 }
 
+.sustain-nav>li.active>a:focus{
+  border: none;
+}
+
 .btn-red[aria-expanded="true"]{
   display: none;
 }
