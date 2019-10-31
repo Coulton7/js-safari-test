@@ -760,6 +760,14 @@ table>tfoot>tr.active>th {
   max-width: 100%;
 }
 
+.sustain-nav li.active{
+  opacity: 1;
+}
+
+.sustain-nav li{
+  opacity: 0.3;
+}
+
 .btn-red[aria-expanded="true"]{
   display: none;
 }
