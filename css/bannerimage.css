@@ -774,15 +774,7 @@ table>tfoot>tr.active>th {
 }
 
 
-.sustain-nav>li.active>a{
-  border: none;
-}
-
-.sustain-nav>li.active>a:hover{
-  border: none;
-}
-
-.sustain-nav>li.active>a:focus{
+.sustain-nav>li.active>a, .sustain-nav>li.active>a:focus, .sustain-nav>li.active>a:hover{
   border: none;
 }
 
