@@ -785,7 +785,7 @@ table>tfoot>tr.active>th {
 .next-arrow{
   float: right;
   position: absolute;
-  right: 0;
+  right: 2%;
 }
 
 .btn-red[aria-expanded="true"]{
