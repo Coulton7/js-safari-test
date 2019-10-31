@@ -919,6 +919,9 @@ max-width: 25%;
   .bottom-gap {
     height: 8em;
   }
+  .sustain-nav{
+    white-space: nowrap;
+  }
 }
 
 /* sm */
@@ -1010,6 +1013,9 @@ max-width: 25%;
 
   .bottom-gap {
     display: none;
+  }
+  .sustain-nav{
+    white-space: wrap;
   }
 }
 
