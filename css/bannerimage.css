@@ -861,6 +861,11 @@ max-width: 25%;
     width: 100%;
   }
 
+  .front__flex-margin{
+    margin: 4.3em 0 0 0;
+    position: relative;
+  }
+
   .icons a:nth-child(1) i {
     padding-right: 0.8em;
     z-index: 4;
@@ -990,6 +995,11 @@ max-width: 25%;
 
   .socialmedia {
     text-align: center;
+  }
+
+  .front__flex-margin{
+    margin: -4.3em 0 0 0;
+    position: relative;
   }
 
   .icons a:nth-child(1) i {
