@@ -768,6 +768,10 @@ table>tfoot>tr.active>th {
   opacity: 0.3;
 }
 
+.sustain-nav>li.active>a{
+  border: none;
+}
+
 .btn-red[aria-expanded="true"]{
   display: none;
 }
