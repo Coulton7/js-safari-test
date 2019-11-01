@@ -768,6 +768,10 @@ outline: 1px dashed #888c8f;
 padding: 1em 0.5em 1em 0.5em;
 }
 
+.field-industry{
+  color: #ffffff;
+}
+
 .grey-banner{
   background-color: #888c8f;
   color: #ffffff;
@@ -788,6 +792,7 @@ padding: 1em 0.5em 1em 0.5em;
 
 .grey-lower-banner{
   background-color: #888c8f;
+  height: 100%;
 }
 
 .sustain-nav{
