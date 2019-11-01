@@ -784,16 +784,15 @@ padding: 1em 0.5em 1em 0.5em;
 .grey-banner{
   background-color: #888c8f;
   color: #ffffff;
-  border-top-right-radius: 2% 60%;
 }
 
 .grey-upper-wave{
   background-color: #888c8f;
-  height: 85%;
+  height: 100%;
   transform: skewX(40deg);
   position: relative;
-  top: 15%;
   right: 95%;
+  border-top-right-radius: 5%;
 }
 
 .grey-lower-wave{
