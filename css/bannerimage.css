@@ -766,6 +766,10 @@ table>tfoot>tr.active>th {
   margin-left:2em;
 }
 
+.case-ref p{
+  color: #ffffff;
+}
+
 .grey-lower-banner{
   background-color: #888c8f;
 }
