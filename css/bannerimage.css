@@ -777,6 +777,16 @@ padding: 1em 0.5em 1em 0.5em;
   color: #ffffff;
 }
 
+.grey-upper-wave{
+  background-color: #888c8f;
+  border-top-right-radius: 15%;
+}
+
+.grey-lower-wave{
+  background-color: #888c8f;
+  transform: skewY(15deg);
+}
+
 .case-ref{
   color: #ffffff;
   margin-left:2em;
