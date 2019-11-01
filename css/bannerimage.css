@@ -806,10 +806,14 @@ padding: 1em 0.5em 1em 0.5em;
 }
 
 .grey-lower-curve{
-  background-color: #e5e5e7;
+  background-color: #ffffff;
   height: 100%;
   transform: skewX(40deg);
-  border-top-right-radius: 5%;
+  border-top-right-radius: 2%;
+  top: -100%;
+  position: relative;
+  left: -99%;
+  border-top-left-radius: 45%;
 }
 
 .grey-lower-wave{
