@@ -791,7 +791,6 @@ padding: 1em 0.5em 1em 0.5em;
   background-color: #888c8f;
   height: 100%;
   transform: skewX(45deg);
-  transform: rotateX(5deg);
 }
 
 .case-ref{
