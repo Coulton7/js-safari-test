@@ -789,8 +789,9 @@ padding: 1em 0.5em 1em 0.5em;
 
 .grey-lower-wave{
   background-color: #888c8f;
-  height: 100%;
-  transform: skewX(45deg);
+  height: 100.1%;
+  transform: skewX(40deg);
+  width: 170%;
 }
 
 .case-ref{
