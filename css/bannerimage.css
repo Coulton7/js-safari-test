@@ -792,6 +792,7 @@ padding: 1em 0.5em 1em 0.5em;
   height: 100.1%;
   transform: skewX(40deg);
   width: 170%;
+  border-bottom-left-radius: 5%
 }
 
 .grey-lower-wave::before{
