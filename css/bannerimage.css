@@ -780,11 +780,13 @@ padding: 1em 0.5em 1em 0.5em;
 .grey-upper-wave{
   background-color: #888c8f;
   border-top-right-radius: 15%;
+  height: 100%;
 }
 
 .grey-lower-wave{
   background-color: #888c8f;
   transform: skewY(15deg);
+  height: 100%;
 }
 
 .case-ref{
@@ -800,11 +802,6 @@ padding: 1em 0.5em 1em 0.5em;
 
 .field-industry{
   text-align: center;
-}
-
-.grey-lower-banner{
-  background-color: #888c8f;
-  height: 100%;
 }
 
 .sustain-nav{
