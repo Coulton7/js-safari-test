@@ -768,13 +768,17 @@ outline: 1px dashed #888c8f;
 padding: 1em 0.5em 1em 0.5em;
 }
 
-.field-industry{
+.field-industry p{
   color: #ffffff;
+  transform: translateY(40%);
+  height: 100%;
 }
 
 .ind-icon{
   position: absolute;
-  height: 50%;
+  bottom: -40%;
+  z-index: 10;
+  right: 40%;
 }
 
 .grey-banner{
