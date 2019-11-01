@@ -808,11 +808,11 @@ padding: 1em 0.5em 1em 0.5em;
 .grey-lower-curve{
   background-color: #ffffff;
   height: 100%;
-  transform: skewX(40deg);
+  transform: skewX(38deg);
   border-top-right-radius: 2%;
   top: -100%;
   position: relative;
-  left: -99%;
+  left: -98%;
   border-top-left-radius: 45%;
 }
 
