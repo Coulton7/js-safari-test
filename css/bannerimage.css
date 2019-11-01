@@ -794,6 +794,13 @@ padding: 1em 0.5em 1em 0.5em;
   width: 170%;
 }
 
+.grey-lower-wave::before{
+  content:"";
+  height: 20%;
+  border-bottom-left-radius: 2% 60%;
+  color: #e5e5e7
+}
+
 .case-ref{
   color: #ffffff;
   margin-left:2em;
