@@ -779,13 +779,13 @@ padding: 1em 0.5em 1em 0.5em;
 
 .grey-upper-wave{
   background-color: #888c8f;
-  border-top-right-radius: 15%;
+  border-top-right-radius: 45%;
   height: 100%;
 }
 
 .grey-lower-wave{
   background-color: #888c8f;
-  transform: skewY(-15deg);
+  transform: skewX(-15deg);
   height: 100%;
 }
 
