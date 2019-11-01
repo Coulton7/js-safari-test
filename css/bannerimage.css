@@ -790,11 +790,12 @@ padding: 1em 0.5em 1em 0.5em;
 .case-ref{
   color: #ffffff;
   margin-left:2em;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .case-ref p{
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .field-industry{
