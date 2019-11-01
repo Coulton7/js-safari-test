@@ -785,7 +785,7 @@ padding: 1em 0.5em 1em 0.5em;
 
 .grey-lower-wave{
   background-color: #888c8f;
-  transform: skewX(-15deg);
+  transform: skewX(15deg);
   height: 100%;
 }
 
