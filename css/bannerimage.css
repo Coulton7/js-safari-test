@@ -796,11 +796,13 @@ padding: 1em 0.5em 1em 0.5em;
 }
 
 .grey-upper-curve{
-  background-color: #e5e5e7;
+  background-color: #ffffff;
   height: 100%;
   position: relative;
-  right: 67%;
-  border-bottom-left-radius: 5%;
+  right: -23%;
+  border-bottom-left-radius: 6%;
+  top: -99%;
+  transform: skewX(39deg);
 }
 
 .grey-lower-wave{
