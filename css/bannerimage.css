@@ -805,6 +805,13 @@ padding: 1em 0.5em 1em 0.5em;
   transform: skewX(40deg);
 }
 
+.grey-lower-curve{
+  background-color: #e5e5e7;
+  height: 100%;
+  transform: skewX(40deg);
+  border-top-right-radius: 5%;
+}
+
 .grey-lower-wave{
   background-color: #888c8f;
   height: 100%;
