@@ -787,21 +787,11 @@ padding: 1em 0.5em 1em 0.5em;
   right: 95%;
 }
 
-.grey-lower-wave::before{
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 12em 12em 0;
-  border-color: transparent #888c8f transparent transparent;
-  position: absolute;
-  top: 0px;
-  margin-left: -3.1em;
-}
-
 .grey-lower-wave{
   background-color: #888c8f;
   height: 100%;
+  transform: skewX(45deg);
+  transform: rotateX(5deg);
 }
 
 .case-ref{
