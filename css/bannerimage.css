@@ -770,6 +770,10 @@ table>tfoot>tr.active>th {
   color: #ffffff;
 }
 
+.field-industry{
+  text-align: center;
+}
+
 .grey-lower-banner{
   background-color: #888c8f;
 }
