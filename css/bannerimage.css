@@ -795,6 +795,14 @@ padding: 1em 0.5em 1em 0.5em;
   border-top-right-radius: 5%;
 }
 
+.gery-upper-curve{
+  background-color: #e5e5e7;
+  height: 100%;
+  position: relative;
+  right: 67%;
+  border-bottom-left-radius: 5%;
+}
+
 .grey-lower-wave{
   background-color: #888c8f;
   height: 100%;
