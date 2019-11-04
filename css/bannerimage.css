@@ -772,8 +772,6 @@ padding: 1em 0.5em 1em 0.5em;
 
 .field-industry p{
   color: #ffffff;
-  transform: translateY(40%);
-  height: 100%;
 }
 
 .ind-icon{
@@ -847,6 +845,8 @@ padding: 1em 0.5em 1em 0.5em;
 
 .field-industry{
   text-align: center;
+  transform: translateY(40%);
+  height: 100%;
 }
 
 .grey-lower-banner{
