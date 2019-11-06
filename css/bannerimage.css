@@ -929,6 +929,14 @@ max-width: 25%;
   display: block;
 }
 
+.fa-edit, .fa-save, .fa-share-square{
+  border-radius: 50%;
+  border: 1px solid #002a5b;
+  padding: 2px;
+  background-color: #002a5b;
+  color: white;
+}
+
 
 @media screen and (max-width: 767px) {
   h1 {
