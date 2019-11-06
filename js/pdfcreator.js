@@ -1,3 +1,4 @@
+window.onload=function(){
     var orgName = document.getElementById('orgName');
     var orgPhone = document.getElementById('orgPhone');
     var orgEmail = document.getElementById('orgEmail');
@@ -77,3 +78,4 @@ function pdfCreator() {
 function pdfOpen() {
   var pdf = pdfMake.createPdf(docDefinition).open('Policy-to-prevent-Global-Warming.pdf');
 }
+};
