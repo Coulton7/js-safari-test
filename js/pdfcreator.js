@@ -90,8 +90,17 @@ function pdfOpen() {
   var orgPhone = document.getElementById('orgPhone');
   var orgEmail = document.getElementById('orgEmail');
   var orgWorkers = document.getElementById('orgWorkers');
-  var orgType = document.getElementById('orgType');
   var roi = document.getElementById('roi');
+  var orgType = document.getElementById('orgType').value;
+  var orgTypeValue;
+  if (document.getElementById('type1').checked) {
+  orgTypeValue = document.getElementById('type1').value;
+  }else if (document.getElementById('type2').checked) {
+  orgTypeValue = document.getElementById('type2').value;
+  }else if (document.getElementById('type3').checked) {
+  orgTypeValue = document.getElementById('type3').value;
+  }
+
 
   var docDefinition = {
 
@@ -117,7 +126,7 @@ function pdfOpen() {
       },
       {
         text: [
-        'The', orgTypeValue, ' has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
+        'The ', orgTypeValue, ' has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
       ]
     },
       {
@@ -131,7 +140,9 @@ function pdfOpen() {
           {
             text: ['All global business heads have local spending authority. Any sustainability project with a higher value should be immediately referred to the Board of ', orgName.value, '.\n\n']
           },
-          'As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than', orgWorkers.value,  'co-workers.\n\n',
+          {
+            text: ['As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than ', orgWorkers.value,  ' co-workers.\n\n']
+          },
           'Current or potential supplier input is welcomed, including their use of the global hotline where necessary.\n\n'
         ],
       },
