@@ -45,8 +45,6 @@ function pdfCreator() {
       {
         ul:
         [
-          {pageMargins:[65, 0, 65, 0]
-          },
           'Any sustainability project will be given priority over any other capital investment with a similar Return on Investment.\n\n',
           {
             text: ['Any sustainability project with a reasonable chance of getting a Return on Investment of ', roi.value, ' years or less, should be brought to the attention of the ', orgName.value, '.\n\n']
@@ -125,8 +123,6 @@ function pdfOpen() {
       {
         ul:
         [
-          {pageMargins:[65, 0, 65, 0]
-          },
           'Any sustainability project will be given priority over any other capital investment with a similar Return on Investment.\n\n',
           {
             text: ['Any sustainability project with a reasonable chance of getting a Return on Investment of ', roi.value, ' years or less, should be brought to the attention of the ', orgName.value, '.\n\n']
