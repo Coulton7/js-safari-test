@@ -169,9 +169,23 @@ function pdfOpen() {
       }
     }
   };
-  var pdf = pdfMake.createPdf(docDefinition).open({}, window);
-  const pdfDocGenerator = pdfMake.createPdf(docDefinition);
-  pdfDocGenerator.getBlob((blob) => {
-    // ...
-});
+
+  var createPdf = pdfMake.createPdf(docDefinition);
+  var base64data = null;
+    createPdf.getBase64(function(encodedString) {
+    base64data = encodedString;
+    console.log(base64data );
+
+    var byteCharacters = atob(base64data);
+    var byteNumbers = new Array(byteCharacters.length);
+    for (var i = 0; i < byteCharacters.length; i++) {
+      byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+    var byteArray = new Uint8Array(byteNumbers);
+    var file = new Blob([byteArray],
+       { type: 'application/pdf;base64' });
+    var fileURL = URL.createObjectURL(file);
+    window.open(fileURL);
+  }
+);
 }
