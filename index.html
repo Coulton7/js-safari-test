@@ -747,7 +747,7 @@
         <p class="text-center">Simply enter your own business information in the form below to create your own personalized policy.</p>
 
         <div class="col-sm-8 col-sm-offset-2">
-          <div class="well form">
+          <form class="well form">
             <div class="col-sm-6">
               <label for="orgName">Business Name: </label>
               <input name="orgName" type="text" maxlength="60" id="orgName" placeholder="Enter Business Name" class="form-control" />
@@ -762,7 +762,7 @@
               <label for="orgWorkers">Enter Number of Employees: </label>
               <input name:"orgWorkers" type="text" maxlength="6" id="orgWorkers" placeholder="Enter number of Employees" class="form-control">
             </div>
-            <form class="col-sm-12" id="orgType">
+            <div class="col-sm-12" id="orgType">
               <label for="orgType">Please select business type: </label>
               <div class="radio">
                 <label><input type="radio" name="orgType" id="type1" value="Group">Group</label>
@@ -773,14 +773,14 @@
               <div class="radio">
                 <label><input type="radio" name="orgType" id="type3" value="Company">Company</label>
               </div>
-            </form>
+            </div>
             <div class="row">
               <div class="btn-container col-sm-12">
                 <button id="createPDF" class="btn-primary btn btn-lg" onclick="">Create the Policy</button>
                 <button id="downloadPDF" class="btn-primary btn btn-lg download-pdf" onclick="pdfCreator()">Download the PDF</button>
                 <button id="savePDF" class="btn-default btn btn-lg save-pdf" onclick="pdfOpen()">Open the PDF</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
