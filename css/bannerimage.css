@@ -918,6 +918,7 @@ max-width: 25%;
 
 .global-warming-form .form-control{
   width: 65%;
+  color: #535354;
 }
 
 #downloadPDF, #savePDF{
