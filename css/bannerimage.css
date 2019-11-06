@@ -1072,6 +1072,9 @@ max-width: 25%;
   #arrowNav{
     display: flex;
   }
+  .gloabl-warming-form{
+    background-image: none;
+  }
 }
 
 /* sm */
