@@ -34,7 +34,7 @@ function pdfCreator() {
       },
       {
         text: [
-          'The Health, Safety and Welfare of all the stakeholders in our', orgTypeValue.value ,'is the primary concern of the Board of ', orgName.value, '.\n\n'
+          'The Health, Safety and Welfare of all the stakeholders in our', orgTypeValue ,'is the primary concern of the Board of ', orgName.value, '.\n\n'
         ]
       },
       {
