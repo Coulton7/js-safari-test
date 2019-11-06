@@ -34,12 +34,12 @@ function pdfCreator() {
       },
       {
         text: [
-          'The Health, Safety and Welfare of all the stakeholders in our', orgTypeValue ,'is the primary concern of the Board of ', orgName.value, '.\n\n'
+          'The Health, Safety and Welfare of all the stakeholders in our ', orgTypeValue ,' is the primary concern of the Board of ', orgName.value, '.\n\n'
         ]
       },
       {
         text: [
-        'The Group has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
+        'The', orgTypeValue, ' has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
       ]
     },
       {
@@ -52,7 +52,7 @@ function pdfCreator() {
           {
             text: ['All global business heads have local spending authority. Any sustainability project with a higher value should be immediately referred to the Board of ', orgName.value, '.\n\n']
           },
-          'As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than 250 co-workers.\n\n',
+          'As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than', orgWorkers.value,  'co-workers.\n\n',
           'Current or potential supplier input is welcomed, including their use of the global hotline where necessary.\n\n'
         ],
       },
@@ -109,12 +109,12 @@ function pdfOpen() {
       },
       {
         text: [
-          'The Health, Safety and Welfare of all the stakeholders in our Group is the primary concern of the Board of ', orgName.value, '.\n\n'
+          'The Health, Safety and Welfare of all the stakeholders in our ', orgTypeValue ,' is the primary concern of the Board of ', orgName.value, '.\n\n'
         ]
       },
       {
         text: [
-        'The Group has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
+        'The', orgTypeValue, ' has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
       ]
     },
       {
@@ -127,7 +127,7 @@ function pdfOpen() {
           {
             text: ['All global business heads have local spending authority. Any sustainability project with a higher value should be immediately referred to the Board of ', orgName.value, '.\n\n']
           },
-          'As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than 250 co-workers.\n\n',
+          'As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than', orgWorkers.value,  'co-workers.\n\n',
           'Current or potential supplier input is welcomed, including their use of the global hotline where necessary.\n\n'
         ],
       },
