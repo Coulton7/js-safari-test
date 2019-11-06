@@ -170,12 +170,6 @@ function pdfOpen() {
     }
   };
 
-  $scope.generatePdf = function() {
-  // create the window before the callback
-  var win = window.open('', '_blank');
-  $http.post('/someUrl', data).then(function(response) {
-    // pass the "win" argument
-    pdfMake.createPdf(docDefinition).open({}, win);
-  });
-};
+  var pdf = pdfMake.createPdf(docDefinition).open();
+
 }
