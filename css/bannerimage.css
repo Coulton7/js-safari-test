@@ -907,7 +907,8 @@ max-width: 25%;
 }
 
 .global-warming-form{
-  background-color: #eeeeee;
+  background-color: #888c8f;
+  color: #ffffff;
   background-image: url('https://s3-eu-west-1.amazonaws.com/aesweb/hostinggrabs/AES-climate-world.png');
   background-repeat: no-repeat;
   background-size: contain;
