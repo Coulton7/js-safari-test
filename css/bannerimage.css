@@ -912,6 +912,7 @@ max-width: 25%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
+  padding: 48px 60px 48px 60px;
 }
 
 .global-warming-form .form-control{
