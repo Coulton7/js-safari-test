@@ -170,22 +170,12 @@ function pdfOpen() {
     }
   };
 
-  var createPdf = pdfMake.createPdf(docDefinition);
-  var base64data = null;
-    createPdf.getBase64(function(encodedString) {
-    base64data = encodedString;
-    console.log(base64data );
-
-    var byteCharacters = atob(base64data);
-    var byteNumbers = new Array(byteCharacters.length);
-    for (var i = 0; i < byteCharacters.length; i++) {
-      byteNumbers[i] = byteCharacters.charCodeAt(i);
-    }
-    var byteArray = new Uint8Array(byteNumbers);
-    var file = new Blob([byteArray],
-       { type: 'application/pdf;base64' });
-    var fileURL = URL.createObjectURL(file);
-    window.open(fileURL);
-  }
-);
+  $scope.generatePdf = function() {
+  // create the window before the callback
+  var win = window.open('', '_blank');
+  $http.post('/someUrl', data).then(function(response) {
+    // pass the "win" argument
+    pdfMake.createPdf(docDefinition).open({}, win);
+  });
+};
 }
