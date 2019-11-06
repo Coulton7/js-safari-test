@@ -919,6 +919,14 @@ max-width: 25%;
   width: 65%;
 }
 
+#downloadPDF, #savePDF{
+  display: none;
+}
+
+#createPDF{
+  display: block;
+}
+
 
 @media screen and (max-width: 767px) {
   h1 {
