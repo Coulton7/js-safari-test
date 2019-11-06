@@ -908,10 +908,14 @@ max-width: 25%;
 
 .global-warming-form{
   background-color: #eeeeee;
-  background-image: url('/sites/aesseal.com/files/sidebar/AES-climate-world.png');
+  background-image: url('www.aesseal.com/sites/aesseal.com/files/sidebar/AES-climate-world.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
+}
+
+.global-warming-form .form-control{
+  width: 65%;
 }
 
 
