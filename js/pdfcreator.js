@@ -4,6 +4,9 @@ function pdfCreator() {
   var orgEmail = document.getElementById('orgEmail');
   var orgWorkers = document.getElementById('orgWorkers');
   var roi = document.getElementById('roi');
+  if (document.getElementById('orgType').checked) {
+  org_type = document.getElementById('orgType').value;
+}
 
   var docDefinition = {
 
