@@ -39,11 +39,14 @@ function pdfCreator() {
       },
       {
         text: [
-        'The', orgTypeValue, ' has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
+        'The ', orgTypeValue, ' has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
       ]
     },
       {
-        ul: [
+        ul:
+        [
+          {pageMargins:[65, 0, 65, 0]
+          },
           'Any sustainability project will be given priority over any other capital investment with a similar Return on Investment.\n\n',
           {
             text: ['Any sustainability project with a reasonable chance of getting a Return on Investment of ', roi.value, ' years or less, should be brought to the attention of the ', orgName.value, '.\n\n']
@@ -52,7 +55,9 @@ function pdfCreator() {
           {
             text: ['All global business heads have local spending authority. Any sustainability project with a higher value should be immediately referred to the Board of ', orgName.value, '.\n\n']
           },
-          'As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than', orgWorkers.value,  'co-workers.\n\n',
+          {
+            text: ['As a Board we undertake to use our personal and corporate presence to influence policy makers to legislate the requirement for such a policy for all businesses with more than ', orgWorkers.value,  ' co-workers.\n\n']
+          },
           'Current or potential supplier input is welcomed, including their use of the global hotline where necessary.\n\n'
         ],
       },
