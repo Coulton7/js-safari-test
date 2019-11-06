@@ -932,7 +932,7 @@ max-width: 25%;
 .fa-edit, .fa-save, .fa-share-square{
   border-radius: 50%;
   border: 1px solid #002a5b;
-  padding: 2px;
+  padding: 0.2em;
   background-color: #002a5b;
   color: white;
 }
