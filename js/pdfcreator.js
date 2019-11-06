@@ -5,7 +5,6 @@ function pdfCreator() {
   var orgWorkers = document.getElementById('orgWorkers');
   var roi = document.getElementById('roi');
   var orgType = document.querySelector('input[name = "orgType"]:checked').value;
-}
 
   var docDefinition = {
 
