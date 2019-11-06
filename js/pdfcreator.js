@@ -170,6 +170,7 @@ function pdfOpen() {
     }
   };
 
+  var docDefinition = getRWABELPDF(data);
   var createPdf = pdfMake.createPdf(docDefinition);
   var base64data = null;
     createPdf.getBase64(function(encodedString) {
