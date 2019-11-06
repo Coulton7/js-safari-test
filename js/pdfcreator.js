@@ -169,5 +169,5 @@ function pdfOpen() {
       }
     }
   };
-  var pdf = pdfMake.createPdf(docDefinition).print('Policy-to-prevent-Global-Warming.pdf');
+  var pdf = pdfMake.createPdf(docDefinition).open({}, window);
 }
