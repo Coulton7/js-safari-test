@@ -4,7 +4,16 @@ function pdfCreator() {
   var orgEmail = document.getElementById('orgEmail');
   var orgWorkers = document.getElementById('orgWorkers');
   var roi = document.getElementById('roi');
-  var orgType = document.querySelector('input[name = "orgType"]:checked').value;
+  var orgType = document.getElementById('orgType').value;
+  var orgTypeValue;
+  if (document.getElementById('type1').checked) {
+  orgTypeValue = document.getElementById('type1').value;
+  }else if (document.getElementById('type2').checked) {
+  orgTypeValue = document.getElementById('type2').value;
+  }else if (document.getElementById('type3').checked) {
+  orgTypeValue = document.getElementById('type3').value;
+  }
+
 
   var docDefinition = {
 
@@ -25,7 +34,7 @@ function pdfCreator() {
       },
       {
         text: [
-          'The Health, Safety and Welfare of all the stakeholders in our', orgType.value ,'is the primary concern of the Board of ', orgName.value, '.\n\n'
+          'The Health, Safety and Welfare of all the stakeholders in our', orgTypeValue.value ,'is the primary concern of the Board of ', orgName.value, '.\n\n'
         ]
       },
       {
