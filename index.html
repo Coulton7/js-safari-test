@@ -58,11 +58,13 @@
     });
   </script>
   <script>
-      function hideshow(){
-        document.getElementById(createPDF).classList.add('none');
-        document.getElementById(downloadPDF).classList.add('block');
-        document.getElementById(savePDF).classList.add('block');
-      }
+      $(document).ready(function (){
+        $('#createPDF').click(function(){
+          $('#createPDF').hide()
+          $('#downloadPDF').show()
+          $('#savePDF').show()
+        });
+        });
 </script>
 </head>
 
