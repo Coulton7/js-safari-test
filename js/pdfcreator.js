@@ -170,4 +170,8 @@ function pdfOpen() {
     }
   };
   var pdf = pdfMake.createPdf(docDefinition).open({}, window);
+  const pdfDocGenerator = pdfMake.createPdf(docDefinition);
+  pdfDocGenerator.getBlob((blob) => {
+    // ...
+});
 }
