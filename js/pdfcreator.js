@@ -3,7 +3,6 @@ function pdfCreator() {
   var orgPhone = document.getElementById('orgPhone');
   var orgEmail = document.getElementById('orgEmail');
   var orgWorkers = document.getElementById('orgWorkers');
-  var orgType = document.getElementById('orgType');
   var roi = document.getElementById('roi');
 
   var docDefinition = {
@@ -25,12 +24,12 @@ function pdfCreator() {
       },
       {
         text: [
-          'The Health, Safety and Welfare of all the stakeholders in our', orgType.value, 'is the primary concern of the Board of ', orgName.value, '.\n\n'
+          'The Health, Safety and Welfare of all the stakeholders in our Group is the primary concern of the Board of ', orgName.value, '.\n\n'
         ]
       },
       {
         text: [
-        'The', orgType.value, 'has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
+        'The Group has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
       ]
     },
       {
@@ -100,12 +99,12 @@ function pdfOpen() {
       },
       {
         text: [
-          'The Health, Safety and Welfare of all the stakeholders in our', orgType.value, 'is the primary concern of the Board of ', orgName.value, '.\n\n'
+          'The Health, Safety and Welfare of all the stakeholders in our Group is the primary concern of the Board of ', orgName.value, '.\n\n'
         ]
       },
       {
         text: [
-        'The', orgType.value, 'has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
+        'The Group has consistently put sustainability projects first for capital investment and has now decided to debate and publish a policy to prevent global warming through technological change and investment decisions.\n\n',
       ]
     },
       {
