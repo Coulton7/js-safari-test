@@ -22,7 +22,7 @@ function pdfCreator() {
       subject: 'POLICY TO PREVENT GLOBAL WARMING'
     },
 
-    pageMargins: [45, 120, 45, 60],
+    pageMargins: [45, 100, 45, 60],
 
     header:{
       margin:[45, 20, 45, 0],
@@ -125,7 +125,7 @@ function pdfOpen() {
       subject: 'POLICY TO PREVENT GLOBAL WARMING'
     },
 
-    pageMargins: [45, 120, 45, 60],
+    pageMargins: [45, 100, 45, 60],
 
     header:{
       margin:[45, 20, 45, 0],
