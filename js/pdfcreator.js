@@ -114,7 +114,7 @@ function pdfOpen() {
 
     footer:
     {
-      pageMargins:[45, 0, 45, 0,],
+      margin:[45, 0, 45, 0,],
       text: [
          new Date().toDateString()
       ]
