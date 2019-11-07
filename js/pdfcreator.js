@@ -197,6 +197,9 @@ function pdfOpen() {
       },
       defaultStyle: {
         fontSize: 12
+      },
+      small:{
+        fontSize: 10
       }
     }
   };
