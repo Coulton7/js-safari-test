@@ -36,7 +36,7 @@ function pdfCreator() {
     {
       margin:[45, 20, 45, 0,],
       text: [
-         'Printed on ',new Date().toDateString()
+         'Printed on ',new Intl.DateTimeFormat('en-GB').format()
       ],
       style: 'small'
     },
