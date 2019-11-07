@@ -114,8 +114,9 @@ function pdfOpen() {
 
     footer:
     {
+      pageMargins:[45, 0, 45, 0,],
       text: [
-        'Created on ', new Date().toDateString(), '.\n\n'
+         new Date().toDateString()
       ]
     },
 
