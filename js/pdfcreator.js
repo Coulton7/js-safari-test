@@ -24,6 +24,13 @@ function pdfCreator() {
 
     pageMargins: [45, 120, 45, 60],
 
+    header:{
+      margin:[45, 0, 45, 0],
+      text:[
+        'This policy is copyright free and any, or all of it can be adopted at will by any organisation. Create your own by visiting, https://www.aesseal.com/en/resources/industry-guides/policy-prevent-global-warming'
+      ]
+    },
+
     footer:
     {
       margin:[45, 0, 45, 0,],
@@ -119,6 +126,13 @@ function pdfOpen() {
     },
 
     pageMargins: [45, 120, 45, 60],
+
+    header:{
+      margin:[45, 0, 45, 0],
+      text:[
+        'This policy is copyright free and any, or all of it can be adopted at will by any organisation. Create your own by visiting, https://www.aesseal.com/en/resources/industry-guides/policy-prevent-global-warming'
+      ]
+    },
 
     footer:
     {
