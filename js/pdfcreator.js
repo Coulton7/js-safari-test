@@ -112,8 +112,10 @@ function pdfOpen() {
 
     pageMargins: [45, 120, 45, 60],
 
-    footer:{
-      creationDate: now.value
+    footer:
+    {
+      text: 
+        now.value
     },
 
     content: [{
