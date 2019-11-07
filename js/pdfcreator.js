@@ -24,6 +24,14 @@ function pdfCreator() {
 
     pageMargins: [45, 120, 45, 60],
 
+    footer:
+    {
+      margin:[45, 0, 45, 0,],
+      text: [
+         new Date().toDateString()
+      ]
+    },
+
     content: [{
         text: 'POLICY TO PREVENT GLOBAL WARMING\n\n',
         style: 'header'
