@@ -115,7 +115,7 @@ function pdfOpen() {
     footer:
     {
       text: [
-        'Created on ', new Date(), '.\n\n'
+        'Created on ', new Date().toISOString().slice(0, 10), '.\n\n'
       ]
     },
 
