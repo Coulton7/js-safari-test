@@ -114,8 +114,9 @@ function pdfOpen() {
 
     footer:
     {
-      text: 
-        now.value
+      text: [
+        'Created on ', now.value, '.\n\n'
+      ]
     },
 
     content: [{
