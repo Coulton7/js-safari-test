@@ -100,6 +100,7 @@ function pdfOpen() {
   }else if (document.getElementById('type3').checked) {
   orgTypeValue = document.getElementById('type3').value;
   }
+  var now = new Date();
 
 
   var docDefinition = {
@@ -110,6 +111,10 @@ function pdfOpen() {
     },
 
     pageMargins: [45, 120, 45, 60],
+
+    footer:{
+      creationDate: now.value
+    },
 
     content: [{
         text: 'POLICY TO PREVENT GLOBAL WARMING\n\n',
