@@ -36,7 +36,7 @@ function pdfCreator() {
     {
       margin:[45, 20, 45, 0,],
       text: [
-         new Date().toDateString()
+         'Printed on ',new Date().toDateString()
       ],
       style: 'small'
     },
@@ -141,7 +141,7 @@ function pdfOpen() {
     {
       margin:[45, 20, 45, 0,],
       text: [
-         new Date().toDateString()
+         'Printed on ',new Date().toDateString()
       ],
       style: 'small'
     },
