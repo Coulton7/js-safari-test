@@ -1,11 +1,5 @@
 (function($) {
   $(document).ready(function() {
-    var regexp = /[\xAE]/;
-    $('body :not(script,sup)').contents().filter(function() {
-      return this.nodeType === 3 && (regexp.test(this.nodeValue));
-    }).replaceWith(function() {
-    return this.nodeValue.replace(regexp, ' ');
-    });
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
@@ -25,7 +19,7 @@
           return;
         }
       }
-      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = element.data.replace(/\bWarman\b|\bwarman\b[\xAE]/gi, "$&<sup>&reg;</sup>");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
