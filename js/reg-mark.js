@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function() {
     var regexp = /[\xAE]/;
-    $('body :not(script,sup)').contents().filter(function() {
+    $('body :not(script,sup)').contents(/\bWarman\b/gi).filter(function() {
       return this.nodeType === 3 && (regexp.test(this.nodeValue));
     }).replaceWith(function() {
     return this.nodeValue.replace(regexp, ' ');
