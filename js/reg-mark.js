@@ -13,20 +13,20 @@
     var html = document.getElementsByTagName('html')[0];
     recurse(html);
     function doReplacements(element, parent) {
-      var html = element.data;
       var content = element.data;
+      var html = element.data;
       if (element.nextSibling) {
         if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
           return;
         }
       }
-      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
       content = element.data.replace(/\&reg;/g, " ");
+      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
-        wrap.innerHTML = html;
         wrap.innerHTML = content;
+        wrap.innerHTML = html;
         while (wrap.firstChild) {
           frag.appendChild(wrap.firstChild);
         }
