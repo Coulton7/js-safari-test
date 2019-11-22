@@ -1,6 +1,6 @@
 (function($) {
   $(document).ready(function() {
-    var regexp = /[\xAE]/;
+    var regexp = /\bwarman\b[\xAE]/;
     $('body :not(script,sup)').contents().filter(function() {
       return this.nodeType === 3 && (regexp.test(this.nodeValue));
     }).replaceWith(function() {
