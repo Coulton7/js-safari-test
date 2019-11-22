@@ -13,6 +13,7 @@
     var html = document.getElementsByTagName('html')[0];
     var content= document.getElementsByTagName('html')[0];
     recurse(html);
+    recurse(content);
     function doReplacements(element, parent) {
       var content = element.data;
       var html = element.data;
