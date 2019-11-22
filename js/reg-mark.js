@@ -32,10 +32,10 @@
       parent.insertBefore(frag, element);
       parent.removeChild(element);
     }
-    $('body :not(script)').contents().filter(function() {
-    return this.nodeType === 3;
-    }).replaceWith(function() {
-    return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
-    });
+  });
+  $('body :not(script)').contents().filter(function() {
+  return this.nodeType === 3;
+  }).replaceWith(function() {
+  return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
   });
 })(jQuery);
