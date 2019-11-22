@@ -26,6 +26,7 @@
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
         wrap.innerHTML = html;
+        wrap.innerHTML = content;
         while (wrap.firstChild) {
           frag.appendChild(wrap.firstChild);
         }
