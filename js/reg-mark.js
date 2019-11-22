@@ -1,5 +1,7 @@
 (function($) {
   $(document).ready(function() {
+    '®'.replace('®', '');
+
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
@@ -32,6 +34,5 @@
       parent.insertBefore(frag, element);
       parent.removeChild(element);
     }
-    '®'.replace('®', '');
   });
 })(jQuery);
