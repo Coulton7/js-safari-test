@@ -32,5 +32,6 @@
       parent.insertBefore(frag, element);
       parent.removeChild(element);
     }
+    '®'.replace('®', '');
   });
 })(jQuery);
