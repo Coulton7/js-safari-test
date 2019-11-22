@@ -11,6 +11,7 @@
       }
     }
     var html = document.getElementsByTagName('html')[0];
+    var content= document.getElementsByTagName('html')[0];
     recurse(html);
     function doReplacements(element, parent) {
       var content = element.data;
