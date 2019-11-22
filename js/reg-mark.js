@@ -1,4 +1,5 @@
 (function($) {
+  $(document).ready(function() {
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
