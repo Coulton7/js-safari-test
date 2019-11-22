@@ -765,6 +765,10 @@ z-index: 1;
 position: relative;
 }
 
+h4{
+  color: #002a5b;
+}
+
 .dotted-border {
 outline: 1px dashed #888c8f;
 padding: 1em 0.5em 1em 0.5em;
