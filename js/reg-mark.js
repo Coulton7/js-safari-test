@@ -1,5 +1,11 @@
 (function($) {
   $(document).ready(function() {
+    var regexp = /[\xAE]/;
+    $('body :not(script,sup)').contents().filter(function() {
+      return this.nodeType === 3 && (regexp.test(this.nodeValue));
+    }).replaceWith(function() {
+    return this.nodeValue.replace(regexp, '<sup>$&</sup>');
+    });
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
