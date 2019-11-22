@@ -1,11 +1,4 @@
 (function($) {
-  $(document).ready(function() {
-    $('warman').contents().filter(function() {
-    return this.nodeType === 3;
-    }).replaceWith(function() {
-    return this.nodeValue.replace(/[™®©]/g, '');
-    });
-
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
