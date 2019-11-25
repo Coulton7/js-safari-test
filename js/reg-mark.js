@@ -20,6 +20,7 @@
         }
       }
       html = element.data.replace(/\bWarman\b|\bAesseal\b/gi, "$&<sup>&reg;</sup>");
+      html = html.replace(/\bMachine(\s)Sentry\b/gi, '$&<sup>&trade;</sup>');
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
