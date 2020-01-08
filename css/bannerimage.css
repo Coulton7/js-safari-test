@@ -805,7 +805,6 @@ padding: 1em 0.5em 1em 0.5em;
   height: 100%;
   position: relative;
   right: -23%;
-  border-bottom-left-radius: 15%;
   top: -99%;
   transform: skewX(38deg);
 }
@@ -1092,6 +1091,9 @@ max-width: 25%;
   .global-warming-form .form-control{
     width: 100%;
   }
+  .grey-upper-curve{
+    border-bottom-left-radius: 12%;
+  }
 }
 
 /* sm */
@@ -1201,6 +1203,9 @@ max-width: 25%;
   #arrowNav{
     display: none;
   }
+  .grey-upper-curve{
+    border-bottom-left-radius: 15%;
+  }
 }
 
 /* md */
@@ -1287,6 +1292,9 @@ max-width: 25%;
     background-color: #ffffff;
     padding-left: 16em;
   }
+  .grey-upper-curve{
+    border-bottom-left-radius: 12%;
+  }
 }
 
 /* lg */
@@ -1347,6 +1355,9 @@ max-width: 25%;
 
   .uppercurve {
     top: 3.1em;
+  }
+  .grey-upper-curve{
+    border-bottom-left-radius: 12%;
   }
 }
 
