@@ -788,6 +788,7 @@ padding: 1em 0.5em 1em 0.5em;
 .grey-banner{
   background-color: #888c8f;
   color: #ffffff;
+  border-top-right-radius: 14%;
 }
 
 .grey-upper-wave{
@@ -804,16 +805,16 @@ padding: 1em 0.5em 1em 0.5em;
   height: 100%;
   position: relative;
   right: -23%;
-  border-bottom-left-radius: 6%;
+  border-bottom-left-radius: 15%;
   top: -99%;
-  transform: skewX(38deg);
+  transform: skewX(35deg);
 }
 
 .grey-lower-curve{
   background-color: #ffffff;
   height: 100%;
   transform: skewX(38deg);
-  border-top-right-radius: 2%;
+  border-top-right-radius: 6%;
   top: -100%;
   position: relative;
   left: -98%;
@@ -824,7 +825,7 @@ padding: 1em 0.5em 1em 0.5em;
 .grey-lower-wave{
   background-color: #888c8f;
   height: 100%;
-  transform: skewX(40deg);
+  transform: skewX(36deg);
   width: 200%;
   border-bottom-left-radius: 5%
 }
