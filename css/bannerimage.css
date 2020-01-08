@@ -825,7 +825,7 @@ padding: 1em 0.5em 1em 0.5em;
 .grey-lower-wave{
   background-color: #888c8f;
   height: 100%;
-  transform: skewX(36deg);
+  transform: skewX(40deg);
   width: 200%;
   border-bottom-left-radius: 5%
 }
