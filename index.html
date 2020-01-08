@@ -21,9 +21,6 @@
   <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
-  <script src='js/pdfmake.min.js'></script>
-  <script src="js/vfs_fonts.js"></script>
-  <script type="text/javascript" src="js/pdfcreator.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script type="text/javascript">
@@ -51,20 +48,6 @@
       $(".chzn-select").chosen();
     });
   </script>
-  <script>
-    $(function() {
-      $("#slider-range").slider();
-    });
-  </script>
-  <script>
-      $(document).ready(function (){
-        $('#createPDF').click(function(){
-          $('#createPDF').hide()
-          $('#downloadPDF').show()
-          $('#savePDF').show()
-        });
-        });
-</script>
 </head>
 
 <body class="navbar-is-fixed-top">
@@ -770,62 +753,6 @@
         <div class="grey-lower-banner">
           <div class="field-industry">
             <p>Oil and Gas</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-
-      <h3>Create your own corporate Global Warming policy in 3 simple steps</h3>
-
-      <p><i class="fas fa-edit"></i> Fill in the form below with your own organization details</p>
-      <p><i class="fas fa-save"></i></i> Then save the newly created customized policy</p>
-      <p><i class="fas fa-share-square"></i>Distribute the policy internally for approval and/or amendment. Then publish the policy on your public channels.</p>
-
-
-      <div class="col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2">
-        <h1 class="page-header" class="text-center">Create an instant policy in your browser</h2>
-
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="global-warming-form" id="global-warming-form">
-            <h3 class="text-center">The health of the Earth is essential to not just business, but also species survival.</h3>
-            <div class="col-sm-12">
-              <label for="orgName">Business Name: </label>
-              <input name="orgName" type="text" maxlength="60" id="orgName" placeholder="e.g ACME.co" class="form-control" />
-              <label for="orgEmail">Enter Email: </label>
-              <input name="orgEmail" type="text" maxlength="60" id="orgEmail" placeholder="john.doe@email.com" class="form-control" />
-              <label for="orgPhone">Phone Number: </label>
-              <input name="orgPhone" type="text" maxlength="18" id="orgPhone" placeholder="01632 123456" class="form-control" />
-              <label for="orgWorkers">Number of Employees: </label>
-              <input name:"orgWorkers" type="text" maxlength="6" id="orgWorkers" placeholder="e.g 250" class="form-control">
-              <label for="roi">Return on Investment Time: </label>
-              <input name:"roi" type="text" maxlength="8" id="roi" placeholder="4 years" class="form-control" />
-            </div>
-            <div class="col-sm-12" id="orgType">
-              <label for="orgType">Please select business type: </label>
-              <div class="radio">
-                <label><input type="radio" name="orgType" id="type1" value="Group">Group</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="orgType" id="type2" value="Organisation">Organisation</label>
-              </div>
-              <div class="radio">
-                <label><input type="radio" name="orgType" id="type3" value="Company">Company</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="btn-container col-sm-12">
-                <button id="createPDF" class="btn-primary btn btn-lg" onclick="">Create the Policy</button>
-                <button id="downloadPDF" class="btn-primary btn btn-lg download-pdf" onclick="pdfCreator()">Download the PDF</button>
-                <button id="savePDF" class="btn-default btn btn-lg save-pdf" onclick="pdfOpen()">Open the PDF</button>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <a href="http://thinkbeforeprinting.org/"><img class="img-responsive" src="http://thinkbeforeprinting.org/struct/pleaseconsidertheenvironmentbeforeprintingthisdocument.gif" /></a>
           </div>
         </div>
       </div>
