@@ -14,11 +14,8 @@
     recurse(html);
     function doReplacements(element, parent) {
       var html = element.data;
+      document.body.innerHTML(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName.toLowerCase() === '®'){
-          element.data.replace(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
-          return;
-        }
         if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
           return;
         }
