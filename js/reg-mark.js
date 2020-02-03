@@ -1,10 +1,5 @@
 (function($) {
   $(document).ready(function() {
-
-    document.body.innerHTML = document.body.innerHTML.replace(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
-    });
-
-  $(document).ready(function() {
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
@@ -24,7 +19,8 @@
           return;
         }
       }
-      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>")
+      .replace(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
