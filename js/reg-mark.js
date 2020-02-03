@@ -1,5 +1,8 @@
 (function($) {
   $(document).ready(function() {
+
+    document.body.innerHTML = document.body.innerHTML.replace(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
+
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
@@ -14,7 +17,6 @@
     recurse(html);
     function doReplacements(element, parent) {
       var html = element.data;
-      document.body.innerHTML(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
       if (element.nextSibling) {
         if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
           return;
