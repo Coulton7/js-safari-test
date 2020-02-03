@@ -18,7 +18,7 @@
       var html = element.data;
       var word = element.data;
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName.toLowerCase() === 'sup'|| element.nextSibling.nodeName.toLowerCase()==='&reg;') {
+        if (element.nextSibling.nodeName.toLowerCase() === 'sup'|| '&reg;') {
           return;
         }
       }
