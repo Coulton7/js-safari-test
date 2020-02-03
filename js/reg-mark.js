@@ -18,7 +18,7 @@
       var html = element.data;
       var word = element.data;
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName() === 'sup'|| '®') {
+        if (element.nextElementSibling.nodeName() === 'sup'|| '®') {
           return;
         }
       }
