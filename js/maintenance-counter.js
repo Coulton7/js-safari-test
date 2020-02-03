@@ -1,5 +1,5 @@
 function countdown(){
-  var i = document.getElementbyId('counter');
+  var i = document.getElementById('counter');
   if (parseInt(i.innerHTML)<=0){
     location.href = 'https://www.aesseal.com/en';
   }
