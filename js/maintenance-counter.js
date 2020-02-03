@@ -1,7 +1,7 @@
 function countdown(){
   var i = document.getElementById('counter');
   if (parseInt(i.innerHTML)<=0){
-    location.href = 'https://www.aesseal.com/en';
+    window.location.href = 'https://www.aesseal.com/en';
   }
   if (parseInt(i.innerHTML)!=0){
     i.innerHTML = parseInt(i.innerHTML)-1;
