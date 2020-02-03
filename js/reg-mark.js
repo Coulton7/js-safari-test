@@ -2,7 +2,9 @@
   $(document).ready(function() {
 
     document.body.innerHTML = document.body.innerHTML.replace(/((?!<sup>\s*))®((?!\s*<\/sup>))/gi, '<sup>&reg;</sup>');
+    })(jQuery);
 
+  $(document).ready(function() {
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
