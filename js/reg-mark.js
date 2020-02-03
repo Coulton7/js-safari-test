@@ -11,15 +11,18 @@
       }
     }
     var html = document.getElementsByTagName('html')[0];
+    var word = document.getElementsByTagName('html')[0];
     recurse(html);
     function doReplacements(element, parent) {
       var html = element.data;
+      var word = element.data;
       if (element.nextSibling) {
         if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
           return;
         }
       }
-      html = element.data.replace(/\®/g, "<sup>&reg;</sup>"); element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = element.data.replace(/\®/g, "<sup>&reg;</sup>");
+      word = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
