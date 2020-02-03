@@ -5,7 +5,7 @@
     }).replaceWith(function() {
       return this.nodeValue.replace(/[™®©]/g, '<sup>$&</sup>');
     });
-    
+
     function recurse(element) {
       if (element.childNodes.length > 0) {
         for (var i = 0; i < element.childNodes.length; i++) {
@@ -17,24 +17,20 @@
       }
     }
     var html = document.getElementsByTagName('html')[0];
-    var word = document.getElementsByTagName('html')[0];
     recurse(html);
     recurse(word);
     function doReplacements(element, parent) {
       var html = element.data;
-      var word = element.data;
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName.toLowerCase() === 'sup'|| '®') {
+        if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
           return;
         }
       }
-      html = element.data.replace(/\®/g, "<sup>&reg;</sup>");
-      word = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
         wrap.innerHTML = html;
-        wrap.innerHTML = word;
         while (wrap.firstChild) {
           frag.appendChild(wrap.firstChild);
         }
