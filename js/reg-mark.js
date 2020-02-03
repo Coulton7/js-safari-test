@@ -13,6 +13,7 @@
     var html = document.getElementsByTagName('html')[0];
     var word = document.getElementsByTagName('html')[0];
     recurse(html);
+    recurse(word);
     function doReplacements(element, parent) {
       var html = element.data;
       var word = element.data;
@@ -27,6 +28,7 @@
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
         wrap.innerHTML = html;
+        wrap.innerHTML = word;
         while (wrap.firstChild) {
           frag.appendChild(wrap.firstChild);
         }
