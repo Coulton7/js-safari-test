@@ -3,7 +3,6 @@ function countdown(){
   var x = document.getElementById('replace');
   if (parseInt(i.innerHTML)<=0){
 
-  x.text.replace(/to the gloabl website/g, "If re-direct has failed click the link to the site");
   return;
 
   }
