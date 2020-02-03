@@ -18,7 +18,6 @@
     }
     var html = document.getElementsByTagName('html')[0];
     recurse(html);
-    recurse(word);
     function doReplacements(element, parent) {
       var html = element.data;
       if (element.nextSibling) {
