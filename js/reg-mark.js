@@ -18,12 +18,12 @@
       var html = element.data;
       var word = element.data;
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
+        if (element.nextSibling.nodeName.toLowerCase() === 'sup'|'®') {
           return;
         }
       }
       html = element.data.replace(/\®/g, "<sup>&reg;</sup>");
-      word = element.data.replace(/\bWarman\b/gi, "<sup>&reg;</sup>");
+      word = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
