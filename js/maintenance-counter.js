@@ -1,8 +1,8 @@
 function countdown(){
   var i = document.getElementById('counter');
-  var x = document.getElementById('replace');
   if (parseInt(i.innerHTML)<=0){
 
+  document.getElementById('replace').innerHTML= "If re-direct has failed click the link to the site";
   return;
 
   }
