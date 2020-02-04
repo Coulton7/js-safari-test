@@ -19,7 +19,7 @@
           return;
         }
       }
-      html = element.data.replace(/\bWarman\b/gi, "&reg;");
+      html = element.data.replace(/\bWarman\b/gi, "$& &reg;");
       html = html.replace(/[®]/gi, '<sup>$&</sup>');
       var frag = (function() {
         var wrap = document.createElement('div'),
