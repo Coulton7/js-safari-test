@@ -18,7 +18,7 @@
         if (element.nextSibling.nodeName.toLowerCase() == 'sup') {
           return;
         }
-        if (element.nextElementSibling() == '®') {
+        if (element.nextSibling.nodeName() == '®') {
           return;
         }
       }
