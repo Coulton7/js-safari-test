@@ -13,7 +13,7 @@
     $('body :not(script)').contents().filter(function() {
         return this.nodeType === 3;
     }).replaceWith(function() {
-        return this.nodeValue.replace(/<sup>\s*®\s*<\/sup> <sup>\s*®\s*<\/sup>/gi, '<sup>&reg;</sup>');
+        return this.nodeValue.replace(/<sup>\s*®\s*<\/sup>?s<sup>\s*®\s*<\/sup>/gi, '<sup>&reg;</sup>');
     });
   });
 })(jQuery);
