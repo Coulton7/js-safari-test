@@ -10,10 +10,6 @@
 
 (function($) {
   $(document).ready(function() {
-    $('body :not(script)').contents().filter(function() {
-        return this.nodeType === 3;
-    }).replaceWith(function() {
-        return this.nodeValue.replace( /((<sup>\s*))®((\s*<\/sup>))\s((<sup>\s*))®((\s*<\/sup>))/gi, '<sup>&reg;</sup>');
-    });
+    $(document.body).html($(document.body).html().replace(/((<sup>\s*))®((\s*<\/sup>))\s((<sup>\s*))®((\s*<\/sup>))/gi, "<sup>&reg;</sup>"));
   });
 })(jQuery);
