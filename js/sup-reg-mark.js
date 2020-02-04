@@ -5,6 +5,5 @@
     }).replaceWith(function() {
         return this.nodeValue.replace(/[™®©]/gi, '<sup>$&</sup>');
     });
-        $(document.body).html($(document.body).html().replace(/((<sup>\s*))®((\s*<\/sup>))\s((<sup>\s*))®((\s*<\/sup>))/gi, "<sup>&reg;</sup>"));
   });
 })(jQuery);
