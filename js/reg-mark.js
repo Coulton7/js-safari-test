@@ -19,8 +19,8 @@
           return;
         }
       }
-      html = element.data.replace(/\bWarman\b/gi, "$&&reg;");
-      html = html.replace(/[™®©]/gi, '<sup>$&</sup>');
+      html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = html.replace(/&reg;/g, '');
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
