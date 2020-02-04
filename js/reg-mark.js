@@ -23,7 +23,7 @@
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
-        wrap.innerHTML = html;
+        wrap.textContent = html;
         while (wrap.firstChild) {
           frag.appendChild(wrap.firstChild);
         }
