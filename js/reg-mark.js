@@ -10,7 +10,7 @@
         doReplacements(element, element.parentElement);
       }
     }
-    var html = document.getElementsByTagName('body :not(script)');
+    var html = document.getElementsByTagName('html')[0];
     recurse(html);
     function doReplacements(element, parent) {
       var html = element.data;
