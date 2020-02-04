@@ -20,17 +20,7 @@
         }
       }
       html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
-      var frag = (function() {
-        var wrap = document.createElement('div'),
-          frag = document.createDocumentFragment();
-        wrap.innerHTML = html;
-        while (wrap.firstChild) {
-          frag.appendChild(wrap.firstChild);
-        }
-        return frag;
-      })();
-      parent.insertBefore(frag, element);
-      parent.removeChild(element);
+
     }
   });
 })(jQuery);
