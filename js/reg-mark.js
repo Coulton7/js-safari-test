@@ -18,6 +18,9 @@
         if (element.nextSibling.nodeName.toLowerCase() == 'sup') {
           return;
         }
+        if (element.nextSibling.nodeName.toLowerCase() == '®') {
+          return;
+        }
       }
       html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
       var frag = (function() {
