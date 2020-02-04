@@ -15,7 +15,7 @@
     function doReplacements(element, parent) {
       var html = element.data;
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
+        if (element.nextSibling.nodeName.toLowerCase() == 'sup') {
           return;
         }
       }
