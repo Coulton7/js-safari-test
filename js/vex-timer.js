@@ -19,7 +19,7 @@
       timer('timerPause' - 'currentTime');
     } else {
       timer(5000);
-      if (seconds > 0) {
+      if (timer > 0) {
         setTimeout(tick, 1000);
       } else {
         vex.dialog.open({
