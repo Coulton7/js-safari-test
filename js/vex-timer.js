@@ -19,6 +19,7 @@
       timer('timerPause' - 'currentTime');
     } else {
       timer(5000);
+    }
       if (timer > 0) {
         setTimeout(tick, 1000);
       } else {
@@ -44,8 +45,7 @@
         });
       }
       console.log(timer);
-    }
-  });
+    });
 
   window.addEventListener('onbeforeunload', function() {
     var timerPause = Date.now();
