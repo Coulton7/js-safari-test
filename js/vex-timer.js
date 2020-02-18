@@ -37,6 +37,7 @@
       }
     }
     vex_counter(10);
+    
     if(vex_counter(0)){
       if (sessionStorage.getItem('vexClosed') != 'closed') {
         vex.dialog.open({
