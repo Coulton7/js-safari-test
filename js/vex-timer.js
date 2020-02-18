@@ -17,7 +17,7 @@
       return null;
     } else {
       timer(5000);
-      if (timer > 0) {
+      if (seconds > 0) {
         setTimeout(tick, 1000);
       } else {
         vex.dialog.open({
