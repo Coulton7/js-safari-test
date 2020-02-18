@@ -1,6 +1,6 @@
 (function($) {
   $(document).ready(function() {
-    function countdown(seconds) {
+    function vex_counter(seconds) {
       seconds = parseInt(sessionStorage.getItem("seconds")) || seconds;
 
       function tick() {
@@ -36,6 +36,6 @@
         tick();
       }
     }
-    countdown(10);
+    vex_counter(10);
   });
 })(jQuery);
