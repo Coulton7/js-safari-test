@@ -15,11 +15,8 @@
     }
     if (sessionStorage.getItem('vexClosed') === 'closed') {
       return null;
-    } else if (sessionStorage.getItem('timerPause')) {
-      timer('timerPause' - 'currentTime');
     } else {
       timer(5000);
-    }
       if (timer > 0) {
         setTimeout(tick, 1000);
       } else {
@@ -45,7 +42,8 @@
         });
       }
       console.log(timer);
-    });
+    }
+  });
 
   window.addEventListener('onbeforeunload', function() {
     var timerPause = Date.now();
