@@ -10,14 +10,14 @@
     }
 
     function tick() {
-      seconds--;
+      var timer = timer--;
       sessionStorage.setItem("seconds", seconds);
     }
     if (sessionStorage.getItem('vexClosed') === 'closed') {
       return null;
     } else {
       timer(5000);
-      if (seconds > 0) {
+      if (timer > 0) {
         setTimeout(tick, 1000);
       } else {
         vex.dialog.open({
