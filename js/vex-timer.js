@@ -3,23 +3,10 @@
 
   $(document).ready(function() {
 
-    var currentTime = Date.now();
-
-    function timer(seconds) {
-      seconds = parseInt(sessionStorage.getItem("seconds")) || seconds;
-    }
-
-    function tick() {
-      var timer = timer--;
-      sessionStorage.setItem("seconds", seconds);
-    }
     if (sessionStorage.getItem('vexClosed') === 'closed') {
       return null;
-    } else {
-      timer(5000);
-      if (timer > 0) {
-        setTimeout(tick, 1000);
-      } else {
+    } else
+        setTimeout (10000); {
         vex.dialog.open({
           message: "Can't find what you are looking for maybe try going to aesseal.com",
           contentClassName: 'web-banner text-center',
@@ -43,7 +30,7 @@
       }
       console.log(timer);
     }
-  });
+  );
 
   window.addEventListener('onbeforeunload', function() {
     var timerPause = Date.now();
