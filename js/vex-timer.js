@@ -37,7 +37,7 @@
       }
     }
     vex_counter(10);
-    if(vex_counter(seconds == 0)){
+    if(vex_counter(0)){
       if (sessionStorage.getItem('vexClosed') != 'closed') {
         vex.dialog.open({
           message: "Can't find what you are looking for maybe try going to aesseal.com",
