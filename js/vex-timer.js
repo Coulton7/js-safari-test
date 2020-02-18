@@ -6,7 +6,7 @@
     if (sessionStorage.getItem('vexClosed') === 'closed') {
       return null;
     } else
-        setTimeout (10000); {
+    {
         vex.dialog.open({
           message: "Can't find what you are looking for maybe try going to aesseal.com",
           contentClassName: 'web-banner text-center',
@@ -27,8 +27,7 @@
             sessionStorage.setItem('vexClosed', 'closed');
           }
         });
-      }
-      console.log(timer);
+      }setTimeout (10000);
     }
   );
 
