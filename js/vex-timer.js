@@ -3,10 +3,11 @@
 
   $(document).ready(function() {
 
+    setTimeout(function(){
+
     if (sessionStorage.getItem('vexClosed') === 'closed') {
       return null;
-    } else
-    {
+    } else {
         vex.dialog.open({
           message: "Can't find what you are looking for maybe try going to aesseal.com",
           contentClassName: 'web-banner text-center',
@@ -27,13 +28,7 @@
             sessionStorage.setItem('vexClosed', 'closed');
           }
         });
-      }setTimeout (10000);
-    }
-  );
-
-  window.addEventListener('onbeforeunload', function() {
-    var timerPause = Date.now();
-    sessionStorage.setItem('timerPause');
+      }
+    }, 10000);
   });
-
 })(jQuery);
