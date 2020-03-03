@@ -19,8 +19,8 @@
           return;
         }
       }
-      html = html.replace(/<sup>&reg;<\/sup>®/gi, "<sup>&reg;</sup>");
       html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = html.replace(/<sup>&reg;<\/sup>®/gi, "<sup>&reg;</sup>");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
