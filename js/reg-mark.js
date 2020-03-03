@@ -15,11 +15,12 @@
     function doReplacements(element, parent) {
       var html = element.data;
       if (element.nextSibling) {
-        if (element.nextSibling.nodeName.toLowerCase() == 'sup') {
+        if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
           return;
         }
       }
       html = element.data.replace(/\bWarman\b/gi, "$&<sup>&reg;</sup>");
+      html = html.replace(/\b®\b/gi, "");
       var frag = (function() {
         var wrap = document.createElement('div'),
           frag = document.createDocumentFragment();
