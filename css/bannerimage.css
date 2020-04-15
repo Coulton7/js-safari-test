@@ -859,7 +859,7 @@ padding: 1em 0.5em 1em 0.5em;
   display: none;
 }
 
-.btn-red[aria-expanded="true"]>.first-icon{
+.btn-red[aria-expanded="true"] ~ .first-icon{
   display: none;
 }
 
