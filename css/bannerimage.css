@@ -845,6 +845,10 @@ padding: 1em 0.5em 1em 0.5em;
   border: none;
 }
 
+.icon-right-padding{
+  padding-right: 0.5em;
+}
+
 .next-arrow{
   float: right;
   position: absolute;
