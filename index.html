@@ -28,13 +28,6 @@
   <script type="text/javascript" src="js/reg-mark.js"></script>
   <script type="text/javascript" src="js/vex.combined.min.js"></script>
   <script type="text/javascript" src="js/vex-timer.js"></script>
-  <script type="text/javascript">
-    (function($) {
-      $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-    });
-  </script>
   <script type="text/javascript" charset="utf-8">
     (function($) {
       $(window).load(function() {
@@ -989,7 +982,6 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2248916.js"></script>
   <script type="text/javascript">
     $('#prev').on('click', function() {
       $('.sustain-nav').animate({
@@ -1001,6 +993,10 @@
       $('.sustain-nav').animate({
         scrollLeft: '+=200'
       }, 300, 'swing');
+    });
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
     });
   </script>
 </body>
