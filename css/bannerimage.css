@@ -817,6 +817,12 @@ padding: 1em 0.5em 1em 0.5em;
   border-bottom: none;
 }
 
+.sustain-nav li a:hover{
+  border-bottom: none;
+  background-color: none;
+  border-color: none;
+}
+
 .sustain-nav>li>a>img{
   max-width: 100%;
 }
