@@ -818,7 +818,7 @@ padding: 1em 0.5em 1em 0.5em;
 }
 
 .sustain-nav li a:hover{
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
   background-color: none;
   border-color: none;
 }
