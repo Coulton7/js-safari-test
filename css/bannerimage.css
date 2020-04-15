@@ -849,6 +849,26 @@ padding: 1em 0.5em 1em 0.5em;
   padding-right: 0.5em;
 }
 
+.instagram{
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.twitter{
+
+}
+
+.article{
+
+}
+
+.case-study{
+
+}
+
 .next-arrow{
   float: right;
   position: absolute;
