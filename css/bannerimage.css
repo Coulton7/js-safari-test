@@ -832,14 +832,15 @@ padding: 1em 0.5em 1em 0.5em;
   border: none;
 }
 
-.sustain-nav li{
-  opacity: 0.5;
+.sustain-nav li .mono-filter{
+  transition: 0.8s;
+  filter: grayscale(1);
 }
 
-.sustain-nav li:hover{
-  opacity: 1;
+.sustain-nav li .mono-filter:hover, .sustain-nav li.active .mono-filter{
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
-
 
 .sustain-nav>li.active>a, .sustain-nav>li.active>a:focus, .sustain-nav>li.active>a:hover{
   border: none;
