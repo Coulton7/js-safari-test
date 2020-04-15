@@ -819,8 +819,8 @@ padding: 1em 0.5em 1em 0.5em;
 
 .sustain-nav li a:hover{
   border-bottom: 1px solid transparent;
-  background-color: none;
-  border-color: none;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .sustain-nav>li>a>img{
@@ -839,7 +839,6 @@ padding: 1em 0.5em 1em 0.5em;
 
 .sustain-nav li .mono-filter:hover, .sustain-nav li.active .mono-filter{
   filter: grayscale(0);
-  transform: scale(1.1);
 }
 
 .sustain-nav>li.active>a, .sustain-nav>li.active>a:focus, .sustain-nav>li.active>a:hover{
