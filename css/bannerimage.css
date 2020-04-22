@@ -876,12 +876,14 @@ padding: 1em 0.5em 1em 0.5em;
   border: 1px solid #ddd;
   width: 1em;
   height: 25%;
+  text-align: center;
 }
 
 .prev-arrow{
   border: 1px solid #ddd;
-width: 1em;
-height: 25%;
+  width: 1em;
+  height: 25%;
+  text-align: center;
 }
 
 .btn-red[aria-expanded="true"]{
