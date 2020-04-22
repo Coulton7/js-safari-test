@@ -788,7 +788,7 @@ padding: 1em 0.5em 1em 0.5em;
   height: 100%;
   transform: skewX(40deg);
   width: 150%;
-  border-bottom-left-radius: 8%
+  border-bottom-left-radius: 3%
 }
 
 .case-ref{
