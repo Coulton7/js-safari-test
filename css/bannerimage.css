@@ -873,11 +873,8 @@ padding: 1em 0.5em 1em 0.5em;
   float: right;
   position: absolute;
   right: 2%;
-}
-
-#next{
   border: 1px solid #ddd;
-  width: 3em;
+  width: 1em;
   height: 25%;
   text-align: center;
 }
