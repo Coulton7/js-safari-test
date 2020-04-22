@@ -742,9 +742,9 @@ padding: 1em 0.5em 1em 0.5em;
 
 .ind-icon{
   position: absolute;
-  bottom: -40%;
+  bottom: -20%;
   z-index: 10;
-  right: 30%;
+  right: 40%;
 }
 
 .grey-banner{
@@ -804,8 +804,8 @@ padding: 1em 0.5em 1em 0.5em;
 
 .field-industry{
   text-align: center;
-  transform: translateY(40%);
   height: 100%;
+  padding: 0.5em;
 }
 
 .grey-lower-banner{
