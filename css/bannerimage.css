@@ -873,6 +873,15 @@ padding: 1em 0.5em 1em 0.5em;
   float: right;
   position: absolute;
   right: 2%;
+  border: 1px solid #ddd;
+  width: 1em;
+  height: 25%;
+}
+
+.prev-arrow{
+  border: 1px solid #ddd;
+width: 1em;
+height: 25%;
 }
 
 .btn-red[aria-expanded="true"]{
