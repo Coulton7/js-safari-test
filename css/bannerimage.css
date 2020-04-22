@@ -755,7 +755,7 @@ padding: 1em 0.5em 1em 0.5em;
 
 .grey-upper-wave{
   background-color: #888c8f;
-  height: 100%;
+  height: 102%;
   transform: skewX(40deg);
   position: relative;
   right: 77%;
