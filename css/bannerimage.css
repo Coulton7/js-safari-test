@@ -869,7 +869,7 @@ padding: 1em 0.5em 1em 0.5em;
   color: #5c9a31
 }
 
-.next-arrow{
+#next{
   float: right;
   position: absolute;
   right: 2%;
