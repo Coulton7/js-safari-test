@@ -873,16 +873,10 @@ padding: 1em 0.5em 1em 0.5em;
   float: right;
   position: absolute;
   right: 2%;
-  border: 1px solid #ddd;
-  width: 1em;
-  height: 16.64%;
   text-align: center;
 }
 
 #prev{
-  border: 1px solid #ddd;
-  width: 3em;
-  height: 25%;
   text-align: center;
 }
 
