@@ -874,10 +874,14 @@ padding: 1em 0.5em 1em 0.5em;
   position: absolute;
   right: 2%;
   text-align: center;
+  border: 1px solid #ddd;
+  padding: 1em;
 }
 
 #prev{
   text-align: center;
+  border: 1px solid #ddd;
+  padding: 1em;
 }
 
 .btn-red[aria-expanded="true"]{
