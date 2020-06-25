@@ -292,16 +292,31 @@ p a[target="_blank"]:after {
   vertical-align: super;
 }
 
+.fade_text {
+  display: none;
+  color: #ffffff;
+}
+
 .social-id {
   position: absolute;
-  top: -3.8em;
-  right: 5em;
+  top: 4.8em;
   z-index: 2;
+  width: 100%;
 }
 
 .fade_text {
   display: none;
-  color: #ffffff;
+  color: #535354;
+}
+
+.social-id p:nth-child(1){
+  right: 19%;
+  position: absolute;
+}
+
+.social-id p:nth-child(2){
+  left: 0%;
+  position: absolute;
 }
 
 .socialmedia {
