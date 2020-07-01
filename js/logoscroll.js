@@ -36,7 +36,7 @@ jQuery(window).width(function(e) {
   jQuery(document).ready(function() {
     if (jQuery(window).width() > 992) {
 
-      jQuery('.waveupper').waveFade();
+      jQuery('body').waveFade();
     } else {
       jQuery('.textlogo, .section-shadow-menu').css({
         "opacity": "1"
