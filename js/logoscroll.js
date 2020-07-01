@@ -9,7 +9,7 @@
         if (windowScrollTop <= windowHeight) {
           var scrollPercent = windowScrollTop / windowHeight;
 
-          self.find('.textlogo, .section-shadow-menu').css({
+          self.find('.textlogo, .section-shadow-menu, .enquiry-icon').css({
             opacity: -1.03 + scrollPercent * 4.5
           });
 
@@ -38,7 +38,7 @@ jQuery(window).width(function(e) {
 
       jQuery('body').waveFade();
     } else {
-      jQuery('.textlogo, .section-shadow-menu').css({
+      jQuery('.textlogo, .section-shadow-menu, .enquiry-icon').css({
         "opacity": "1"
       });
     }
