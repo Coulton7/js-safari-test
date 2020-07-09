@@ -986,6 +986,10 @@ max-width: 25%;
   font-size: 1.5em;
 }
 
+.overlay-content{
+  background-color: none;
+}
+
 .overlay {
   height: 0%;
   background-color: rgba(0, 0, 0, .85);
@@ -998,7 +1002,6 @@ max-width: 25%;
   transition: 0.5s;
   backdrop-filter: blur(5px);
 }
-
 
 .overlay.active {
   height: 100%;
@@ -1048,8 +1051,6 @@ max-width: 25%;
     font-size: 2em;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   h1 {
