@@ -1,4 +1,5 @@
 (function($){
+    $(document).ready(function() {
     $("#overlay-btn").click(
     function navBtn() {
         document.getElementById('overlay-btn').classList.toggle("change");
@@ -33,4 +34,5 @@
             $(y).removeClass('fixed-top');
         }
     });
+  });
 })(jQuery);
