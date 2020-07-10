@@ -1055,10 +1055,6 @@ ul.resource-cats a, ul.languages a, ul.about-us-cats a{
   line-height: 1.3em;
 }
 
-.overlay-btn.change{
-  display: none;
-}
-
 .change:after {
   display: inline-block;
   content: "\00d7";
