@@ -1007,7 +1007,7 @@ ul.resource-cats, ul.main-pages, ul.product-cats, ul.industry-cats, ul.about-us-
   backdrop-filter: blur(5px);
 }
 
-ul.resource-cats a, ul.product-cats a, ul.industry-cats a, ul.about-us-cats a{
+ul.resource-cats a, ul.industry-cats a, ul.about-us-cats a{
   font-size: 1em;
   text-align: left;
 }
@@ -1034,7 +1034,7 @@ ul.resource-cats a, ul.product-cats a, ul.industry-cats a, ul.about-us-cats a{
   top: 35%;
   transform: translate(0%, -70%);
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .noscroll {
