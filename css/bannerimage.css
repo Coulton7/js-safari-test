@@ -1034,6 +1034,10 @@ ul.resource-cats a, ul.languages a, ul.about-us-cats a{
   overflow: visible;
 }
 
+ul.product-cats li a:hover{
+  overflow: visible;
+}
+
 .overlay-content {
   position: relative;
   top: 35%;
