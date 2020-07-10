@@ -986,6 +986,10 @@ max-width: 25%;
   font-size: 1.5em;
 }
 
+.overlay-btn{
+  float: right;
+}
+
 ul.resource-cats, ul.main-pages, ul.product-cats, ul.industry-cats, ul.about-us-cats {
     background: none;
 }
