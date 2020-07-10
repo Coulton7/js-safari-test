@@ -990,7 +990,7 @@ max-width: 25%;
   float: right;
 }
 
-ul.resource-cats, ul.main-pages, ul.product-cats, ul.industry-cats, ul.about-us-cats {
+ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
     background: none;
 }
 
