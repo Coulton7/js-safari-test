@@ -1007,6 +1007,19 @@ ul.resource-cats, ul.main-pages, ul.product-cats, ul.industry-cats, ul.about-us-
   backdrop-filter: blur(5px);
 }
 
+ul.resource-cats a, ul.product-cats a, ul.industry-cats a, ul.about-us-cats a{
+  font-size: 1em;
+}
+
+.overlay-content ul li{
+  float: none;
+  display: block;
+}
+
+.overlay-content h4{
+  color: #ffffff;
+}
+
 .overlay.active {
   height: 100%;
 }
@@ -1017,7 +1030,7 @@ ul.resource-cats, ul.main-pages, ul.product-cats, ul.industry-cats, ul.about-us-
 
 .overlay-content {
   position: relative;
-  top: 55%;
+  top: 35%;
   transform: translate(0%, -70%);
   width: 100%;
   text-align: center;
