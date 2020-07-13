@@ -125,8 +125,8 @@ p a[target="_blank"]:after {
   line-height: initial;
 }
 
-.lang-switch .chosen-container {
-  width: -webkit-fill-available !important;
+.form-item-lang-dropdown-select {
+    display: inline;
 }
 
 .shadow-back {
