@@ -204,6 +204,7 @@ p a[target="_blank"]:after {
 
 .search-block .form-item {
   width: 57%;
+  display: inline-block;
 }
 
 .search-block .views-exposed-widgets {
