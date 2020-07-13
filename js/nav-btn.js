@@ -9,11 +9,13 @@
             x.style.height = "0%";
             $('.main').removeClass('active');
             $("body").removeClass('noscroll');
+            $('#overlay-btn').addClass('overlay-btn');
             $(y).addClass('fixed-top');
         } else {
             x.style.height = "100%";
             $('.main').addClass('active');
             $("body").addClass('noscroll');
+            $('#overlay-btn').removeClass('overlay-btn');
             $(y).removeClass('fixed-top');
         }
     });
