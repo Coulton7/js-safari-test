@@ -1067,6 +1067,9 @@ max-width: 25%;
 
 .overlay-btn{
   float: right;
+  display: inline-block;
+  padding-top: 0.6em;
+  margin-right: 1.5em;
 }
 
 ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
