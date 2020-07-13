@@ -109,8 +109,9 @@ p a[target="_blank"]:after {
 
 .fit-menu {
   float: right;
-display: inline-block;
+  display: inline-block;
   height: inherit;
+  width: 90%;
 }
 
 .lang-switch .chosen-container-single .chosen-single {
