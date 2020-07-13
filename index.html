@@ -92,37 +92,82 @@
 
 
       <div class="navigation_col">
-        <div class="row">
-          <div class="shadow-back">
-            <div class="col-lg-2 col-md-1">
-            </div>
-            <div class="col-lg-10 col-md-11">
-              <div id="main-nav" class="action-menu text-center">
-                <div class="col-sm-2 col-xs-0 fullscreen">
-                </div>
-                <div class="col-sm-10 col-xs-12 fullscreen">
-                  <div class="region region-navigation-col fit-menu">
-                    <div class="col-md-6">
-                      <div class="lang-switch">
-                        <select class="chzn-select" select data-placeholder="Choose a Language..." style="width:110px;">
-                          <option value="English"></option>
-                          <option value="Francais"></option>
-                          <option value="Deutsch"></option>
-                        </select>
-                      </div>
+  <div class="action-menu text-center">
+    <div class="col-sm-2 col-xs-0 fullscreen">
+    </div>
+    <div class="col-sm-10 col-sm-offset-2 col-xs-12 no-padding">
+      <div class="region region-navigation-col fit-menu">
+        <section id="block-lang-dropdown-language" class="block block-lang-dropdown lang-switch clearfix">
+
+
+          <form class="lang_dropdown_form language" id="lang_dropdown_form_language" action="/en" method="post" accept-charset="UTF-8">
+            <div>
+              <div class="form-item form-item-lang-dropdown-select form-type-select form-group"><select class="lang-dropdown-select-element form-control form-select" id="lang-dropdown-select-language" style="width: 110px; display: none;"
+                  name="lang_dropdown_select">
+                  <option value="en" selected="selected">English</option>
+                  <option value="zh-hans">简体中文</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="it">Italiano</option>
+                  <option value="pl">Polski</option>
+                  <option value="ru">Русский</option>
+                  <option value="es">Español</option>
+                  <option value="tr">Türkçe</option>
+                </select>
+                <div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="lang_dropdown_select_language_chosen" style="width: 110px;"><a class="chosen-single">
+                    <input class="chosen-focus-input" type="text" autocomplete="off" readonly="">
+                    <span>English</span>
+                    <div><b></b></div>
+                  </a>
+                  <div class="chosen-drop">
+                    <div class="chosen-search">
+                      <input class="chosen-search-input" type="text" autocomplete="off" readonly="">
                     </div>
-                    <div class="col-md-6">
-                      <div class="cust-portal">
-                        <p><a href="/en/customer-portal" class="cust-portal-text" rel="nofollow">Customer Portal</a>&nbsp;<a href="/en/customer-portal"><i class="fas fa-sign-in-alt fa-2x"></i></a></p>
-                      </div>
-                    </div>
+                    <ul class="chosen-results"></ul>
                   </div>
                 </div>
-              </div>
+              </div><input type="hidden" name="en" value="/en">
+              <input type="hidden" name="zh-hans" value="/zh-hans">
+              <input type="hidden" name="fr" value="/fr">
+              <input type="hidden" name="de" value="/de">
+              <input type="hidden" name="it" value="/it">
+              <input type="hidden" name="pl" value="/pl">
+              <input type="hidden" name="ru" value="/ru">
+              <input type="hidden" name="es" value="/es">
+              <input type="hidden" name="tr" value="/tr">
+              <noscript>
+                <div>
+                  <button type="submit" id="edit-submit" name="op" value="Go" class="btn btn-default form-submit">Go</button>
+
+                </div>
+              </noscript><input type="hidden" name="form_build_id" value="form-_amAQaX5G4UPCsB8G0TlMGB7kX3rgravAP7gacoCrdw">
+              <input type="hidden" name="form_id" value="lang_dropdown_form">
             </div>
-          </div>
-        </div>
+          </form>
+        </section>
+        <section id="block-search-api-page-full-node-search" class="block block-search-api-page search-block clearfix">
+
+
+          <form action="/en" method="post" id="search-api-page-search-form-full-node-search" accept-charset="UTF-8">
+            <div>
+              <div class="form-item form-item-keys-4 form-type-textfield form-group"><input placeholder="Enter your keywords" class="form-control form-text" type="text" id="edit-keys-4" name="keys_4" value="" size="15" maxlength="128"> <label
+                  class="control-label element-invisible" for="edit-keys-4">Enter your keywords</label>
+              </div><input type="hidden" name="id" value="4">
+              <button type="submit" id="edit-submit-4" name="op" value="Search" class="btn btn-primary form-submit">Search</button>
+              <input type="hidden" name="form_build_id" value="form-hV1iSXZXIlrvenrn5HN95sIAT5GOUP3EhVpS3ObXMck">
+              <input type="hidden" name="form_id" value="search_api_page_search_form_full_node_search">
+            </div>
+          </form>
+        </section>
+        <section id="block-block-138" class="block block-block cust-portal clearfix">
+
+
+          <p><a href="/en/customer-portal" rel="nofollow">Customer Portal</a>&nbsp;<a href="/en/customer-portal"><i class="fas fa-sign-in-alt cust-portal-text"></i></a></p>
+        </section>
       </div>
+    </div>
+  </div>
+</div>
 
 <div id="myNav" class="overlay">
       <div class="overlay-content">
