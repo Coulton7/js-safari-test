@@ -195,6 +195,7 @@ p a[target="_blank"]:after {
   margin-left: 2em;
   padding-top: 0.6em;
   display: inline-block;
+  float: left;
 }
 
 .search-block .has-error .form-control {
