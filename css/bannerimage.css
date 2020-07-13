@@ -1072,6 +1072,15 @@ max-width: 25%;
   margin-right: 1.5em;
 }
 
+.overlay-btn a{
+  color: #ffffff;
+}
+
+.overlay-btn a:hover{
+  color: #dd1e25;
+}
+
+
 ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
     background: none;
     overflow: visible;
