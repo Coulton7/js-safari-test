@@ -108,6 +108,8 @@ p a[target="_blank"]:after {
 }
 
 .fit-menu {
+  float: right;
+display: inline-block;
   height: inherit;
 }
 
