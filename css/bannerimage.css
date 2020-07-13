@@ -205,6 +205,10 @@ p a[target="_blank"]:after {
   font-size: 1.5em;
   }
 
+  .lang-switch .language div{
+    float: left;
+  }
+
   .search-block .form-item {
     width: 56%;
   }
