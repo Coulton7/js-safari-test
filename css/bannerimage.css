@@ -184,6 +184,7 @@ p a[target="_blank"]:after {
   width: 25em;
   display: inline-block;
   height: 100%;
+  padding-top: 0.6em;
 }
 
 .search-block .input-group-btn {
