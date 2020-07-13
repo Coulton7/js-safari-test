@@ -189,6 +189,7 @@ p a[target="_blank"]:after {
 
 .lang-switch {
   margin-left: 2em;
+  padding-top: 0.6em;
 }
 
 .search-block .has-error .form-control {
