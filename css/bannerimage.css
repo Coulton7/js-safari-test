@@ -189,6 +189,25 @@ p a[target="_blank"]:after {
   margin-left: 2em;
 }
 
+.search-block #search-api-page-search-form-full-node-search div:last-child::before{
+  font-family: 'Font Awesome 5 Free';
+  content: " \f002";
+  font-weight: 900;
+  padding: 0 0.5em
+}
+
+.lang-switch .language:before {
+  font-family: 'Font Awesome 5 Free';
+  content: " \f1ab";
+  font-weight: 900;
+  float: left;
+  padding: 0 0.5em;
+  font-size: 1.5em;
+  }
+
+  .lang-switch .language div{
+    float: right;
+  }
 
   .search-block .form-item {
     width: 56%;
