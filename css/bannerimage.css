@@ -1034,6 +1034,7 @@ ul.resource-cats a, ul.languages a, ul.about-us-cats a{
 .overlay a:hover {
   transform: scale(1.1);
   overflow: visible;
+  color: #dd1e25;
 }
 
 ul.product-cats{
