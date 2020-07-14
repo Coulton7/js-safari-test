@@ -1144,7 +1144,6 @@ ul.product-cats{
   position: relative;
   z-index: 101;
   width: 100%;
-  transition-delay: 0.5s;
   transition: 0.5s;
 }
 
