@@ -1152,7 +1152,7 @@ ul.product-cats{
 .overlay-search{
   position: relative;
   z-index: 101;
-  width: 100%;
+  width: 90%;
   transition: 0.5s;
   transition-delay: 0.5s;
 }
