@@ -175,7 +175,6 @@ p a[target="_blank"]:after {
   color: #ffffff;
   height: 3em;
   width: 100%;
-  position: relative;
   z-index: 1030;
 }
 
