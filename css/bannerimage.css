@@ -1118,6 +1118,11 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
   color: transparent;
 }
 
+.change:hover{
+  color: transparent;
+  border-bottom: none;
+}
+
 .overlay-menu .action-menu{
   z-index: 1030;
   transition: 0.5s;
