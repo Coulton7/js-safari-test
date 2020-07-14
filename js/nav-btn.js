@@ -10,12 +10,14 @@
             $('.main').removeClass('active');
             $("body").removeClass('noscroll');
             $('#overlay-btn').addClass('overlay-btn');
+            $('.search-block').removeClass('overlay-search');
             $(y).addClass('fixed-top');
         } else {
             x.style.height = "100%";
             $('.main').addClass('active');
             $("body").addClass('noscroll');
             $('#overlay-btn').removeClass('overlay-btn');
+            $('.search-block').addClass('overlay-search');
             $(y).removeClass('fixed-top');
         }
     });
