@@ -1109,6 +1109,10 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
 
 .overlay-menu {
   transition: 0.5s;
+  transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .full-menu{
