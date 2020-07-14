@@ -1140,6 +1140,14 @@ ul.product-cats{
   text-align: left;
 }
 
+.overlay-search{
+  position: relative;
+  z-index: 101;
+  width: 100%;
+  transition-delay: 0.5s;
+  transition: 0.5s;
+}
+
 .noscroll {
   overflow-y: hidden;
 }
