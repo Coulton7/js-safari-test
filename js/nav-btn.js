@@ -12,7 +12,7 @@
             $('#overlay-btn').addClass('overlay-btn');
             $('.search-block').removeClass('overlay-search');
             $('.fit-menu').removeClass('full-menu');
-            $('.navigation_col')removeClass('overlay_menu');
+            $('.navigation_col').removeClass('overlay_menu');
             $(y).addClass('fixed-top');
         } else {
             x.style.height = "100%";
@@ -21,7 +21,7 @@
             $('#overlay-btn').removeClass('overlay-btn');
             $('.search-block').addClass('overlay-search');
             $('.fit-menu').addClass('full-menu');
-            $('.navigation_col')addClass('overlay_menu');
+            $('.navigation_col').addClass('overlay_menu');
             $(y).removeClass('fixed-top');
         }
     });
