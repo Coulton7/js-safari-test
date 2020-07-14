@@ -1116,6 +1116,8 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
 
 .overlay-menu .action-menu{
   z-index: 1030;
+  transition: 0.5s;
+  background-color: transparent;
 }
 
 .full-menu{
@@ -1162,7 +1164,7 @@ ul.product-cats{
 .overlay-search{
   position: relative;
   z-index: 101;
-  width: 75%;
+  width: 65%;
   transition: 0.5s;
   transition-delay: 0.5s;
 }
