@@ -175,6 +175,8 @@ p a[target="_blank"]:after {
   color: #ffffff;
   height: 3em;
   width: 100%;
+  position: relative;
+  z-index: 1030;
 }
 
 .search-block {
@@ -1179,7 +1181,7 @@ ul.product-cats{
   position: fixed;
   font-size: 3em;
   float: right;
-  z-index: 1031;
+  z-index: 1032;
   top: 2em;
   right: 1em;
   height: 1em;
