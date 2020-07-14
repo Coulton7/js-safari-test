@@ -1072,11 +1072,11 @@ max-width: 25%;
   margin-right: 1.5em;
 }
 
-.overlay-btn a{
+a.overlay-btn{
   color: #ffffff;
 }
 
-.overlay-btn a:hover{
+a.overlay-btn:hover{
   color: #dd1e25;
 }
 
