@@ -1116,11 +1116,13 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
 
 .change{
   color: transparent;
+  pointer-events: none;
 }
 
 .change:hover, .change:focus{
   color: transparent;
   border-bottom: none;
+  pointer-events: none;
 }
 
 .overlay-menu .action-menu{
@@ -1204,6 +1206,7 @@ ul.product-cats{
   height: 1em;
   width: 1em;
   transition: 0.5s;
+  pointer-events: auto;
 }
 
 @media (min-width: 768px) {
