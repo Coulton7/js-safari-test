@@ -1090,7 +1090,7 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
   background-color: none;
 }
 
-.overlay {
+.overlay-menu {
   height: 0%;
   background-color: rgba(0, 0, 0, .85);
   width: 100%;
@@ -1103,6 +1103,19 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, .85);
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
 
 ul.resource-cats a, ul.languages a, ul.about-us-cats a{
   font-size: 1em;
