@@ -1144,8 +1144,6 @@ ul.product-cats{
   position: relative;
   z-index: 101;
   width: 100%;
-  transition: 0.5s;
-  transition-delay: 0.5s;
 }
 
 .noscroll {
