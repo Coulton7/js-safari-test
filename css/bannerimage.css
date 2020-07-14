@@ -302,7 +302,7 @@ p a[target="_blank"]:after {
 .uppercurve {
   height: 7.35em;
   left: 11em;
-  z-index: 1030;
+  z-index: 1031;
   position: relative;
   top: 2.95em;
 }
@@ -348,6 +348,8 @@ p a[target="_blank"]:after {
   margin-top: 0;
   background: #ffffff;
   border-bottom: none;
+  position: relative;
+  z-index: 1031;
 }
 
 .cust-portal {
