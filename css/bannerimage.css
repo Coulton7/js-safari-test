@@ -1108,6 +1108,10 @@ ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
   transition: 0.5s;
 }
 
+.full-menu{
+  width: 100%;
+}
+
 
 ul.resource-cats a, ul.languages a, ul.about-us-cats a{
   font-size: 1em;
@@ -1149,6 +1153,8 @@ ul.product-cats{
   position: relative;
   z-index: 101;
   width: 100%;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .noscroll {
