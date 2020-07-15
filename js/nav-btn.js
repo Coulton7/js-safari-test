@@ -11,7 +11,6 @@
             $("body").removeClass('noscroll');
             $('#overlay-btn').addClass('overlay-btn');
             $('.search-block').removeClass('overlay-search');
-            $('.fit-menu').removeClass('full-menu');
             $('.navigation_col').removeClass('overlay-menu');
             $(y).addClass('fixed-top');
         } else {
@@ -20,7 +19,6 @@
             $("body").addClass('noscroll');
             $('#overlay-btn').removeClass('overlay-btn');
             $('.search-block').addClass('overlay-search');
-            $('.fit-menu').addClass('full-menu');
             $('.navigation_col').addClass('overlay-menu');
             $(y).removeClass('fixed-top');
         }
