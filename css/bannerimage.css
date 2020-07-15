@@ -1226,12 +1226,6 @@ ul.product-cats{
   color: #dd1e25;
 }
 
-@media (min-width: 768px) {
-  .overlay a {
-    font-size: 2em;
-  }
-}
-
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 30px;
@@ -1436,6 +1430,10 @@ ul.product-cats{
 
   .action-menu {
       top: 3.4em;
+  }
+
+  .overlay a {
+    font-size: 2em;
   }
 
   .socialmedia {
