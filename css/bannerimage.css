@@ -1080,6 +1080,8 @@ max-width: 25%;
   padding: 0.95em 1.1em;
   text-decoration: none;
   z-index: 1031;
+  border-top: 4px solid transparent;
+  border-bottom: none;
 }
 
 .overlay-btn:hover{
