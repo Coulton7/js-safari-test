@@ -1085,7 +1085,8 @@ max-width: 25%;
 .overlay-btn:hover{
   border-top: 4px solid #dd1e25;
   border-bottom: none;
-  color: #333
+  color: #333;
+  text-decoration: none;
 }
 
 
