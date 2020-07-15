@@ -1082,8 +1082,9 @@ max-width: 25%;
   z-index: 1031;
 }
 
-a.overlay-btn:hover{
-  color: #dd1e25;
+.overlay-btn:hover{
+  border-top: 4px solid #dd1e25;
+  border-bottom: none;
 }
 
 
