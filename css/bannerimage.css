@@ -1070,14 +1070,13 @@ max-width: 25%;
 .overlay-btn{
   float: right;
   display: inline-block;
-  padding-top: 0.6em;
   margin-right: 1.5em;
   position: fixed;
   right: 0;
   top: 0;
   display: block;
   color: #535454;
-  padding: 0.95em 1.1em;
+  padding: 0.7em 1.1em;
   text-decoration: none;
   z-index: 1031;
   border-top: 4px solid transparent;
@@ -1087,6 +1086,7 @@ max-width: 25%;
 .overlay-btn:hover{
   border-top: 4px solid #dd1e25;
   border-bottom: none;
+  color: #333
 }
 
 
