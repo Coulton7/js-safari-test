@@ -1435,9 +1435,11 @@ ul.product-cats{
   }
 
   @media screen and (min-width: 768px)
-.action-menu {
-    top: 3.4em;
-}
+  {
+    
+  .action-menu {
+      top: 3.4em;
+  }
 
   .socialmedia {
     text-align: center;
