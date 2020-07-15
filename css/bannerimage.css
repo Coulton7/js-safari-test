@@ -1207,6 +1207,10 @@ ul.product-cats{
   pointer-events: auto;
 }
 
+.change:after:hover{
+  color: #dd1e25;
+}
+
 @media (min-width: 768px) {
   .overlay a {
     font-size: 2em;
