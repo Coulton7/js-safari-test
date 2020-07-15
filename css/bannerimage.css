@@ -1069,7 +1069,6 @@ max-width: 25%;
 
 .overlay-btn{
   float: right;
-  display: inline-block;
   margin-right: 1.5em;
   position: fixed;
   right: 0;
