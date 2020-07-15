@@ -1207,7 +1207,7 @@ ul.product-cats{
   pointer-events: auto;
 }
 
-.change:after:hover{
+.change:hover:after{
   color: #dd1e25;
 }
 
