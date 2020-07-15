@@ -1434,9 +1434,6 @@ ul.product-cats{
     padding-left: 0em;
   }
 
-  @media screen and (min-width: 768px)
-  {
-    
   .action-menu {
       top: 3.4em;
   }
