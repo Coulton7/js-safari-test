@@ -1651,11 +1651,11 @@ ul.product-cats{
 }
 
 @media (max-width: 992px) {
-  .logo img {
+  .wavelogo img {
     display: none;
   }
 
-  .logo {
+  .wavelogo {
     display: none;
   }
 
