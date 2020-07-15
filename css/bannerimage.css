@@ -1089,6 +1089,12 @@ max-width: 25%;
   text-decoration: none;
 }
 
+.overlay-btn:focus{
+  border-bottom: none;
+  color: #535454;
+  text-decoration: none;
+}
+
 
 ul.resource-cats, ul.product-cats, ul.languages, ul.about-us-cats {
     background: none;
