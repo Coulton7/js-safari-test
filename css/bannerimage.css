@@ -1394,6 +1394,9 @@ ul.product-cats{
         text-align: center;
         transform: translate(25%);
     }
+    .cust-portal{
+      display: none;
+    }
 }
 
 /* sm */
