@@ -1399,6 +1399,21 @@ ul.product-cats {
     transform: translate(25%);
   }
 
+  .social-id p:nth-child(1){
+    position: absolute;
+    right: 18%;
+  }
+
+  .social-id p:nth-child(2){
+    position: absolute;
+    left: 26%;
+  }
+
+  .social-id p:nth-child(3){
+    position: absolute;
+    right: 38%;
+  }
+
   .cust-portal {
     display: none;
   }
@@ -1511,6 +1526,21 @@ ul.product-cats {
   .icons a:nth-child(5) i {
     z-index: 4;
     margin-top: 0.35em;
+  }
+
+  .social-id p:nth-child(1){
+    position: absolute;
+    right: 20%;
+  }
+
+  .social-id p:nth-child(2){
+    position: absolute;
+    left: 18%;
+  }
+
+  .social-id p:nth-child(3){
+    position: absolute;
+    right: 32%;
   }
 
   .gap {
