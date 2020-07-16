@@ -1194,7 +1194,7 @@ ul.product-cats {
 }
 
 .noscroll {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .overlay a {
