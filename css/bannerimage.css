@@ -1510,6 +1510,14 @@ ul.product-cats{
     border: none;
   }
 
+  .fit-menu{
+    width: 90%;
+  }
+
+  .action-menu{
+    top: 3.3em;
+  }
+
   .flex-header {
     font-size: 3em;
     line-height: 58px;
@@ -1602,6 +1610,10 @@ ul.product-cats{
   .flex-caption {
     font-size: 1.5em;
     line-height: 36px;
+  }
+
+  .action-menu{
+    top: 3em;
   }
 
   h1 {
