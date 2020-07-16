@@ -432,6 +432,9 @@ p a[target="_blank"]:after {
 }
 
 .socialmedia ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -1227,6 +1230,11 @@ ul.product-cats{
 }
 
 @media screen and (max-width: 767px) {
+  .banner-title {
+    font-size: 42px;
+    line-height: 67px;
+  }
+
   h1 {
     font-size: 30px;
     line-height: 49px;
@@ -1238,33 +1246,33 @@ ul.product-cats{
   }
 
   h3 {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 36px;
   }
 
   h4 {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 19px;
+    line-height: 31px;
   }
 
   h5 {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 29px;
   }
 
   h6 {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 29px;
   }
 
   .lead {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 29px;
   }
 
   body {
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   .curve-down {
@@ -1381,44 +1389,49 @@ ul.product-cats{
 
 /* sm */
 @media screen and (min-width: 768px) {
+  .banner-title {
+    font-size: 44px;
+    line-height: 71px;
+  }
+
   h1 {
-    font-size: 32px;
-    line-height: 52px;
+    font-size: 31px;
+    line-height: 50px;
   }
 
   h2 {
-    font-size: 27px;
-    line-height: 44px;
+    font-size: 26px;
+    line-height: 42px;
   }
 
   h3 {
-    font-size: 21px;
-    line-height: 34px;
+    font-size: 23px;
+    line-height: 37px;
   }
 
   h4 {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   h5 {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 31px;
   }
 
   h6 {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 31px;
   }
 
   .lead {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 31px;
   }
 
   body {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   ul {
@@ -1442,6 +1455,11 @@ ul.product-cats{
 
   .socialmedia {
     text-align: center;
+  }
+
+  .socialmedia ul{
+    top: 15%;
+    height: 100%;
   }
 
   .front__flex-margin{
@@ -1518,34 +1536,39 @@ ul.product-cats{
     top: 3.3em;
   }
 
+  .banner-title {
+    font-size: 49px;
+    line-height: 79px;
+  }
+
   .flex-header {
-    font-size: 3em;
+    font-size: 2.8em;
     line-height: 58px;
   }
 
   .flex-caption {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 30px;
   }
 
   h1 {
-    font-size: 34px;
-    line-height: 55px;
+    font-size: 32px;
+    line-height: 52px;
   }
 
   h2 {
-    font-size: 29px;
-    line-height: 47px;
+    font-size: 27px;
+    line-height: 44px;
   }
 
   h3 {
-    font-size: 22px;
-    line-height: 37px;
+    font-size: 24px;
+    line-height: 39px;
   }
 
   h4 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 21px;
+    line-height: 34px;
   }
 
   h5 {
@@ -1564,8 +1587,8 @@ ul.product-cats{
   }
 
   body {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 28px;
   }
 
   ul {
@@ -1602,33 +1625,34 @@ ul.product-cats{
 
 /* lg */
 @media screen and (min-width: 1200px) {
+  .banner-title {
+    font-size: 51px;
+    line-height: 82px;
+  }
+
   .flex-header {
-    font-size: 3.5em;
+    font-size: 2.8em;
     line-height: 58px;
   }
 
   .flex-caption {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 36px;
   }
 
-  .action-menu{
-    top: 3em;
-  }
-
   h1 {
-    font-size: 36px;
-    line-height: 58px;
+    font-size: 33px;
+    line-height: 54px;
   }
 
   h2 {
-    font-size: 31px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 45px;
   }
 
   h3 {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 41px;
   }
 
   h4 {
@@ -1637,18 +1661,18 @@ ul.product-cats{
   }
 
   h5 {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 21px;
+    line-height: 34px;
   }
 
   h6 {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 21px;
+    line-height: 34px;
   }
 
   .lead {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 21px;
+    line-height: 34px;
   }
 
   body {
