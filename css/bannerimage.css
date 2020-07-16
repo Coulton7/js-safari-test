@@ -1518,6 +1518,13 @@ ul.product-cats{
   .grey-upper-curve{
     border-bottom-left-radius: 8%;
   }
+  .lang-switch {
+    padding-top: 0.3em;
+    margin-left: 1em;
+  }
+  .search-block .form-item {
+    width: 56%;
+  }
 }
 
 /* md */
@@ -1624,6 +1631,9 @@ ul.product-cats{
   .front__flex-margin{
     margin: -4.3em 0 0 0;
   }
+  .search-block .form-item {
+    width: 56%;
+}
 }
 
 /* lg */
@@ -1693,6 +1703,9 @@ ul.product-cats{
   .grey-upper-curve{
     border-bottom-left-radius: 10%;
   }
+  .search-block .form-item {
+    width: 57%;
+}
 }
 
 @media (max-width: 992px) {
