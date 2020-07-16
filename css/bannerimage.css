@@ -1389,6 +1389,11 @@ ul.product-cats{
     width: 57%;
     float: right !important;
   }
+    .socialmedia ul li {
+        width: 18%;
+        text-align: center;
+        transform: translate(25%);
+    }
 }
 
 /* sm */
