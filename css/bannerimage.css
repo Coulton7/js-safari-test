@@ -1385,6 +1385,10 @@ ul.product-cats{
   .grey-upper-curve{
     border-bottom-left-radius: 12%;
   }
+.search-block {
+    width: 57%;
+    float: right !important;
+  }
 }
 
 /* sm */
@@ -1527,6 +1531,9 @@ ul.product-cats{
   }
   .search-block .form-item {
     width: 56%;
+  }
+.search-block {
+    float: left !important;
   }
 }
 
