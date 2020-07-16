@@ -1432,6 +1432,10 @@ ul.product-cats{
       top: 3.4em;
   }
 
+  .fit-menu{
+    width: 100%;
+  }
+
   .overlay a {
     font-size: 2em;
   }
