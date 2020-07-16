@@ -25,7 +25,7 @@
     });
     $("#mobile-overlay").click(
     function mobileNavBtn(){
-        document.getElementById('mobile-overlay').classList.toggle("change");
+        document.getElementById('navbar-toggle').classList.toggle("change");
         var x = document.getElementById('myNav');
         var y = document.getElementById('main-nav');
         if(x.style.height === "100%") {
