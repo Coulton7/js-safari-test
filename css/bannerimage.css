@@ -1522,6 +1522,9 @@ ul.product-cats{
     padding-top: 0.3em;
     margin-left: 1em;
   }
+  .search-block{
+    padding-top: 0.3em;
+  }
   .search-block .form-item {
     width: 56%;
   }
