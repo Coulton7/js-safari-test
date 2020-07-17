@@ -1345,6 +1345,15 @@ ul.product-cats {
     width: 100%;
   }
 
+  .lang-switch{
+    padding-top: 0.65em;
+    margin-left: 0.1em;
+  }
+
+  .search-block {
+    padding-top: 0.65em;
+  }
+
   .lang-switch .language:before {
     content: "";
   }
