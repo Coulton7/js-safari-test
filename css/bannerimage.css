@@ -1226,6 +1226,49 @@ ul.product-cats {
   color: #dd1e25;
 }
 
+@media screen and (max-width: 500px) {
+    .search-block {
+        margin:0 0 0 -1.9em
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width:371px) {
+    .search-block {
+        width:74%;
+    }
+
+    .lang-switch {
+        width: 30%;
+    }
+
+    .front__flex-margin {
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        transform-origin: none;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width:501px) {
+    .search-block {
+        width:57%;
+        float: right !important;
+    }
+
+    .lang-switch {
+        width: 23%;
+    }
+
+    .front__flex-margin {
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        transform-origin: none;
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
   .banner-title {
     font-size: 42px;
@@ -1497,7 +1540,7 @@ ul.product-cats {
   .overlay-content{
   transform: translate(0%, -70%);
   }
-  
+
   ul.resource-cats a, ul.languages a, ul.about-us-cats a{
     font-size: 1.4em;
     line-height: 2em;
