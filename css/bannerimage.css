@@ -1357,6 +1357,10 @@ ul.product-cats {
     padding-left: 0em;
   }
 
+  .overlay-content{
+    transform: translate(0);
+  }
+
   .gap {
     height: 5.95em;
   }
@@ -1490,6 +1494,10 @@ ul.product-cats {
     line-height: 2em;
   }
 
+  .overlay-content{
+  transform: translate(0%, -70%);
+  }
+  
   ul.resource-cats a, ul.languages a, ul.about-us-cats a{
     font-size: 1.4em;
     line-height: 2em;
