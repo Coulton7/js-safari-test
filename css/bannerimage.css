@@ -1250,7 +1250,7 @@ ul.product-cats {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 501px) {
+@media screen and (max-width: 766px) and (min-width: 501px) {
   .search-block {
     width: 57%;
     float: right !important;
@@ -1352,7 +1352,8 @@ ul.product-cats {
 
   .overlay a {
     font-size: 1em;
-    line-height: 1.2em padding: 0.95em 1.1em;
+    line-height: 1.2em;
+     padding: 0.95em 1.1em;
   }
 
   .search-block {
