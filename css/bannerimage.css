@@ -1350,6 +1350,11 @@ ul.product-cats {
     margin-left: 0.1em;
   }
 
+  .overlay a{
+    font-size: 1em;
+    line-height: 1.2em
+  }
+
   .search-block {
     padding-top: 0.65em;
   }
