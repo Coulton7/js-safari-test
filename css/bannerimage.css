@@ -1428,6 +1428,7 @@ ul.product-cats {
   }
 
   .overlay-content {
+    top: 16%;
     transform: translate(0);
   }
 
