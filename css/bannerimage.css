@@ -1240,7 +1240,7 @@ ul.product-cats {
     width: 65%!important;
     top: 0;
     left: 0;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {
