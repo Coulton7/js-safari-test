@@ -1356,6 +1356,10 @@ ul.product-cats {
      padding: 0.95em 1.1em;
   }
 
+  .change:after{
+    top: 3em;
+  }
+
   .search-block {
     padding-top: 0.65em;
   }
@@ -1563,6 +1567,10 @@ ul.product-cats {
   .overlay-content {
     top: 30%;
     transform: translate(0%, -70%);
+  }
+
+  .change:after{
+    top: 2em;
   }
 
   ul.resource-cats a, ul.languages a, ul.about-us-cats a {
