@@ -336,7 +336,7 @@ p a[target="_blank"]:after {
   display: none;
 }
 
-.navbar-heaer{
+.navbar-header{
   background-color: #ffffff;
   z-index: 1030;
   position: relative;
