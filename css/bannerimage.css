@@ -1227,6 +1227,15 @@ ul.product-cats {
   color: #dd1e25;
 }
 
+@media screen and (max-width: 370px) {
+    .search-block {
+        position:absolute;
+        top: 19.2em;
+        left: 8%;
+        width: 23em!important;
+    }
+}
+
 @media screen and (max-width: 500px) {
   .search-block {
     margin: 0 0 0 -1.9em
