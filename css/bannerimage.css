@@ -1228,12 +1228,12 @@ ul.product-cats {
 }
 
 @media screen and (max-width: 370px) {
-    .search-block {
-        position:absolute;
-        top: 19.2em;
-        left: 8%;
-        width: 23em!important;
-    }
+  .search-block {
+    position: absolute;
+    top: 19.2em;
+    left: 8%;
+    width: 23em !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1363,10 +1363,10 @@ ul.product-cats {
   .overlay a {
     font-size: 1em;
     line-height: 1.2em;
-     padding: 0.95em 1.1em;
+    padding: 0.95em 1.1em;
   }
 
-  .change:after{
+  .change:after {
     top: 17%;
   }
 
@@ -1579,7 +1579,7 @@ ul.product-cats {
     transform: translate(0%, -70%);
   }
 
-  .change:after{
+  .change:after {
     top: 2em;
   }
 
