@@ -1204,6 +1204,11 @@ ul.product-cats {
   overflow: hidden;
 }
 
+.noscroll .action-menu {
+    position: fixed;
+    top: 3em;
+}
+
 .overlay a {
   text-decoration: none;
   color: #fff;
