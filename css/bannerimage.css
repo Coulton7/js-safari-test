@@ -1102,7 +1102,7 @@ h4 {
   text-decoration: none;
 }
 
-ul.resource-cats, ul.about-us-cats {
+ul.resource-cats, ul.product-cats, ul.about-us-cats {
   background: none;
   overflow: visible;
 }
