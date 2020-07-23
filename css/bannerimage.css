@@ -1180,10 +1180,6 @@ ul.resource-cats a, ul.about-us-cats a {
   color: #dd1e25;
 }
 
-ul.product-cats {
-  overflow: visible;
-}
-
 .overlay-content {
   position: relative;
   top: 30%;
