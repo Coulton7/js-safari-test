@@ -1583,6 +1583,10 @@ ul.product-cats {
     top: 3.4em;
   }
 
+  .noscroll .action-menu{
+    top:3.4em;
+  }
+
   .fit-menu {
     width: 100%;
   }
@@ -1721,6 +1725,10 @@ ul.product-cats {
   }
 
   .action-menu {
+    top: 3.3em;
+  }
+
+  .noscroll .action-menu{
     top: 3.3em;
   }
 
