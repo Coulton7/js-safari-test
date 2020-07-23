@@ -1156,7 +1156,7 @@ ul.resource-cats, ul.about-us-cats {
   width: 100%;
 }
 
-ul.resource-cats a, ul.languages a, ul.about-us-cats a {
+ul.resource-cats a, ul.about-us-cats a {
   font-size: 1em;
   text-align: left;
 }
