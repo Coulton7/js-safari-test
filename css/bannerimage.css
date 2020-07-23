@@ -1112,7 +1112,7 @@ ul.resource-cats, ul.about-us-cats {
   position: static;
 }
 
-.overlay {
+.overlay-main {
   height: 0%;
   background-color: rgba(0, 0, 0, .85);
   width: 100%;
@@ -1170,11 +1170,11 @@ ul.resource-cats a, ul.about-us-cats a {
   color: #ffffff;
 }
 
-.overlay.active {
+.overlay-main.active {
   height: 100%;
 }
 
-.overlay a:hover {
+.overlay-main a:hover {
   transform: scale(1.1);
   overflow: visible;
   color: #dd1e25;
@@ -1209,7 +1209,7 @@ ul.product-cats {
     top: 3em;
 }
 
-.overlay a {
+.overlay-main a {
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -1378,7 +1378,7 @@ ul.product-cats {
     margin-left: 0.1em;
   }
 
-  .overlay a {
+  .overlay-main a {
     font-size: 1em;
     line-height: 1.2em;
     padding: 0.95em 1.1em;
@@ -1591,7 +1591,7 @@ ul.product-cats {
     width: 100%;
   }
 
-  .overlay a {
+  .overlay-main a {
     font-size: 2em;
     line-height: 2em;
   }
@@ -1794,7 +1794,7 @@ ul.product-cats {
     padding-left: 4em;
   }
 
-  .overlay a {
+  .overlay-main a {
     font-size: 2em;
     line-height: 1.6em;
   }
