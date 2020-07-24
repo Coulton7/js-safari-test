@@ -1087,6 +1087,7 @@ h4 {
   z-index: 1031;
   border-top: 4px solid transparent;
   border-bottom: none;
+  cursor: pointer;
 }
 
 .overlay-btn:hover {
@@ -1228,6 +1229,7 @@ ul.resource-cats a, ul.about-us-cats a {
   width: 1em;
   transition: 0.5s;
   pointer-events: auto;
+  cursor: pointer;
 }
 
 .change:hover:after {
