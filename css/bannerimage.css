@@ -1301,6 +1301,10 @@ ul.resource-cats a, ul.about-us-cats a {
     line-height: 67px;
   }
 
+  .navbar-nav{
+    display: none;
+  }
+
   h1 {
     font-size: 30px;
     line-height: 49px;
@@ -1575,6 +1579,10 @@ ul.resource-cats a, ul.about-us-cats a {
     overflow: hidden;
     background-color: #ffffff;
     padding-left: 0em;
+  }
+
+  .navbar-nav{
+    display: block;
   }
 
   .action-menu {
