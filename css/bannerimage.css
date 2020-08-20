@@ -1697,6 +1697,10 @@ ul.resource-cats a, ul.about-us-cats a {
     outline:0;
   }
 
+.tab-content>.active{
+  outline: 0;
+}
+
   .sustain-nav li a {
     padding: 0;
   }
