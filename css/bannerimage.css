@@ -1401,6 +1401,10 @@ ul.resource-cats a, ul.about-us-cats a {
     display: block;
   }
 
+  .row-bottom{
+    position: relative;
+  }
+
   .fit-menu {
     width: 100%;
   }
@@ -1625,6 +1629,9 @@ ul.resource-cats a, ul.about-us-cats a {
 
   .row-flexrow{
     display: flex;
+  }
+  .row-bottom{
+    position: absolute;
   }
 
   .fit-menu {
