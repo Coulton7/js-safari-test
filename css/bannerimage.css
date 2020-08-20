@@ -1693,6 +1693,10 @@ ul.resource-cats a, ul.about-us-cats a {
     float: left;
   }
 
+  .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+    outline:0;
+  }
+
   .sustain-nav li a {
     padding: 0;
   }
