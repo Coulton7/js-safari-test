@@ -1262,6 +1262,10 @@ ul.resource-cats a, ul.about-us-cats a {
   color: #dd1e25;
 }
 
+.padding-bottom-2em{
+  padding-bottom: 2em;
+}
+
 @media screen and (max-width: 370px) {
   .search-block {
     position: absolute;
