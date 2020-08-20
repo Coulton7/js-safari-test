@@ -5,6 +5,13 @@
       // Remove links that don't actually link to anything
       .not('[href="#"]')
       .not('[href="#0"]')
+      .not('[href="#edu"]')
+      .not('[href="#wat"]')
+      .not('[href="#eng"]')
+      .not('[href="#ind"]')
+      .not('[href="#ineq"]')
+      .not('[href="#prod"]')
+      .not('[href="#cli"]')
       .click(function(event) {
         // On-page links
         if (
