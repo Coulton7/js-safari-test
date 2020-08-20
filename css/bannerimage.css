@@ -1693,6 +1693,10 @@ ul.resource-cats a, ul.about-us-cats a {
     float: left;
   }
 
+  .sustain-nav li a {
+    padding: 0;
+  }
+
   #arrowNav {
     display: none;
   }
