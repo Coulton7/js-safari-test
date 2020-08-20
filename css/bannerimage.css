@@ -988,7 +988,7 @@ outline: 0;
   right: 0;
 }
 
-.row-flex-row{
+.row-flexrow{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1397,7 +1397,7 @@ ul.resource-cats a, ul.about-us-cats a {
     margin-top: 2em;
   }
 
-  .row-flex-row{
+  .row-flexrow{
     display: block;
   }
 
@@ -1623,7 +1623,7 @@ ul.resource-cats a, ul.about-us-cats a {
     top:3.4em;
   }
 
-  .row-flex-row{
+  .row-flexrow{
     display: flex;
   }
 
