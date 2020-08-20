@@ -988,6 +988,14 @@ outline: 0;
   right: 0;
 }
 
+.row-flex-row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .icon-right-padding {
   padding-right: 0.5em;
 }
@@ -1389,6 +1397,10 @@ ul.resource-cats a, ul.about-us-cats a {
     margin-top: 2em;
   }
 
+  .row-flex-row{
+    display: block;
+  }
+
   .fit-menu {
     width: 100%;
   }
@@ -1609,6 +1621,10 @@ ul.resource-cats a, ul.about-us-cats a {
 
   .noscroll .action-menu{
     top:3.4em;
+  }
+
+  .row-flex-row{
+    display: flex;
   }
 
   .fit-menu {
