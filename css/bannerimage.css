@@ -1044,15 +1044,15 @@ outline: 0;
   text-shadow: 0 0 3px #ffffff;
 }
 
+.reveal[aria-expanded="false"]~.full-details {
+  display: none;
+}
+
 .reveal[aria-expanded="true"] {
   display: none;
 }
 
-.full-details[aria-expanded="false"] {
-  display: none;;
-}
-
-.full-details[aria-expanded="true"] {
+.reveal[aria-expanded="true"]~.full-details {
   display: block;
 }
 
