@@ -1044,12 +1044,16 @@ outline: 0;
   text-shadow: 0 0 3px #ffffff;
 }
 
-.btn-red[aria-expanded="true"] {
+.reveal[aria-expanded="true"] {
   display: none;
 }
 
-.btn-red[aria-expanded="true"]~.first-icon {
-  display: none;
+.full-details[aria-expanded="false"] {
+  display: none;;
+}
+
+.full-details[aria-expanded="true"] {
+  display: block;
 }
 
 .float-right {
