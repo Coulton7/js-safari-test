@@ -1,3 +1,8 @@
+.on{
+  fill: #002a5b;
+  stroke: #004a8c;
+  stroke-width: 2;
+}
 body {
   font-size: 14px;
   line-height: 1.618rem;
