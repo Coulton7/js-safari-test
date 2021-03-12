@@ -3,7 +3,7 @@
   });
 
   $(document).ready(function() {
-    var allRegions = $("g#map > *");
+    var allRegions = $("svg.uk > g#map > path");
 
     allRegions.on("click", function() {
       allRegions.removeClass("on");
