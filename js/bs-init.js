@@ -3,7 +3,7 @@
   });
 
   $(document).ready(function() {
-    var allRegions = $("#Region_Boundaries > *");
+    var allRegions = $("#Map > *");
 
     allRegions.on("click", function() {
       allRegions.removeClass("on");
