@@ -10,7 +10,3 @@
       $(this).addClass("on");
     });
   });
-
-  function displayName (name) {
-    document.getElementById('country-name').firstChild.data = name;
-  }
