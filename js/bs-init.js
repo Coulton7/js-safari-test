@@ -20,7 +20,7 @@ $(function(){
       height: 'auto',
       modal:true,
       title: 'Location Details',
-      overlay: { backgroundColor: "#000", opacity:0.9}
-    })
+      overlay: { backgroundColor: "#000", opacity:0.9},
+    });
   });
 });
