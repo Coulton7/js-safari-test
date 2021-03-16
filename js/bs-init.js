@@ -11,7 +11,8 @@
     });
   });
 
-  jQuery("#Map > *").click(function(){
-    var idClicked = jQuery(this).attr('id');
-      console.log(idClicked)
+$(function(){
+  $("#Map").click(function(){
+    alert($(this).attr('id'));
   });
+});
