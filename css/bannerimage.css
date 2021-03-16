@@ -1279,6 +1279,12 @@ ul.resource-cats a, ul.about-us-cats a {
   padding-top: 2em;
 }
 
+.location-pop-up{
+  display: none;
+  height:30%;
+  width: 30%;
+}
+
 @media screen and (max-width: 370px) {
   .search-block {
     position: absolute;
