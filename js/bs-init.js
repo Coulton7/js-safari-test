@@ -12,7 +12,7 @@
   });
 
 $(function(){
-  $("#Map").click(function(){
+  $("#Map > *").click(function(){
     alert($(this).attr('id'));
   });
 });
