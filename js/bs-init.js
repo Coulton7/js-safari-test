@@ -13,6 +13,7 @@
 
 $(function(){
   $("#Map > *").click(function(){
-    alert($(this).attr('id'));
+    link = ($(this).attr('id'));
+    console.log(link);
   });
 });
