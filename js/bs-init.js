@@ -11,7 +11,7 @@
     });
   });
 
-  jQuery("svg.uk").click(function(){
+  jQuery("#Map > *").click(function(){
     var idClicked = jQuery(this).attr('id');
       console.log(idClicked)
   });
