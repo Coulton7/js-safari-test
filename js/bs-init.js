@@ -14,7 +14,7 @@
 function printLink(link){
   jQuery("svg.uk").click(function(){
     var idClicked = jQuery(this).attr('id');
-    console.log(idClicked)
   });
+  console.log(idClicked)
 
 }
