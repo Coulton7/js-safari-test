@@ -21,7 +21,7 @@ $(document).ready(function() {
       var link = ($(this).attr('id'));
       console.log(link);
       if (link == "Yorkshire_and_the_Humber"){
-        ('#location-details').html("<a href='https://www.aesseal.com/en/locations/europe/gb/SYK'>Click to see locations in your area</a>");
+        $('#location-details').html("<a href='https://www.aesseal.com/en/locations/europe/gb/SYK'>Click to see locations in your area</a>");
       }
     });
   });
