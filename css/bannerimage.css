@@ -1279,7 +1279,7 @@ ul.resource-cats a, ul.about-us-cats a {
   padding-top: 2em;
 }
 
-.location-pop-up{
+.location-pop-up, .millClose{
   display: none;
   height:30%;
   width: 30%;
