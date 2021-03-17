@@ -21,7 +21,7 @@ $(document).ready(function() {
       var link = ($(this).attr('id'));
       console.log(link);
       if (link == "Yorkshire_and_the_Humber"){
-        $('.location-pop-up').addClass('show');
+        $('.millClose').addClass('show');
       }
     });
   });
