@@ -20,9 +20,9 @@ $(document).ready(function() {
     $("#Map > *").click(function(){
       var link = ($(this).attr('id'));
       console.log(link);
-      if ((link == "Yorkshire_and_the_Humber"){
+      if (link == "Yorkshire_and_the_Humber"){
         document.getElementById('location-details').innerhtml = "<a href='https://www.aesseal.com/en/locations/europe/gb/SYK'<a>Click to see locations in your area</a>";
-      });
+      }
     });
   });
 });
