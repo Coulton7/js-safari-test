@@ -1281,8 +1281,8 @@ ul.resource-cats a, ul.about-us-cats a {
 
 .location-pop-up, .millClose{
   display: none;
-  height:30%;
-  width: 30%;
+  height:100%;
+  width: 100%;
 }
 
 #Map > *:hover, #Map > * g:hover{
