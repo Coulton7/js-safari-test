@@ -4,6 +4,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var allRegions = $("#Map > *");
+  var link = ($(this).attr('id'));
+  if (link == "Yorkshire_and_the_Humber"){
+    $('.millClose').addClass('show');
+  }
 
   allRegions.on("click", function() {
     allRegions.removeClass("on");
@@ -14,14 +18,9 @@ $(document).ready(function() {
       modal:true,
       title: 'Location Details',
       overlay: { backgroundColor: "#000", opacity:0.9},
-    });
-  });
-  $(function(){
-    $("#Map > *").click(function(){
-      var link = ($(this).attr('id'));
-      console.log(link);
-      if (link == "Yorkshire_and_the_Humber"){
-        $('.millClose').addClass('show');
+      close: function(){
+        link.removeClass('show');
+        allRegions.removeClass('on');
       }
     });
   });
