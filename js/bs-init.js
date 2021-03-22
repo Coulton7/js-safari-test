@@ -19,7 +19,8 @@ $(document).ready(function() {
       title: 'Location Details',
       overlay: { backgroundColor: "#000", opacity:0.9},
       close: function(){
-      }
+        link.removeClass("show");
+      },
     });
   });
 });
