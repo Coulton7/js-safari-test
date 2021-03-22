@@ -4,12 +4,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var allRegions = $("#Map > *");
-  var link = allRegions.attr('id');
-  if (link == "Yorkshire_and_the_Humber"){
-    $('.millClose').addClass('show');
-  }
 
   allRegions.on("click", function() {
+    var link = ($(this).attr('id'));
+    if (link == "Yorkshire_and_the_Humber"){
+      $('.millClose').addClass('show');
+    }
     allRegions.removeClass("on");
     $(this).addClass("on");
     $('.location-pop-up').dialog({
