@@ -13,7 +13,7 @@ $(document).ready(function() {
     allRegions.removeClass("on");
     $(this).addClass("on");
     $('.location-pop-up').dialog({
-      width: $(window).width(),,
+      width: $(window).width(),
       height: 'auto',
       modal:true,
       title: 'Location Details',
