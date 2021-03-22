@@ -24,6 +24,7 @@ $(document).ready(function() {
     });
     $('.location-pop-up').on("dialogclose", function(){
       allRegions.removeClass("on");
+      $('body').removeClass("noscroll");
       if(link == "Yorkshire_and_the_Humber"){
         $('.millClose').removeClass('show');
       }
