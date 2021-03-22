@@ -17,7 +17,7 @@ $(document).ready(function() {
       height: 'auto',
       modal:true,
       title: 'Location Details',
-      overlay: { backgroundColor: "rgba(0, 0, 0, .85)"},
+      overlay: { background: "rgba(0, 0, 0, .85)"},
       close: function(){
       },
     });
