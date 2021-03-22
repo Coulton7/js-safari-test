@@ -14,6 +14,33 @@ p {
   color: #535454;
 }
 
+p a[target="_blank"]:after {
+  font-family: 'Font Awesome 5 Free';
+  content: " \f35d";
+  font-weight: 700;
+}
+
+a {
+  color: #dd1e25;
+  text-decoration: none;
+}
+
+a:link {
+  color: #dd1e25;
+  border-bottom: 1px dashed #888c8f;
+}
+
+a:visited {
+  color: #dd1e25;
+  border-bottom: 1px dashed #b5b6b9;
+}
+
+a:hover {
+  color: #fa010a;
+  border-bottom: 1px dashed #fa010a;
+  text-decoration: none;
+}
+
 /*anything under the p tag colr*/
 li {
   float: left;
