@@ -1285,7 +1285,7 @@ ul.resource-cats a, ul.about-us-cats a {
   width: 100%;
 }
 
-#Map > *:hover, #Map > * g:hover{
+#Map > *:hover, #Map > g:hover{
   fill: #002a5b!important;
   stroke: #004a8c;
   stroke-width: 2;
