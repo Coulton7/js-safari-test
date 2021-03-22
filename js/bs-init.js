@@ -22,7 +22,9 @@ $(document).ready(function() {
       },
     });
     $('.location-pop-up').on("dialogclose", function(){
-      $(link).removeClass("show");
+      if(link == "Yorkshire_and_the_Humber"){
+        $('.millClose').removeClass('show');
+      }
     });
   });
 });
