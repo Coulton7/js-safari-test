@@ -1325,6 +1325,10 @@ ul.resource-cats a, ul.about-us-cats a {
   overflow-y: scroll;
 }
 
+.ui-widget-content a{
+  color: #dd1e25!important;
+}
+
 @media screen and (max-width: 370px) {
   .search-block {
     position: absolute;
