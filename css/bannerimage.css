@@ -1293,7 +1293,7 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .ui-widget-overlay{
-  background: rgba(0, 0, 0, .85);
+  background: rgba(0, 0, 0, .85)!important;
   opacity: auto;
 }
 
