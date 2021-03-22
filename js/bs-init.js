@@ -20,7 +20,6 @@ $(document).ready(function() {
       overlay: { backgroundColor: "#000", opacity:0.9},
       close: function(){
         link.removeClass('show');
-        allRegions.removeClass('on');
       }
     });
   });
