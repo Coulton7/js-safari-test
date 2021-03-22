@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   var allRegions = $("#Map > *");
-  var link = ($(this).attr('id'));
+  var link = allRegions.attr('id');
   if (link == "Yorkshire_and_the_Humber"){
     $('.millClose').addClass('show');
   }
