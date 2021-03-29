@@ -100,6 +100,10 @@ a:hover {
   color: #dd1e25;
 }
 
+a:focus{
+  outline: none;
+}
+
 p a[target="_blank"]:after {
   font-family: "Font Awesome 5 Free";
   content: "\f35d";
