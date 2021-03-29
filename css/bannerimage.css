@@ -100,7 +100,7 @@ a:hover {
   color: #dd1e25;
 }
 
-a:focus{
+a:focus, .ui-widget-content a:focus{
   outline: none;
 }
 
