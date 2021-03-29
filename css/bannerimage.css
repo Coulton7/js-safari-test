@@ -102,7 +102,6 @@ a:hover {
 
 a:focus, .ui-widget-content a:focus{
   outline: none;
-  border-bottom: none;
 }
 
 p a[target="_blank"]:after {
