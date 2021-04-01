@@ -1338,6 +1338,7 @@ ul.resource-cats a, ul.about-us-cats a {
   background: rgba(0, 0, 0, .85)!important;
   opacity: initial!important;
   overflow-y: scroll;
+  transition: 0.5s;
 }
 
 .ui-widget-content a{
