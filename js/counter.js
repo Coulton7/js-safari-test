@@ -1,7 +1,6 @@
 (function($){
   document.addEventListener('DOMContentLoaded', function() {
     var options = {
-      startVal: 0,
       duration: 5,
       useEasing: true,
       useGrouping: true,
