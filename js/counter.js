@@ -8,7 +8,7 @@
       decimal: '.',
     };
 
-    var count = new CountUp('car-counter', 353500000, options);
+    var count = new CountUp('car-counter', 0, 353500000, 0, 5,  options);
     if (!count.error) {
       count.start();
     } else {
