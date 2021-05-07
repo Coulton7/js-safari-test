@@ -1,14 +1,14 @@
 (function($){
   document.addEventListener('DOMContentLoaded', function() {
     var options = {
-      duration: 8,
+      duration: 7,
       useEasing: true,
       useGrouping: true,
       separator: ',',
       decimal: '.',
     };
 
-    var count = new CountUp('car-counter', 0, 529500000, 0, 8,  options);
+    var count = new CountUp('car-counter', 0, 529500000, 0,  options);
     if (!count.error) {
       count.start();
     } else {
