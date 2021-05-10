@@ -50,7 +50,7 @@ function typewriter()
  while ( iRow < iIndex ) {
   sContents += aText[iRow++] + '<br />';
  }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ destination.innerHTML = sContents + aText[iIndex].substring(iTextPos) + "_";
  if ( iTextPos++ == iArrLength ) {
   iTextPos = 0;
   iIndex++;
