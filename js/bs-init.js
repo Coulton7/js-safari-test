@@ -73,8 +73,7 @@ var TxtType = function(el, toRotate, period) {
     };
 
     window.onload = function() {
-        var flex = document.getElementsByClassName('flex-active-slide');
-        var elements = flex.getElementsByClassName('typewrite');
+        var elements = document.getElementsByClassName('flex-active-slide').getElementsByid('headline');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
             var period = elements[i].getAttribute('data-period');
