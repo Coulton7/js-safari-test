@@ -1364,18 +1364,12 @@ ul.resource-cats a, ul.about-us-cats a {
   overflow: hidden;
   margin: 0 auto;
   animation:
-    7s typing-erase-link 4s steps(50, end) infinite;
+    7s typing-erase 4s steps(50, end) infinite;
     animation-delay: 3s;
 }
 
 /* The type and erase effect */
 @keyframes typing-erase {
-  0% { width: 0 }
-  35% { width: 100% }
-  90%, 100% { width: 0 }
-}
-
-@keyframes typing-erase-link {
   0% { width: 0 }
   35% { width: 100% }
   90%, 100% { width: 0 }
