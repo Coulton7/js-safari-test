@@ -1346,6 +1346,7 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .typing-erase-headline {
+  width: 0;
   overflow: hidden;
   margin: 0 auto;
   animation: 10s typing-erase 4s steps(50, end) infinite;
@@ -1359,6 +1360,7 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .typing-erase-link {
+  width: 0;
   overflow: hidden;
   margin: 0 auto;
   animation:
