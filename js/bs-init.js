@@ -61,7 +61,7 @@ var TxtType = function(el, toRotate, period) {
         }, delta);
     };
 
-    window.onload = function() {
+    document.getElementsByClassName('flex-active-slide'); = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
