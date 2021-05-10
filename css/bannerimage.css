@@ -1346,8 +1346,13 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .typing-erase-headline {
-  animation:
-    10s typing-erase 4s steps(50, end) infinite;
+  color: #000;
+  font-size: inherit;
+  font-weight: 500;
+  width: 0;
+  max-width: max-content;
+  overflow: hidden;
+  animation: 10s typing-erase 4s steps(50, end) infinite;
 }
 
 /* The type and erase effect */
@@ -1358,6 +1363,12 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .typing-erase-link {
+  color: #000;
+  font-size: inherit;
+  font-weight: 500;
+  width: 0;
+  max-width: max-content;
+  overflow: hidden;
   animation:
     7s typing-erase 4s steps(50, end) infinite;
     animation-delay: 3s;
