@@ -56,7 +56,7 @@
 
             // wait for a while and call this function again for next character
             setTimeout(function() {
-              typeWriter(text, i + 1, fnCallback)
+              typeWriter(text, i + 1, fnCallback);
             }, 100);
           }
           // text finished, call callback if there is a callback function
@@ -83,14 +83,13 @@
         }
         // start the text animation
         StartTextAnimation(0);
-        });
       },
       animation: "fade",
       slideshowSpeed: 12000,
       easing: "swing",
       animationLoop: true,
 
-    })
+    });
 
     $('.product-slider').flexslider({
       controlNav: false,
