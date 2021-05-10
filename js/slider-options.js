@@ -13,7 +13,7 @@
           this.toRotate = toRotate;
           this.el = el;
           this.loopNum = 0;
-          this.period = parseInt(period, 10) || 6000;
+          this.period = parseInt(period, 10) || 7000;
           this.txt = '';
           this.tick();
       };
@@ -31,7 +31,7 @@
           this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
           var that = this;
-          var delta = 200 - Math.random() * 100;
+          var delta = 100 - Math.random() * 100;
 
           setTimeout(function() {
           that.tick();
