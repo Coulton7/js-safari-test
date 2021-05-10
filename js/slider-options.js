@@ -43,10 +43,10 @@
       controlNav: false,
       directionNav: false,
       before: function(slider){
-        $('p#headline').addClass('typewrite');
+        $('#headline').removeClass('typewrite');
       },
       after: function(slider){
-        $('p#headline').removeClass('typewrite');
+        $('#headline').removeClass('typewrite');
       },
       animation: "fade",
       slideshowSpeed: 12000,
