@@ -1345,32 +1345,11 @@ ul.resource-cats a, ul.about-us-cats a {
   color: #dd1e25!important;
 }
 
-.typing-erase-headline {
-  width: 0;
-  overflow: hidden;
-  margin: 0 auto;
-  animation: 12s typing-erase 4s steps(50, end) infinite;
-}
-
-/* The type and erase effect */
-@keyframes typing-erase {
-  0% { width: 0 }
-  35% { width: 100% }
-  90%, 100% { width: 0 }
-}
-
 .typing-erase-link {
   width: 0;
   overflow: hidden;
   margin: 0 auto;
   animation: 12s typing-link 4s steps(50, end) infinite;
-}
-
-/* The type and erase effect */
-@keyframes typing-erase {
-  0% { width: 0 }
-  35% { width: 100% }
-  90%, 100% { width: 0 }
 }
 
 @keyframes typing-link {
