@@ -12,7 +12,7 @@ $(document).ready(function() {
     }
     allRegions.removeClass("on");
     $(this).addClass("on");
-    $('body').addClass("noscroll")
+    $('body').addClass("noscroll");
     $('.location-pop-up').dialog({
       width: "70%",
       height: 'auto',
