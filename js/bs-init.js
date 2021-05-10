@@ -31,7 +31,7 @@ $(document).ready(function() {
   });
 });
 
-var aText = $('typewrite').attr('data-type')[0];
+var aText = $('typewrite').attr('data-type');
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
