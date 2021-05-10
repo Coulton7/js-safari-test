@@ -1373,6 +1373,13 @@ ul.resource-cats a, ul.about-us-cats a {
   90%, 100% { width: 0 }
 }
 
+@keyframes typing-link {
+  0% { width: 0 }
+  35% { width: 100% }
+  90%, 100% { width: 0 }
+}
+
+
 @media screen and (max-width: 370px) {
   .search-block {
     position: absolute;
