@@ -56,7 +56,7 @@ var TxtType = function(el, toRotate, period) {
         var that = this;
         var delta = 100 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) { delta /= 100; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
