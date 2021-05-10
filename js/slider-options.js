@@ -42,7 +42,14 @@
     $('.newsslider').flexslider({
       controlNav: false,
       directionNav: false,
-      before: function(){},
+      before: function(slider){
+        var headline = document.getElementById('headline');
+        headline.addClass('typewrite');
+      },
+      after: function(slider){
+        var headline = document.getElementById('headline');
+        headline.removeClass('typewrite');
+      },
       animation: "fade",
       slideshowSpeed: 12000,
       easing: "swing",
