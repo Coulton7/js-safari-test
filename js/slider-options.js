@@ -43,7 +43,7 @@
       controlNav: false,
       directionNav: false,
       before: function(slider){
-        $('#headline').removeClass('typewrite');
+        $('#headline').addClass('typewrite');
       },
       after: function(slider){
         $('#headline').removeClass('typewrite');
