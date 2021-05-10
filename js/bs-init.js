@@ -63,6 +63,7 @@ var TxtType = function(el, toRotate, period) {
         this.isDeleting = true;
         } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
+        this.loopNum++;
         delta = 400;
         }
 
