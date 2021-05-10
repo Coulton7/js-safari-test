@@ -34,7 +34,7 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
 
-  var dataText = $('typewrite').attr('data-type');
+  var dataText = $('typewrite').attr('data-type')[0];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
