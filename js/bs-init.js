@@ -32,7 +32,7 @@ $(document).ready(function() {
 });
 
 var elements = document.getElementsByClassName('typewrite');
-var aText = elements[i].getAttribute('data-type');
+var aText = elements.getAttribute('data-type');
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
