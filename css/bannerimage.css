@@ -1363,9 +1363,7 @@ ul.resource-cats a, ul.about-us-cats a {
   width: 0;
   overflow: hidden;
   margin: 0 auto;
-  animation:
-    8s typing-erase 4s steps(50, end) infinite;
-    animation-delay: 4s;
+  animation: 12s typing-erase 4s steps(50, end) infinite;
 }
 
 /* The type and erase effect */
