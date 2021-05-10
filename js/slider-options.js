@@ -43,7 +43,7 @@
       controlNav: false,
       directionNav: false,
       animation: "fade",
-      slideshowSpeed: 10000,
+      slideshowSpeed: 11000,
       easing: "swing",
       animationLoop: true,
 
