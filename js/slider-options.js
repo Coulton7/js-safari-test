@@ -13,7 +13,7 @@
   var txtone = "The Planet is burning… There is a long-term illness, affecting the entire planet, that must be tackled urgently.";
   var txttwo ="Identification of the need to carefully manage water resources was the key to moving forward.";
   var txtthree = "Policies to deliver a comprehensive network of public EV chargepoints";
-  var speed = 10000;
+  var speed = 50;
 
   $(document).ready(function() {
 
@@ -49,40 +49,34 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        function typeWriter() {
           if (document.getElementById('headline-1')){
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(slider, speed);
           } else if (document.getElementById('headline-2')){
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(slider, speed);
           } else if (document.getElementById('headline-3')){
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
-              setTimeout(typeWriter, speed);
+              setTimeout(slider, speed);
           }
-        }
-        typeWriter();
       },
       after: function(slider){
-        function typeWriter() {
           if (document.getElementById('headline-1')){
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(slider, speed);
           } else if (document.getElementById('headline-2')){
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(slider, speed);
           } else if (document.getElementById('headline-3')){
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
-              setTimeout(typeWriter, speed);
+              setTimeout(slider, speed);
           }
-        }
-        typeWriter();
       },
       animation: "fade",
       slideshowSpeed: 12000,
