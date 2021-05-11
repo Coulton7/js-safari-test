@@ -49,34 +49,40 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
+        function typeWriter() {
           if (document.getElementById('headline-1')){
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
-            setTimeout(speed);
+            setTimeout(typeWriter, speed);
           } else if (document.getElementById('headline-2')){
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
-            setTimeout(speed);
+            setTimeout(typeWriter, speed);
           } else if (document.getElementById('headline-3')){
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
-              setTimeout(speed);
+              setTimeout(typeWriter, speed);
           }
+        }
+        typeWriter();
       },
       after: function(slider){
+        function typeWriter() {
           if (document.getElementById('headline-1')){
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
-            setTimeout(speed);
+            setTimeout(typeWriter, speed);
           } else if (document.getElementById('headline-2')){
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
-            setTimeout(speed);
+            setTimeout(typeWriter, speed);
           } else if (document.getElementById('headline-3')){
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
-              setTimeout(speed);
+              setTimeout(typeWriter, speed);
           }
+        }
+        typeWriter();
       },
       animation: "fade",
       slideshowSpeed: 12000,
