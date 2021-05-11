@@ -48,22 +48,18 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        function typeWriter(){
           if (i < txt.length){
             document.getElementById('wrap').innerHTML += txt.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(slider, speed);
           }
-        }
       },
       after: function(slider){
-        function typeWriter(){
           if (i < txt.length){
             document.getElementById('wrap').innerHTML += txt.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            setTimeout(slider, speed);
           }
-        }
       },
       animation: "fade",
       slideshowSpeed: 12000,
