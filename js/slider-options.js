@@ -9,11 +9,34 @@
            (window.innerWidth < 1200) ? 4 : 4;
   }
 
-  var i = 0;
-  var txtone = "The Planet is burning… There is a long-term illness, affecting the entire planet, that must be tackled urgently.";
-  var txttwo ="Identification of the need to carefully manage water resources was the key to moving forward.";
-  var txtthree = "Policies to deliver a comprehensive network of public EV chargepoints";
-  var speed = 50;
+  var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 7000;
+          this.txt = '';
+          this.tick();
+      };
+
+      TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+          var that = this;
+          var delta = 100 - Math.random() * 100;
+
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+      };
 
   $(document).ready(function() {
 
@@ -49,45 +72,24 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-          if (document.getElementById('headline-1')){
-            if (i < txtone.length) {
-            document.getElementById('wrap').innerHTML += txtone.charAt(i);
-            i++;
-            setTimeout(speed);
-          }} else if (document.getElementById('headline-2')){
-            if (i < txttwo.length) {
-            document.getElementById('wrap').innerHTML += txttwo.charAt(i);
-            i++;
-            setTimeout(speed);
-          }
-          } else if (document.getElementById('headline-3')){
-            if (i < txtthree.length) {
-              document.getElementById('wrap').innerHTML += txtthree.charAt(i);
-              i++;
-              setTimeout(speed);
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
             }
-          }
+        }
       },
       after: function(slider){
-          if (document.getElementById('headline-1')){
-            if (i < txtone.length) {
-            document.getElementById('wrap').innerHTML += txtone.charAt(i);
-            i++;
-            setTimeout(speed);
-          }
-          } else if (document.getElementById('headline-2')){
-            if (i < txttwo.length) {
-            document.getElementById('wrap').innerHTML += txttwo.charAt(i);
-            i++;
-            setTimeout(speed);
-          }
-          } else if (document.getElementById('headline-3')){
-            if (i < txtthree.length) {
-              document.getElementById('wrap').innerHTML += txtthree.charAt(i);
-              i++;
-              setTimeout(speed);
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
             }
-          }
+        }
       },
       animation: "fade",
       slideshowSpeed: 12000,
