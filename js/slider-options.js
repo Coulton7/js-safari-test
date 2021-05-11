@@ -11,7 +11,7 @@
 
   var i = 0;
   var elements = $(".typewrite");
-  var value = elements.attr("data-type");
+  var value = elements.attr("data-type") || '';
   var txt = value;
   var speed = 50;
 
