@@ -12,7 +12,7 @@
   var i = 0;
   var elements = $(".typewrite");
   var value = elements.attr('data-type');
-  var txt = value.text;
+  var txt = value;
   var speed = 50;
 
   $(document).ready(function() {
