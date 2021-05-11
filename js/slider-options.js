@@ -10,7 +10,7 @@
   }
 
   var i = 0;
-  var elements = document.getElementsByClassName('typewrite');
+  var elements = $(".typewrite");
   var txt = elements.getAttribute('data-type');
   var speed = 50;
 
