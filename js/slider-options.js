@@ -10,9 +10,9 @@
   }
 
   var i = 0;
-  var elements = $(".typewrite");
-  var value = elements.attr("data-type") || '';
-  var txt = value;
+  var txtone = 'The Planet is burning… There is a long-term illness, affecting the entire planet, that must be tackled urgently.';
+  var txttwo ='Identification of the need to carefully manage water resources was the key to moving forward.';
+  var txtthree = 'Policies to deliver a comprehensive network of public EV chargepoints';
   var speed = 50;
 
   $(document).ready(function() {
@@ -49,17 +49,33 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-          if (i < txt.length){
-            document.getElementById('wrap').innerHTML += txt.charAt(i);
+          if (document.getElementById('headline-1')){
+            document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
             setTimeout(slider, speed);
+          } else if (document.getElementById('headline-2')){
+            document.getElementById('wrap').innerHTML += txttwo.charAt(i);
+            i++;
+            setTimeout(slider, speed);
+          } else if (document.getElementById('headline-3')){
+              document.getElementById('wrap').innerHTML += txtthree.charAt(i);
+              i++;
+              setTimeout(slider, speed);
           }
       },
       after: function(slider){
-          if (i < txt.length){
-            document.getElementById('wrap').innerHTML += txt.charAt(i);
+          if (document.getElementById('headline-1')){
+            document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
             setTimeout(slider, speed);
+          } else if (document.getElementById('headline-2')){
+            document.getElementById('wrap').innerHTML += txttwo.charAt(i);
+            i++;
+            setTimeout(slider, speed);
+          } else if (document.getElementById('headline-3')){
+              document.getElementById('wrap').innerHTML += txtthree.charAt(i);
+              i++;
+              setTimeout(slider, speed);
           }
       },
       animation: "fade",
