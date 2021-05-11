@@ -9,34 +9,10 @@
            (window.innerWidth < 1200) ? 4 : 4;
   }
 
-  var TxtType = function(el, toRotate, period) {
-          this.toRotate = toRotate;
-          this.el = el;
-          this.loopNum = 0;
-          this.period = parseInt(period, 10) || 7000;
-          this.txt = '';
-          this.tick();
-      };
-
-      TxtType.prototype.tick = function() {
-          var i = this.loopNum % this.toRotate.length;
-          var fullTxt = this.toRotate[i];
-
-          if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-          } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-          }
-
-          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-          var that = this;
-          var delta = 100 - Math.random() * 100;
-
-          setTimeout(function() {
-          that.tick();
-          }, delta);
-      };
+  var i = 0;
+  var elements = document.getElementsByClassName('typewrite');
+  var txt = elements.getAttribute('data-type');
+  var speed = 50;
 
   $(document).ready(function() {
 
@@ -72,23 +48,21 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
+        function typeWriter(){
+          if (i < txt.length){
+            document.getElementsByClassName("wrap").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
         }
       },
       after: function(slider){
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
+        function typeWriter(){
+          if (i < txt.length){
+            document.getElementsByClassName("wrap").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
         }
       },
       animation: "fade",
