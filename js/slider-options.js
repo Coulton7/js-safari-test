@@ -53,15 +53,18 @@
             if (i < txtone.length) {
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
+            setTimeout(slider, speed);
           }} else if (document.getElementById('headline-2')){
             if (i < txttwo.length) {
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
+            setTimeout(slider, speed);
           }
           } else if (document.getElementById('headline-3')){
             if (i < txtthree.length) {
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
+              setTimeout(slider, speed);
             }
           }
       },
@@ -70,16 +73,19 @@
             if (i < txtone.length) {
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
+            setTimeout(slider, speed);
           }
           } else if (document.getElementById('headline-2')){
             if (i < txttwo.length) {
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
+            setTimeout(slider, speed);
           }
           } else if (document.getElementById('headline-3')){
             if (i < txtthree.length) {
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
+              setTimeout(slider, speed);
             }
           }
       },
