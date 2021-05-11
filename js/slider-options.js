@@ -50,26 +50,37 @@
       directionNav: false,
       start: function(slider){
           if (document.getElementById('headline-1')){
+            if (i < txtone.length) {
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
-          } else if (document.getElementById('headline-2')){
+          }} else if (document.getElementById('headline-2')){
+            if (i < txttwo.length) {
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
+          }
           } else if (document.getElementById('headline-3')){
+            if (i < txtthree.length) {
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
+            }
           }
       },
       after: function(slider){
           if (document.getElementById('headline-1')){
+            if (i < txtone.length) {
             document.getElementById('wrap').innerHTML += txtone.charAt(i);
             i++;
+          }
           } else if (document.getElementById('headline-2')){
+            if (i < txttwo.length) {
             document.getElementById('wrap').innerHTML += txttwo.charAt(i);
             i++;
+          }
           } else if (document.getElementById('headline-3')){
+            if (i < txtthree.length) {
               document.getElementById('wrap').innerHTML += txtthree.charAt(i);
               i++;
+            }
           }
       },
       animation: "fade",
