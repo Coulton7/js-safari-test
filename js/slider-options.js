@@ -33,17 +33,6 @@
           var that = this;
           var delta = 100 - Math.random() * 100;
 
-          if (this.isDeleting) { delta /= 2; }
-
-          if (!this.isDeleting && this.txt === fullTxt) {
-          delta = this.period;
-          this.isDeleting = false;
-          } else if (this.isDeleting && this.txt === '') {
-          this.isDeleting = false;
-          this.loopNum==1;
-          delta = 500;
-          }
-
           setTimeout(function() {
           that.tick();
           }, delta);
@@ -83,7 +72,7 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        var elements = document.getElementsByClassName('typewrite');
+        var elements = document.querySelectorAll('.flex-active-slide .typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
             var period = elements[i].getAttribute('data-period');
@@ -93,7 +82,7 @@
         }
       },
       after: function(slider){
-        var elements = document.getElementsByClassName('typewrite');
+        var elements = document.querySelectorAll('.flex-active-slide .typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
             var period = elements[i].getAttribute('data-period');
