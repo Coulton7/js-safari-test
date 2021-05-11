@@ -50,7 +50,7 @@
       start: function(slider){
         function typeWriter(){
           if (i < txt.length){
-            document.getElementsByClassName("wrap").innerHTML += txt.charAt(i);
+            document.getElementById('wrap').innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
           }
@@ -59,7 +59,7 @@
       after: function(slider){
         function typeWriter(){
           if (i < txt.length){
-            document.getElementsByClassName("wrap").innerHTML += txt.charAt(i);
+            document.getElementById('wrap').innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
           }
