@@ -77,7 +77,7 @@
         var content = ($(curSlide, id).attr("data-type"));
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
-        $(ele).hide().appendTo($(id+='p.typewrite')).each(function (i) {
+        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
             $(this).delay(50 * i).css({
                 display: 'inline',
                 opacity: 0
@@ -95,7 +95,7 @@
 
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
-        $(ele).hide().appendTo($(id+='p.typewrite')).each(function (i) {
+        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
             $(this).delay(50 * i).css({
                 display: 'inline',
                 opacity: 0
