@@ -76,7 +76,7 @@
         var id = ($(curSlide).attr("id"));
         var content = ($(id).attr("data-type"));
 
-        console.log(id);
+        console.log(content);
 
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
@@ -94,7 +94,7 @@
         var id = ($(curSlide).attr("id"));
         var content = ($(id).attr("data-type"));
 
-        console.log(id);
+        console.log(content);
 
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
