@@ -59,7 +59,7 @@
       },
       after: function(slider){
         var headline = document.getElementsByClassName('.typewrite').innerHTML;
-        if (headline == null || headline == ""){
+        if (headline != null || headline != ""){
           return true;
         }else{
         var curSlide = slider.find("li.flex-active-slide");
