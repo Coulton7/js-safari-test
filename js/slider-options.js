@@ -78,7 +78,7 @@
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
         $(ele).hide().appendTo('p.typewrite').each(function (i) {
-            $(this).delay(10 * i).css({
+            $(this).delay(50 * i).css({
                 display: 'inline',
                 opacity: 0
             }).animate({
@@ -96,7 +96,7 @@
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
         $(ele).hide().appendTo('p.typewrite').each(function (i) {
-            $(this).delay(10 * i).css({
+            $(this).delay(50 * i).css({
                 display: 'inline',
                 opacity: 0
             }).animate({
