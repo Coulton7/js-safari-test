@@ -58,10 +58,7 @@
         });
       },
       after: function(slider){
-        var headline = document.querySelectorAll('p.typewrite');
-        if (headline !== null){
-          return true;
-        }else{
+
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
         var content = ($(curSlide, id).attr("data-type"));
