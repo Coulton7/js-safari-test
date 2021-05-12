@@ -76,6 +76,8 @@
         var id = ($(curSlide).attr("id"));
         var content = ($(id).attr("data-type"));
 
+        console.log(id);
+
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
         $(ele).hide().appendTo('p.typewrite').each(function (i) {
@@ -91,6 +93,8 @@
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
         var content = ($(id).attr("data-type"));
+
+        console.log(id);
 
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
