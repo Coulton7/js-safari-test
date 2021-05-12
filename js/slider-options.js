@@ -75,7 +75,6 @@
                 opacity: 1
             }, 50);
         });
-      }
       },
       animation: "fade",
       slideshowSpeed: 5000,
