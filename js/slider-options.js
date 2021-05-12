@@ -60,6 +60,9 @@
       before: function(slider){ document.querySelectorAll('p.typewrite').innerHTML = ''; },
       after: function(slider){
 
+        var headline = document.querySelectorAll('.flex-active-slide p.typewrite');
+        if (headline !== null){
+
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
         var content = ($(curSlide, id).attr("data-type"));
@@ -76,6 +79,9 @@
                 opacity: 1
             }, 50);
           });
+        } else {
+          return true;
+        }
       },
       animation: "fade",
       slideshowSpeed: 10000,
