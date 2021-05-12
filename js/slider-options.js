@@ -72,7 +72,7 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        
+
       },
       before: function(slider){var curSlide = slider.find("li.flex-active-slide");
       var id = ($(curSlide).attr("id"));
@@ -91,6 +91,7 @@
           }, 50);
       });},
       after: function(slider){
+        delete(content);
       },
       animation: "fade",
       slideshowSpeed: 12000,
