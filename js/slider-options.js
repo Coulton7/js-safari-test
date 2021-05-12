@@ -66,7 +66,7 @@
         var id = ($(curSlide).attr("id"));
         var content = ($(curSlide, id).attr("data-type"));
 
-        console.log(content);
+        console.log(headline);
 
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
