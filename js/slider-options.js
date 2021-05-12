@@ -60,7 +60,7 @@
       after: function(slider){
 
 
-        if ($(document.querySelectorAll('.flex-active-slide p.typewrite').innerHTML !== "")){
+        if (slider.find('.flex-active-slide p.typewrite').innerHTML !== ""){
           return false;
         } else {
           var curSlide = slider.find("li.flex-active-slide");
