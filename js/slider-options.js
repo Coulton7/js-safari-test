@@ -86,7 +86,7 @@
                 opacity: 0
             }).animate({
                 opacity: 1
-            }, 100);
+            }, 10);
         });
       },
       after: function(slider){
@@ -104,7 +104,7 @@
                 opacity: 0
             }).animate({
                 opacity: 1
-            }, 100);
+            }, 10);
         });
       },
       animation: "fade",
