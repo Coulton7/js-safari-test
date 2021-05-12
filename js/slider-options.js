@@ -57,7 +57,6 @@
             }, 50);
         });
       },
-      before: function(slider){ document.querySelectorAll('p.typewrite').innerHTML = ''; },
       after: function(slider){
 
         var headline = document.querySelectorAll('.flex-active-slide p.typewrite');
