@@ -57,12 +57,9 @@
             }, 50);
         });
       },
+      before: function(slider){},
       after: function(slider){
 
-
-        if (slider.find('li.flex-active-slide p.typewrite').innerHTML !== ""){
-          return false;
-        } else {
           var curSlide = slider.find("li.flex-active-slide");
           var id = ($(curSlide).attr("id"));
           var content = ($(curSlide, id).attr("data-type"));
@@ -77,7 +74,6 @@
                   opacity: 1
               }, 50);
               });
-        }
       },
       animation: "fade",
       slideshowSpeed: 5000,
