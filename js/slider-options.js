@@ -60,26 +60,25 @@
       after: function(slider){
 
         var headline = document.querySelectorAll('.flex-active-slide p.typewrite').innerHTML;
-        if (headline === null || headline === ""){
-
-        var curSlide = slider.find("li.flex-active-slide");
-        var id = ($(curSlide).attr("id"));
-        var content = ($(curSlide, id).attr("data-type"));
-
-        console.log(headline);
-
-        var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-
-        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
-            $(this).delay(50 * i).css({
-                display: 'inline',
-                opacity: 0
-            }).animate({
-                opacity: 1
-            }, 50);
+        if (headline !== null || headline !== ""){
+          return false;
           });
         } else {
-          return false;
+          var curSlide = slider.find("li.flex-active-slide");
+          var id = ($(curSlide).attr("id"));
+          var content = ($(curSlide, id).attr("data-type"));
+
+          console.log(headline);
+
+          var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+          $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
+              $(this).delay(50 * i).css({
+                  display: 'inline',
+                  opacity: 0
+              }).animate({
+                  opacity: 1
+              }, 50);
         }
       },
       animation: "fade",
