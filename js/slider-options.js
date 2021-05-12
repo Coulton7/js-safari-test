@@ -79,7 +79,7 @@
             }, 50);
           });
         } else {
-          return true;
+          return false;
         }
       },
       animation: "fade",
