@@ -62,7 +62,6 @@
         var headline = document.querySelectorAll('.flex-active-slide p.typewrite').innerHTML;
         if (headline !== null || headline !== ""){
           return false;
-          });
         } else {
           var curSlide = slider.find("li.flex-active-slide");
           var id = ($(curSlide).attr("id"));
@@ -79,6 +78,7 @@
               }).animate({
                   opacity: 1
               }, 50);
+              });
         }
       },
       animation: "fade",
