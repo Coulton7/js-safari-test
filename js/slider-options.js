@@ -72,14 +72,6 @@
       controlNav: false,
       directionNav: false,
       start: function(slider){
-        var elements = document.querySelectorAll('.flex-active-slide .typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
       },
       after: function(slider){
         var elements = document.querySelectorAll('.flex-active-slide .typewrite');
