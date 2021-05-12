@@ -83,7 +83,7 @@
         }
       },
       animation: "fade",
-      slideshowSpeed: 10000,
+      slideshowSpeed: 5000,
       easing: "swing",
       animationLoop: true,
 
