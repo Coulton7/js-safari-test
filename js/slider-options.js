@@ -71,42 +71,41 @@
     $('.newsslider').flexslider({
       controlNav: false,
       directionNav: false,
-      start: function(slider){var curSlide = slider.find("li.flex-active-slide");
-      var id = ($(curSlide).attr("id"));
-      var content = ($(curSlide).attr("data-type"));
+      start: function(slider){
+        var curSlide = slider.find("li.flex-active-slide");
+        var id = ($(curSlide).attr("id"));
+        var content = ($(curSlide).attr("data-type"));
 
-      console.log(content);
+        console.log(content);
 
-      var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+        var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
-      $(ele).hide().appendTo('p.typewrite').each(function (i) {
-          $(this).delay(100 * i).css({
-              display: 'inline',
-              opacity: 0
-          }).animate({
-              opacity: 1
-          }, 50);
-      });},
-
+        $(ele).hide().appendTo('p.typewrite').each(function (i) {
+            $(this).delay(100 * i).css({
+                display: 'inline',
+                opacity: 0
+            }).animate({
+                opacity: 1
+            }, 50);
+        });
       },
-      before: function(slider){var curSlide = slider.find("li.flex-active-slide");
-      var id = ($(curSlide).attr("id"));
-      var content = ($(curSlide).attr("data-type"));
-
-      console.log(content);
-
-      var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-
-      $(ele).hide().appendTo('p.typewrite').each(function (i) {
-          $(this).delay(100 * i).css({
-              display: 'inline',
-              opacity: 0
-          }).animate({
-              opacity: 1
-          }, 50);
-      });},
       after: function(slider){
-        delete(content);
+        var curSlide = slider.find("li.flex-active-slide");
+        var id = ($(curSlide).attr("id"));
+        var content = ($(curSlide).attr("data-type"));
+
+        console.log(content);
+
+        var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+        $(ele).hide().appendTo('p.typewrite').each(function (i) {
+            $(this).delay(100 * i).css({
+                display: 'inline',
+                opacity: 0
+            }).animate({
+                opacity: 1
+            }, 50);
+        });
       },
       animation: "fade",
       slideshowSpeed: 12000,
