@@ -59,7 +59,7 @@
       },
       after: function(slider){
         var headline = document.querySelectorAll('p.typewrite');
-        if (headline != null){
+        if (headline !== null){
           return true;
         }else{
         var curSlide = slider.find("li.flex-active-slide");
