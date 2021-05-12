@@ -74,6 +74,7 @@
             }).animate({
                 opacity: 1
             }, 50);
+            return true;
           });
       },
       animation: "fade",
