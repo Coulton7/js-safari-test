@@ -92,7 +92,7 @@
       after: function(slider){
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
-        var content = ($(id).attr("data-type"));
+        var content = ($(curSlide).attr("data-type"));
 
         console.log(content);
 
