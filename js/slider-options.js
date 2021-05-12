@@ -60,7 +60,7 @@
       after: function(slider){
 
         var headline = document.getElementsByClassName('.typewrite').innerHTML;
-        if (headline === null){
+        if (headline === null || headline === ""){
 
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
