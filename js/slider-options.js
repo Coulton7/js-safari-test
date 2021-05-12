@@ -77,7 +77,7 @@
         });
       },
       animation: "fade",
-      slideshowSpeed: 5000,
+      slideshowSpeed: 10000,
       easing: "swing",
       animationLoop: true,
 
