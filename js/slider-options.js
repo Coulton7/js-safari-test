@@ -60,14 +60,12 @@
       after: function(slider){
 
         var headline = document.querySelectorAll('.flex-active-slide p.typewrite').innerHTML;
-        if (headline === null || headline === ""){
+        if (headline === "<span>"){
           return false;
         } else {
           var curSlide = slider.find("li.flex-active-slide");
           var id = ($(curSlide).attr("id"));
           var content = ($(curSlide, id).attr("data-type"));
-
-          console.log(headline);
 
           var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
