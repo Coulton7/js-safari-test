@@ -57,6 +57,7 @@
             }, 50);
         });
       },
+      before: function(slider){ document.querySelectorAll('p.typewrite').innerHTML = "" },
       after: function(slider){
 
         var curSlide = slider.find("li.flex-active-slide");
@@ -74,7 +75,6 @@
             }).animate({
                 opacity: 1
             }, 50);
-            return true;
           });
       },
       animation: "fade",
