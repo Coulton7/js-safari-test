@@ -58,7 +58,7 @@
         });
       },
       after: function(slider){
-        var headline = document.getElementsByClassName('.typewrite');
+        var headline = document.querySelectorAll('p.typewrite');
         if (headline != null){
           return true;
         }else{
