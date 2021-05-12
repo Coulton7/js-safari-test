@@ -9,35 +9,6 @@
            (window.innerWidth < 1200) ? 4 : 4;
   }
 
-  var TxtType = function(el, toRotate, period) {
-          this.toRotate = toRotate;
-          this.el = el;
-          this.loopNum = 0;
-          this.period = parseInt(period, 10) || 7000;
-          this.txt = '';
-          this.tick();
-      };
-
-      TxtType.prototype.tick = function() {
-          var i = this.loopNum % this.toRotate.length;
-          var fullTxt = this.toRotate[i];
-
-          if (this.isDeleting) {
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-          } else {
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-          }
-
-          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-          var that = this;
-          var delta = 100 - Math.random() * 100;
-
-          setTimeout(function() {
-          that.tick();
-          }, delta);
-      };
-
   $(document).ready(function() {
 
     $('.flexslider').flexslider({
@@ -87,6 +58,10 @@
         });
       },
       after: function(slider){
+        var headline = document.getElementsByClassName('.typewrite').innerHTML;
+        if (headline == null || headline == ""){
+          return true;
+        }else{
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
         var content = ($(curSlide, id).attr("data-type"));
@@ -103,6 +78,7 @@
                 opacity: 1
             }, 50);
         });
+      }
       },
       animation: "fade",
       slideshowSpeed: 12000,
