@@ -64,7 +64,7 @@
           var id = ($(curSlide).attr("id"));
           var content = ($(curSlide, id).attr("data-type"));
 
-          var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+          var ele = '<span class="headline">' + content.split('').join('</span><span clas="headline">') + '</span>';
 
           $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
               $(this).delay(50 * i).css({
