@@ -58,7 +58,7 @@
         });
       },
       after: function(slider){
-        var headline = document.getElementsByClassName('.typewrite').innerHTML;
+        var headline = document.getElementsByClassName('.typewrite');
         if (headline != null || headline != ""){
           return true;
         }else{
