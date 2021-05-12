@@ -75,14 +75,6 @@
                 opacity: 1
             }, 50);
           });
-          $(ele).hide().appendTo($('p.typewrite')).each(function (i) {
-              $(this).delay(50 * i).css({
-                  display: 'inline',
-                  opacity: 1
-              }).animate({
-                  opacity: 0
-            }, 50);
-        });
       },
       animation: "fade",
       slideshowSpeed: 10000,
