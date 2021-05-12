@@ -59,8 +59,8 @@
       },
       after: function(slider){
 
-        var headline = document.querySelectorAll('.flex-active-slide p.typewrite').innerHTML;
-        if (headline === "<span>"){
+
+        if ($(document.querySelectorAll('.flex-active-slide p.typewrite').innerHTML === "")){
           return false;
         } else {
           var curSlide = slider.find("li.flex-active-slide");
