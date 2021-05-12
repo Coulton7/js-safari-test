@@ -57,7 +57,7 @@
             }, 50);
         });
       },
-      before: function(slider){},
+      before: function(slider){ $("span").remove(); },
       after: function(slider){
 
           var curSlide = slider.find("li.flex-active-slide");
