@@ -81,7 +81,7 @@
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
         $(ele).hide().appendTo('p.typewrite').each(function (i) {
-            $(this).delay(100 * i).css({
+            $(this).delay(10 * i).css({
                 display: 'inline',
                 opacity: 0
             }).animate({
@@ -92,14 +92,14 @@
       after: function(slider){
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
-        var content = ($(curSlide).attr("data-type"));
+        var content = ($(curSlide, id).attr("data-type"));
 
         console.log(content);
 
         var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
         $(ele).hide().appendTo('p.typewrite').each(function (i) {
-            $(this).delay(100 * i).css({
+            $(this).delay(10 * i).css({
                 display: 'inline',
                 opacity: 0
             }).animate({
