@@ -11,7 +11,7 @@
 
     jQuery(window).on("resize scroll", function(){
       var scrollPosition = jQuery(window).scrollTop();
-      var viewportHeight = window.innerHeight();
+      var viewportHeight = window.innerHeight;
       var offset = jQuery("#car-counter").offset();
       var elementHeight = jQuery("#car-counter").height();
       if(offset.top > scrollPosition - elementHeight && offset.top < scrollPosition + viewportHeight) {
