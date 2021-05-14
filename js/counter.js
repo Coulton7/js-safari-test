@@ -9,7 +9,7 @@
 
     var count = new CountUp('car-counter', 0, 529500000, 0, 7,  options);
 
-    jQuery(window).on("resize scroll", function(){
+    jQuery(window).on("resize scroll load", function(){
       var scrollPosition = jQuery(window).scrollTop();
       var viewportHeight = window.innerHeight;
       var offset = jQuery("#car-counter").offset();
