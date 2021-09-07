@@ -14,13 +14,21 @@ $(document).ready(function() {
     $(this).addClass("on");
     $('body').addClass("noscroll");
     $('.location-pop-up').dialog({
-      width: "75%",
-      height: 'auto',
-      modal:true,
-      title: 'Location Details',
-      close: function(){
+      open: function(event, ui) {
+        $('.ui-dialog-titlebar-close').removeClass("ui-button-icon-primary ui-icon ui-icon-closethick").html('<span class="close-dialog">x</span>');
+        $('.ui-dialog-title').addClass('h2').addClass('text-center');
       },
+      width: "75%",
+      height: '600',
+      modal: true,
+      title: "Regional sales & contact Details for "+ link,
+      draggable: false,
+      resizable: false,
+      close: function() {},
     });
+    $('.location-pop-up').on("dialogclose", function() {
+      allRegions.removeClass("on");
+      $('body').removeClass("noscroll");
     $('.location-pop-up').on("dialogclose", function(){
       allRegions.removeClass("on");
       $('body').removeClass("noscroll");
