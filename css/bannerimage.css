@@ -20,6 +20,10 @@ p a[target="_blank"]:after {
   font-weight: 700;
 }
 
+.white-text {
+  color: #ffffff;
+}
+
 a {
   color: #dd1e25;
   text-decoration: none;
