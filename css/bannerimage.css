@@ -1374,20 +1374,21 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .close-dialog {
-    color: #ffffff;
-    position: fixed;
-    font-size: 3em;
-    float: right;
-    z-index: 1032;
-    top: 1.5em;
-    right: 1.2em;
-    height: 1em;
-    width: 1em;
-    transition: 0.5s;
-    pointer-events: auto;
-    cursor: pointer;
-    opacity: 1;
-    font-weight: normal;
+  color: #ffffff;
+  position: fixed;
+  font-size: 3em;
+  float: right;
+  z-index: 1032;
+  top: 1.5em;
+  right: 1.2em;
+  height: 1em;
+  width: 1em;
+  transition: 0.5s;
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 1;
+  font-weight: normal;
+  text-indent: 0;
 }
 
 .ui-button-icon-only{
