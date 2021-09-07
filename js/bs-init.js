@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   allRegions.on("click", function() {
     var link = ($(this).attr('id'));
-    if (link == "Yorkshire_and_the_Humber"){
+    if (link == "Yorkshire_and_the_Humber") {
       $('.millClose').addClass('show');
     }
     allRegions.removeClass("on");
@@ -21,7 +21,7 @@ $(document).ready(function() {
       width: "75%",
       height: '600',
       modal: true,
-      title: "Regional sales & contact Details for "+ link,
+      title: "Regional sales & contact Details for " + link,
       draggable: false,
       resizable: false,
       close: function() {},
@@ -29,12 +29,13 @@ $(document).ready(function() {
     $('.location-pop-up').on("dialogclose", function() {
       allRegions.removeClass("on");
       $('body').removeClass("noscroll");
-    $('.location-pop-up').on("dialogclose", function(){
-      allRegions.removeClass("on");
-      $('body').removeClass("noscroll");
-      if(link == "Yorkshire_and_the_Humber"){
-        $('.millClose').removeClass('show');
-      }
+      $('.location-pop-up').on("dialogclose", function() {
+        allRegions.removeClass("on");
+        $('body').removeClass("noscroll");
+        if (link == "Yorkshire_and_the_Humber") {
+          $('.millClose').removeClass('show');
+        }
+      });
     });
   });
 });
