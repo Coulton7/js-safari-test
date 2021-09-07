@@ -1367,10 +1367,10 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
-  height: 0;
-  width: 0;
-  padding: 0;
-  border: none;
+  height: 0!important;
+  width: 0!important;
+  padding: 0!important;
+  border: none!important;
 }
 
 .close-dialog {
@@ -1388,6 +1388,10 @@ ul.resource-cats a, ul.about-us-cats a {
     cursor: pointer;
     opacity: 1;
     font-weight: normal;
+}
+
+.ui-button-icon-only{
+  text-indent: 0;
 }
 
 .typing-erase-link {
