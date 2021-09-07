@@ -1334,15 +1334,43 @@ ul.resource-cats a, ul.about-us-cats a {
   cursor: pointer;
 }
 
-.ui-widget-overlay{
-  background: rgba(0, 0, 0, .85)!important;
-  opacity: initial!important;
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, .85) !important;
+  opacity: initial !important;
   overflow-y: scroll;
   transition: 0.5s;
 }
 
+.ui-widget-header {
+  background: none !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.ui-widget-content{
+  background: none!important;
+  border: none!important;
+  color: #ffffff!important;
+}
+
 .ui-widget-content a{
   color: #dd1e25!important;
+}
+
+.ui-widget {
+  font-size: inherit !important;
+}
+
+.ui-widget-content a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  height: 0;
+  width: 0;
+  padding: 0;
+  border: none;
 }
 
 .typing-erase-link {
