@@ -14,7 +14,7 @@ $(document).ready(function() {
     $(this).addClass("on");
     $('body').addClass("noscroll");
     $('.location-pop-up').dialog({
-      width: "70%",
+      width: "75%",
       height: 'auto',
       modal:true,
       title: 'Location Details',
