@@ -18,9 +18,10 @@ $(document).ready(function() {
         $('.ui-dialog-titlebar-close').removeClass("ui-button-icon-primary ui-icon ui-icon-closethick").html('<span class="close-dialog">x</span>');
         $('.ui-dialog-title').addClass('h2').addClass('text-center');
       },
-      width: "75%",
-      height: '600',
+      width: "70%",
+      height: ($(window).height()-250),
       modal: true,
+      position: {my:"bottom", at:"bottom", of: screen},
       title: "Regional sales & contact Details for " + link,
       draggable: false,
       resizable: false,
