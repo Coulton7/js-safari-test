@@ -1406,6 +1406,24 @@ ul.resource-cats a, ul.about-us-cats a {
   width: 11px;
 }
 
+.ui-dialog-content::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+.ui-dialog-content::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+.ui-dialog-content::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+.ui-dialog-content::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+
 .close-dialog {
   color: #ffffff;
   position: fixed;
