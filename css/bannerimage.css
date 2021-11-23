@@ -1398,6 +1398,14 @@ ul.resource-cats a, ul.about-us-cats a {
   background: rgba(0,0,0,0.5)!important;
 }
 
+.ui-dialog-content-webkit-scrollbar-button:single-button {
+  background-color: #rgba(0,0,0,0.8);
+  display: block;
+  border-style: solid;
+  height: 11px;
+  width: 11px;
+}
+
 .close-dialog {
   color: #ffffff;
   position: fixed;
