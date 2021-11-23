@@ -1377,6 +1377,27 @@ ul.resource-cats a, ul.about-us-cats a {
   border: none!important;
 }
 
+.ui-dialog-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 11px;
+  height: 11px;
+}
+
+.ui-dialog-content::-webkit-button{
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.ui-dialog-content::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .8);
+  border: 1px solid #535354;
+}
+
+.ui-dialog .ui-dialog-content {
+  background: rgba(0,0,0,0.5)!important;
+}
+
 .close-dialog {
   color: #ffffff;
   position: fixed;
