@@ -1459,7 +1459,7 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .iceberg-background {
-  background-image: url("Images/Simplicity.png");
+  background-image: url("/js-safari-test/Images/Simplicity.png");
   background-size: cover;
   padding-top: 28.13%;
   padding-bottom: 28.13%;
