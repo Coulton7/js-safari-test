@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;
 
   if ("IntersectionObserver" in window) {
-    lazyloadImages = document.querySelectorAll(".lazy");
+    lazyloadImages = document.querySelectorAll(".lazy-back");
     var imageObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           var image = entry.target;
-          image.classList.remove("lazy");
+          image.classList.remove("lazy-back");
           imageObserver.unobserve(image);
         }
       });
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {
     var lazyloadThrottleTimeout;
-    lazyloadImages = document.querySelectorAll(".lazy");
+    lazyloadImages = document.querySelectorAll(".lazy-back");
 
     function lazyload () {
       if(lazyloadThrottleTimeout) {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lazyloadImages.forEach(function(img) {
             if(img.offsetTop < (window.innerHeight + scrollTop)) {
               img.src = img.dataset.src;
-              img.classList.remove('lazy');
+              img.classList.remove('lazy-back');
             }
         });
         if(lazyloadImages.length == 0) {

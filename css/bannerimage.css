@@ -1453,7 +1453,7 @@ ul.resource-cats a, ul.about-us-cats a {
   animation: 12s typing-link 4s steps(50, end) infinite;
 }
 
-.iceberg-background.lazy {
+.iceberg-background.lazy-back {
   background-image: none;
   background-color: #f1f1fa
 }
@@ -1464,7 +1464,7 @@ ul.resource-cats a, ul.about-us-cats a {
   padding-top: 28.13%;
   padding-bottom: 28.13%;
   background-repeat: no-repeat;
-} 
+}
 
 @keyframes typing-link {
   0% { width: 0 }
