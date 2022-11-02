@@ -1425,7 +1425,7 @@ ul.resource-cats a, ul.about-us-cats a {
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
 }
 
 .close-dialog {
