@@ -15,18 +15,18 @@
             $(y).addClass('fixed-top');
         } else {
             x.style.height = "100%";
-            $('.main').addClass('active');
-            $("body").addClass('noscroll');
-            $('#overlay-btn').removeClass('overlay-btn');
-            $('.search-block').addClass('overlay-search');
-            $('.navigation_col').addClass('overlay-menu');
-            $(y).removeClass('fixed-top');
             if($('#prodForm').hasClass('in')) {
               $('#prodForm').modal('hide')
             }
             if($('#location-details').dialog('isOpen') === true) {
               $('#location-details').dialog('close');
             }
+            $('.main').addClass('active');
+            $("body").addClass('noscroll');
+            $('#overlay-btn').removeClass('overlay-btn');
+            $('.search-block').addClass('overlay-search');
+            $('.navigation_col').addClass('overlay-menu');
+            $(y).removeClass('fixed-top');
         }
     });
 
