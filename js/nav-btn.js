@@ -24,6 +24,9 @@
             if($('#prodForm').hasClass('in')) {
               $('#prodForm').modal('hide')
             }
+            if($('#location-details').dialog('isOpen') === true) {
+              $('#location-details').dialog('close');
+            }
         }
     });
 
