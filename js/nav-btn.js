@@ -13,7 +13,7 @@
             $('.search-block').removeClass('overlay-search');
             $('.navigation_col').removeClass('overlay-menu');
             $(y).addClass('fixed-top');
-            if($('#prodForm').data('modal').isShown) {
+            if($('#prodForm').hasClass('in') {
               $('#prodForm').modal('hide')
             }
         } else {
