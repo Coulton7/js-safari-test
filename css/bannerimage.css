@@ -1424,13 +1424,17 @@ ul.resource-cats a, ul.about-us-cats a {
   border-color: #777777 transparent transparent transparent;
 }
 
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
 .close-dialog {
   color: #ffffff;
   position: fixed;
   font-size: 3em;
   float: right;
   z-index: 1032;
-  top: 1.5em;
+  top: 2.5em;
   right: 1.2em;
   height: 1em;
   width: 1em;
@@ -1486,10 +1490,6 @@ ul.resource-cats a, ul.about-us-cats a {
   cursor: pointer;
   opacity: 1;
   font-weight: normal;
-}
-
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 .modal .close:hover {
