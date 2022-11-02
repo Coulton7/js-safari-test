@@ -1488,6 +1488,10 @@ ul.resource-cats a, ul.about-us-cats a {
   font-weight: normal;
 }
 
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
 .modal .close:hover {
   color: #dd1e25;
   text-shadow: none;
