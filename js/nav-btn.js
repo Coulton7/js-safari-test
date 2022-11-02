@@ -13,9 +13,6 @@
             $('.search-block').removeClass('overlay-search');
             $('.navigation_col').removeClass('overlay-menu');
             $(y).addClass('fixed-top');
-            if($('#prodForm').hasClass('in')) {
-              $('#prodForm').modal('hide')
-            }
         } else {
             x.style.height = "100%";
             $('.main').addClass('active');
@@ -24,6 +21,9 @@
             $('.search-block').addClass('overlay-search');
             $('.navigation_col').addClass('overlay-menu');
             $(y).removeClass('fixed-top');
+            if($('#prodForm').hasClass('in')) {
+              $('#prodForm').modal('hide')
+            }
         }
     });
 
