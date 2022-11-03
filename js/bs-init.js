@@ -7,8 +7,10 @@ $(document).ready(function() {
 
   allRegions.on("click", function() {
     var link = ($(this).attr('id'));
+    var county;
     if (link == "Yorkshire_and_the_Humber") {
       $('.millClose').addClass('show');
+      county = "Yorkshire and the Humber";
     }
     allRegions.removeClass("on");
     $(this).addClass("on");
@@ -23,7 +25,7 @@ $(document).ready(function() {
       modal: true,
       zIndex: 500,
       position: { my: "bottom", at:"bottom", of: window},
-      title: "Regional sales & contact Details for " + link,
+      title: "Regional sales & contact Details for " + county,
       draggable: false,
       resizable: false,
       close: function() {},
