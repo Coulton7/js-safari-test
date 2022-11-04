@@ -16,5 +16,5 @@ $(document).ready(function() {
     $('#location-details').modal('show');
     $(this).addClass("on");
     $('body').addClass("noscroll");
-  })
+  });
 });
