@@ -2,12 +2,7 @@
   $(document).ready(function() {
     var bootstrapButton = $.fn.button.noConflict();
     $.fn.bootstrapBtn = bootstrapButton;
-    var dialogWidth = "70%";
-    if ($(window).width() < 767 ) {
-      dialogWidth = "100%";
-    };
     var allRegions = $("#Lands > *");
-
     allRegions.on("click", function() {
       var link = ($(this).attr('id'));
       var state;
@@ -293,24 +288,10 @@
       }
 
       allRegions.removeClass("on");
+      $('#location-details').modal('show');
       $(this).addClass("on");
       $('body').addClass("noscroll");
-      $('.location-pop-up').dialog({
-        open: function(event, ui) {
-          $('.ui-dialog-titlebar-close').removeClass("ui-button-icon-primary ui-icon ui-icon-closethick").html('<span class="close-dialog">&#215;</span>');
-          $('.ui-dialog-title').addClass('h2').addClass('text-center');
-          $('.ui-dialog-content').scrollTop(0);
-        },
-        width: dialogWidth,
-        height: ($(window).height()-250),
-        modal: true,
-        position: {my:"bottom", at:"bottom", of: window},
-        title: "Regional sales and contact Details for "+ state,
-        draggable: false,
-        resizable: false,
-        close: function() {},
-      });
-      $('.location-pop-up').on("dialogclose", function() {
+      $('#location-details').on("hidden.bs.modal", function() {
         allRegions.removeClass("on");
         $('body').removeClass("noscroll");
 
