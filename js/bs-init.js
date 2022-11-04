@@ -6,7 +6,7 @@ $(document).ready(function() {
   var allRegions = $("#Map > *");
 
   allRegions.on("click", function() {
-    var link = (allRegions.attr('id'));
+    var link = ($(this).attr('id'));
     var county;
     if (link == "Yorkshire_and_the_Humber") {
       county = "Yorkshire and the Humber";
