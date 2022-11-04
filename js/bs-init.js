@@ -8,7 +8,7 @@ $(document).ready(function() {
   allRegions.on("click", function() {
     var link = ($(this).attr('id'));
     var county;
-    if (link == "Yorkshire_and_the_Humber") {
+    if (link === "Yorkshire_and_the_Humber") {
       county = "Yorkshire and the Humber";
       $('millClose').addClass('show');
     }
