@@ -288,10 +288,10 @@
       }
 
       allRegions.removeClass("on");
-      $('#location-info').modal('show');
+      $('.location-pop-up').modal('show');
       $(this).addClass("on");
       $('body').addClass("noscroll");
-      $('#location-info').on("hidden.bs.modal", function() {
+      $('.location-pop-up').on("hidden.bs.modal", function() {
         allRegions.removeClass("on");
         $('body').removeClass("noscroll");
 
