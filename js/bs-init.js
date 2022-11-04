@@ -12,8 +12,6 @@ $(document).ready(function() {
       county = "Yorkshire and the Humber";
       $('.millClose').addClass('show');
     }
-    console.log(link);
-    console.log(county)
     allRegions.removeClass("on");
     $('#location-details').modal('show');
     $(this).addClass("on");
