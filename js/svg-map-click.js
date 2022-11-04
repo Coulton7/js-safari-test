@@ -288,10 +288,10 @@
       }
 
       allRegions.removeClass("on");
-      $('#location-details').modal('show');
+      $('#location-info').modal('show');
       $(this).addClass("on");
       $('body').addClass("noscroll");
-      $('#location-details').on("hidden.bs.modal", function() {
+      $('#location-info').on("hidden.bs.modal", function() {
         allRegions.removeClass("on");
         $('body').removeClass("noscroll");
 
