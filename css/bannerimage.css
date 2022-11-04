@@ -20,7 +20,7 @@ p a[target="_blank"]:after {
   font-weight: 700;
 }
 
-.white-text {
+.white-text, .white-text p {
   color: #ffffff;
 }
 
