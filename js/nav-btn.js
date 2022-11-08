@@ -18,6 +18,9 @@
             if($('#prodForm').hasClass('in')) {
               $('#prodForm').modal('hide')
             }
+            if($('#resForm').hasClass('in')) {
+              $('#resForm').modal('hide')
+            }
             if($('#location-details').dialog('isOpen') === true) {
               $('#location-details').dialog('close');
             }
@@ -45,6 +48,9 @@
           $(y).addClass('fixed-top');
         } else {
           x.style.height = "100%";
+          if($('#location-details').dialog('isOpen') === true) {
+            $('#location-details').dialog('close');
+          }
           $('.main').addClass('active');
           $("body").addClass('noscroll');
           $('#overlay-btn').removeClass('overlay-btn');
