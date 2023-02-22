@@ -4636,7 +4636,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     min-height: 32em;
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
-    background-image: url(Images/banner/stock-photo-steam-leakage-of-equipment-in-boiler-plant-enegy-saving-concept-industry-plant-2055125513.jpg);
+    background-image: url(/Images/banner/stock-photo-steam-leakage-of-equipment-in-boiler-plant-enegy-saving-concept-industry-plant-2055125513.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(8,14,34);
