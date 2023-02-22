@@ -4,278 +4,1097 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+  <script type="text/javascript" src="js/chosen-init.js"></script>
+  <script type="text/javascript" src="js/init-bs.js"></script>
+  <script type="text/javascript" src="js/contact-icon.js"></script>
+  <script type="text/javascript" src="js/fade-text.js"></script>
+  <script type="text/javascript" src="js/home-carousel-hider.js"></script>
+  <script type="text/javascript" src="js/slider-options.js"></script>
+  <script type="text/javascript" src="js/logoscroll.js"></script>
+  <script type="text/javascript" src="js/lazyload-background-img.js"></script>
+  <script type="text/javascript" src="js/shadow-drop-mobile.js"></script>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/vex.css">
-  <link rel="stylesheet" type="text/css" href="css/vex-theme-top.css">
-  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
-  <link rel="stylesheet" type="text/css" href="css/bannerimage.css">
-  <link rel="stylesheet" type="text/css" href="css/chosen.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script type="text/javascript" src="js/contact-icon.min.js"></script>
-  <script type="text/javascript" src="js/fade-text.min.js"></script>
-  <script type="text/javascript" src="js/logoscroll.js"></script>
-  <script type="text/javascript" src="js/smooth-scroll.js"></script>
-  <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-  <script type="text/javascript" src="js/slider-options.js"></script>
-  <script type="text/javascript" src="js/maintenance-counter.js"></script>
-  <script type="text/javascript" src="js/reg-mark.js"></script>
-  <script type="text/javascript" src="js/nav-btn.js"></script>
-  <script type="text/javascript" src="js/bs-init.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
-  <script type="text/javascript" src="js/counter.js"></script>
-  <script type="text/javascript" src="js/lazyload-background-img.js"></script>
-  <script type="text/javascript" src="js/svg-map-click.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $(".chzn-select").chosen();
-    });
-  </script>
-  <script type="text/javascript" charset="utf-8">
-    $(function() {
-      var hashTab = window.location.hash;
-      if (hashTab != '') {
-        $('.nav-tabs [href="' + hashTab + '"]').tab('show');
-        $(hashTab).addClass('active');
-      }
-    });
-  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts-style.css">
+  <link rel="stylesheet" type="text/css" href="css/regions-style.css">
+  <link rel="stylesheet" type="text/css" href="css/block-style.css">
+  <link rel="stylesheet" type="text/css" href="css/field-style.css">
+  <link rel="stylesheet" type="text/css" href="css/global-style.css">
 </head>
 
-<body class="navbar-is-fixed-top">
-  <div class="container-fluid bannercontainer">
-    <div class="row bannerimage">
-      <div class="row waveupper row-eq-height">
-        <div class="col-lg-2 col-md-2 col-xs-1 fullscreen">
-          <a>
-            <div class="wavelogo">
-              <img class="wavelogo" src="Images/logo.svg" img alt="logo"></img>
+<body class="front">
+  <div class="row bannerimage">
+    <div class="row waveupper row-eq-height">
+      <div class="col-sm-2 col-xs-1 fullscreen">
+        <a title="Home" class="logo-link" href="/en">
+          <div class="wavelogo">
+            <img class="wavelogo" src="Images/AES-logo21.svg" alt="logo">
+          </div>
+        </a>
+        <img class="uppercurve" src="Images/wave-upper.svg" alt="uppercurve">
+        <a class="logo navbar-btn pull-left" href="/en" title="Home">
+          <img src="Images/textonlylogo.svg" alt="Home " class="textlogo img-adaptive">
+        </a>
+      </div>
+      <div class="col-sm-10 col-xs-11 fullscreen">
+        <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
-          </a>
-          <img class="uppercurve" src="Images/wave-upper.svg" img alt="uppercurve"></img>
-          <a class=" navbar-btn pull-left" title="">
-            <img src="Images/textonlylogo.svg" class="textlogo img-adaptive" alt="image responsive" />
-          </a>
-        </div>
-
-        <div class="col-sm-10 col-xs-11 fullscreen">
-          <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" id="mobile-overlay" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-            </div>
-            <div class="navbar-collapse collapse">
-              <div class="container-fluid navbar-container">
-                <nav role="navigation">
-                  <ul class="menu nav navbar-nav">
-                    <li><a href="#" id="ind-selector">Industry</a></li>
-                    <li><a href="#" id="prod-selector">Product</a></li>
-                    <li><a href="#">Media Centre</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                  </ul>
-
-                  <div class="region region-navigation">
+          </div>
+          <div class="navbar-collapse collapse" aria-expanded="false">
+            <div class="container-fluid navbar-container">
+              <nav role="navigation">
+                <ul class="menu nav navbar-nav">
+                  <li class="first leaf"><a href="/en/industry">Industry</a></li>
+                  <li class="leaf"><a href="/en/product">Product</a></li>
+                  <li class="leaf"><a href="/en/services" title="Services">Services</a></li>
+                  <li class="leaf"><a href="/en/about-us" title="About Us">About Us</a></li>
+                  <li class="leaf"><a href="/en/resources" title="Resources">Brochures &amp; Downloads</a></li>
+                  <li class="last leaf hidden-lg hidden-md hidden-sm"><a href="/en/customer-portal" rel="nofollow">Customer Portal</a></li>
+                </ul>
+                <div class="region region-navigation">
+                  <section id="block-block-202" class="block block-block clearfix">
                     <a class="hidden-xs overlay-btn" id="overlay-btn">
-                      <i class="fas fa-bars"></i>  Menu
+                      <i class="fas fa-bars" aria-hidden="true"></i>
+                      <div class="inline hidden-sm hidden-xs"> Menu</div>
                     </a>
                     <div id="myNav" class="overlay-main">
                       <div class="overlay-content">
                         <div class="col-md-4 col-md-offset-2 col-sm-6 col-sm-offset-1">
                           <ul class="product-cats list-unstyled">
-                            <li><a href="#">Bearing Protection</a></li>
-                            <li><a href="#">Cartridge Mechanical Seals</a></li>
-                            <li><a href="#">Component Seals</a></li>
-                            <li><a href="#">Gas Seals</a></li>
-                            <li><a href="#">Gland Packing</a></li>
-                            <li><a href="#">Seal Support System</a></li>
-                            <li><a href="#">Seal Refurbishment</a></li>
+                            <li><a class="no-dash" href="/en/product/bearing-protection">Bearing Protection</a></li>
+                            <li><a class="no-dash" href="/en/product/cartridge-mechanical-seals">Cartridge Mechanical Seals</a></li>
+                            <li><a class="no-dash" href="/en/product/component-seals">Component Seals</a></li>
+                            <li><a class="no-dash" href="/en/product/gas-seals">Gas Seals</a></li>
+                            <li><a class="no-dash" href="/en/product/gland-packing">Gland Packing</a></li>
+                            <li><a class="no-dash" href="/en/product/seal-support-systems">Seal Support System</a></li>
+                            <li><a class="no-dash" href="/en/services/seal-refurbishment">Seal Refurbishment</a></li>
                           </ul>
                         </div>
                         <div class="col-md-3 hidden-sm hidden-xs">
                           <ul class="about-us-cats list-unstyled">
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Certifications and Standards</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Customer Portal</a></li>
-                            <li><a href="#">Customer Training</a></li>
-                            <li><a href="#">Locations</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Sustainability</a>
+                            <li><a class="no-dash" href="/en/careers">Careers</a></li>
+                            <li><a class="no-dash" href="/en/about-us/certifications-and-standards">Certifications and Standards</a></li>
+                            <li><a class="no-dash" href="/contact-us">Contact Us</a></li>
+                            <li><a class="no-dash" href="/en/customer-portal">Customer Portal</a></li>
+                            <li><a class="no-dash" href="/en/services/customer-training">Customer Training</a></li>
+                            <li><a class="no-dash" href="/locations">Locations</a></li>
+                            <li><a class="no-dash" href="/en/article">News</a></li>
+                            <li><a class="no-dash" href="/en/about-us/sustainability">Sustainability</a>
+                            </li>
                             <li>
+                            </li>
                           </ul>
                         </div>
                         <div class="col-md-3 col-sm-3">
                           <ul class="resource-cats list-unstyled">
-                            <li><a href="#">Academy</a></li>
-                            <li><a href="#">API Plans</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Industry Guides</a></li>
-                            <li><a href="#">Product Brochures</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">White Papers</a></li>
+                            <li><a class="no-dash" href="/en/resources/academy">Academy</a></li>
+                            <li><a class="no-dash" href="/en/resources/api-plans">API Plans</a></li>
+                            <li><a class="no-dash" href="/en/resources/case-studies">Case Studies</a></li>
+                            <li><a class="no-dash" href="/en/resources/industry-guides">Industry Guides</a></li>
+                            <li><a class="no-dash" href="/en/resources/product-brochure">Product Brochures</a></li>
+                            <li><a class="no-dash" href="/en/resources/video">Video</a></li>
+                            <li><a class="no-dash" href="/en/resources/whitepapers">White Papers</a></li>
+                            <li><a class="no-dash" href="/en/terms-and-conditions">Legal &amp; Policies</a></li>
                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="section-shadow-menu"></div>
+        </header>
+      </div>
+    </div>
+    <div class="navigation_col">
+      <div class="action-menu text-center">
+        <div class="col-md-2 col-sm-1 col-xs-0 fullscreen">
+        </div>
+        <div class="col-md-10 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-12 no-padding">
+          <div class="region region-navigation-col fit-menu">
+            <section id="block-search-api-page-node-taxonomy-search" class="block block-search-api-page search-block clearfix">
+              <form action="/en" method="post" id="search-api-page-search-form-node-taxonomy-search" accept-charset="UTF-8">
+                <div>
+                  <div class="form-item form-item-keys-5 form-type-textfield form-group"><input placeholder="Enter your keywords" class="form-control form-text" type="text" id="edit-keys-5" name="keys_5" value="" size="15" maxlength="128">
+                  </div><input type="hidden" name="id" value="5">
+                  <button type="submit" id="edit-submit-5" name="op" value="Search" class="btn btn-primary form-submit">Search</button>
+                  <input type="hidden" name="form_build_id" value="form-SHuvAtCSxMTy8X3FGmBV3ybzFkSO0CAfeWB-X4T4uwI">
+                  <input type="hidden" name="form_id" value="search_api_page_search_form_node_taxonomy_search">
+                </div>
+              </form>
+            </section>
+            <section id="block-block-138" class="block block-block cust-portal hidden-sm hidden-xs clearfix">
+              <a href="https://www.aesseal.com/en/customer-portal" rel="nofollow"><span class="hidden-md">Customer</span> Portal <i class="fas fa-sign-in-alt cust-portal-text" aria-hidden="true"></i></a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="preface front__flex-margin black-background no-padding">
+      <div class="row row-flex-col">
+        <div class="col-sm-12 fullscreen">
+          <div class="preface-main full-height">
+            <div class="region region-preface">
+              <section id="block-block-141" class="block block-block clearfix">
+                <div class="home-slider-height fullscreen">
+                  <div class="full-height full-width row">
+                    <div id="carousel-fade" class="carousel slide carousel-fade full-height" data-interval="false" data-ride="carousel">
+                      <div class="carousel-inner full-height" aria-owns="news esg tech cust-service prod" role="listbox">
+
+                        <div class="item active" role="option" id="news">
+                          <div class="row full-height flex padding-top-2em">
+                            <div class="carousel-caption col-sm-12 full-height carousel-fill">
+                              <div class="col-lg-5 col-lg-offset-2 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 mobile-carousel-caption margin-bottom-3em">
+                                <div class="flex-header">
+                                  <h1 class="white-text carousel-text-shadow">New BHAG for a new era</h1>
+                                </div>
+                                <div class="col-sm-12 flexslider transparent-background">
+                                  <ul class="slides">
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Find out what’s the most important thing for AES Engineering Ltd Group’s future… it may not be what you think.</h4>
+                                    </li>
+                                  </ul>
+                                  <div class="find-out-more">
+                                    <a href="https://www.aesseal.com/en/article/new-bhag-new-era" class="btn btn-lightblue btn-lg"><span class="animate__animated animate__fadeIn animate__delay-1s">Find Out More<span></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 hidden-sm hidden-xs full-height position-rel">
+                                <img src="https://static.aesseal.com/photo/wavehead/Logo-Glass.png" class="img-responsive slider-img animate__animated animate__fadeInRight animate__delay animate__delay-1s" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item lazy-back" role="option" id="esg">
+                          <div class="row full-height flex padding-top-2em">
+                            <div class="carousel-caption col-sm-12 full-height carousel-fill">
+                              <div class="col-lg-5 col-lg-offset-2 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 mobile-carousel-caption margin-bottom-3em">
+                                <div class="flex-header">
+                                  <h1 class="white-text carousel-text-shadow">Net Zero Globally</h1>
+                                </div>
+                                <div class="col-sm-12 flexslider transparent-background">
+                                  <ul class="slides">
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Environmental, social and corporate governance</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Independent verification confirms <strong>net negative for Scope 1, 2 & 3 emissions for 2020</strong></h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow"><strong>64,200 tonnes of CO<sub>2</sub>e emissions</strong> avoided by using our Water Management System.</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow"><strong>£1m charitable fund</strong> available to help fund community projects</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Helping companies save <strong>95 billion litres</strong> of water each year</h4>
+                                    </li>
+                                  </ul>
+                                  <div class="find-out-more">
+                                    <a href="/en/about-us/sustainability" class="btn btn-lightblue btn-lg"><span class="animate__animated animate__fadeIn animate__delay-1s">Find Out More</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 hidden-sm hidden-xs full-height position-rel">
+                                <img src="https://static.aesseal.com/photo/wavehead/sustainability-hero.png" class="img-responsive slider-img animate__animated animate__fadeInRight animate__delay animate__delay-1s" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item lazy-back" role="option" id="tech">
+                          <div class="row full-height flex padding-top-2em">
+                            <div class="carousel-caption col-sm-12 full-height carousel-fill">
+                              <div class="col-lg-5 col-lg-offset-2 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 mobile-carousel-caption margin-bottom-3em">
+                                <div class="flex-header">
+                                  <h1 class="white-text carousel-text-shadow">Advanced Technology</h1>
+                                </div>
+                                <div class="col-sm-12 flexslider transparent-background">
+                                  <ul class="slides">
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Our world class manufacturing facilities use the latest in machine tool technology.</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Over 7% of annual sales revenue has been reinvested in R&D over several decades.</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Leading to the most advanced range of sealing technology available globally.</h4>
+                                    </li>
+                                  </ul>
+                                  <div class="find-out-more">
+                                    <a href="/en/about-us/technology-and-innovation" class="btn btn-lightblue btn-lg"><span class="animate__animated animate__fadeIn animate__delay-1s">Find Out More</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 hidden-sm hidden-xs full-height position-rel">
+                                <img src="https://static.aesseal.com/photo/wavehead/technology-hero.png" class="img-responsive slider-img animate__animated animate__fadeInRight animate__delay animate__delay-1s" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item lazy-back" role="option" id="cust-service">
+                          <div class="row full-height flex padding-top-2em">
+                            <div class="carousel-caption col-sm-12 full-height carousel-fill">
+                              <div class="col-lg-5 col-lg-offset-2 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 mobile-carousel-caption margin-bottom-3em">
+                                <div class="flex-header">
+                                  <h1 class="white-text carousel-text-shadow">Customer Service</h1>
+                                </div>
+                                <div class="col-sm-12 flexslider transparent-background">
+                                  <ul class="slides">
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">We aim to give such exceptional service that you need never seek another source of supply.</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Quality is non-negotiable – it’s the thread that weaves together all our activities and people.</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">We aim to exceed expectation consistently: in delivery, quality, reliability and service.</h4>
+                                    </li>
+                                  </ul>
+                                  <div class="find-out-more">
+                                    <a href="/en/about-us/customer-focus" class="btn btn-lightblue btn-lg"><span class="animate__animated animate__fadeIn animate__delay-1s">Find Out More</span></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 hidden-sm hidden-xs full-height position-rel">
+                                <img src="https://static.aesseal.com/photo/wavehead/service-hero.png" class="img-responsive slider-img animate__animated animate__fadeInRight animate__delay animate__delay-1s" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="item lazy-back" role="option" id="prod">
+                          <div class="row full-height flex padding-top-2em">
+                            <div class="carousel-caption col-sm-12 full-height carousel-fill">
+                              <div class="col-lg-5 col-lg-offset-2 col-md-6 col-md-offset-1 col-sm-12 col-xs-12 mobile-carousel-caption margin-bottom-3em">
+                                <div class="flex-header">
+                                  <h1 class="white-text carousel-text-shadow">Product Information</h1>
+                                </div>
+                                <div class="col-sm-12 flexslider transparent-background">
+                                  <ul class="slides">
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Innovative products that provide real customer benefits</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">AESSEAL<sup>®</sup> offers a comprehensive sealing package, using the latest in machine tool technology</h4>
+                                    </li>
+                                    <li>
+                                      <h4 class="white-text carousel-text-shadow">Shaft packing and flow meters, seals and systems, to bearing face seals and labyrinth seals,
+                                      </h4>
+                                    </li>
+                                  </ul>
+                                  <div class="find-out-more">
+                                    <a href="/en/product" class="btn btn-lightblue btn-lg"><span class="animate__animated animate__fadeIn animate__delay-1s">Find Out More<spsn></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-5 hidden-sm hidden-xs full-height position-rel">
+                                <img src="https://static.aesseal.com/photo/wavehead/product-hero.png" class="img-responsive slider-img animate__animated animate__fadeInRight animate__delay animate__delay-1s" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="visiblie-xs hidden-sm hidden-md hidden-lg position-absolute col-xs-6 col-xs-offset-4">
+                      <div class="mob-envirologo-container">
+                        <div class="container-29by29 mob-enviro-logo">
+                          <a href="https://29by29.aesseal.com" rel="nofollow" class="no-dash display-block">
+                            <img class="img-responsive by29" src="https://static.aesseal.com/graphics/29x29-logo-white.svg" alt="29by29 Logo" data-toggle="tooltip" data-placement="top" title="£29 million by 2029 investment pledge" data-original="£29 million by 2029 investment pledge">
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                </nav>
+                  <div class="hidden-xs social-media text-center white-text">
+                    <ul>
+                      <li> <a href="https://twitter.com/AESSEALplc" target="_self" data-toggle="tooltip" data-placement="top" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
+                      <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" data-toggle="tooltip" data-placement="top" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
+                      <li class="front-icon"> <a href="/contact-us" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
+                      <li class="front-icon" style="display: none;"> <a href="/contact-us" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
+                      <li> <a href="/locations" target="_self" data-toggle="tooltip" data-placement="top" title="Browse all Locations"> <i class="fas fa-globe-americas"></i></a></li>
+                    </ul>
+                    <div class="social-id">
+                      <p class="front-fade">Find Us</p>
+                      <p class="front-fade">Follow Us</p>
+                      <p class="front-fade">Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row wavelower row-eq-height">
+      <div class="col-xl-10 col-md-9 col-sm-8 col-xs-0 fullscreen">
+        <div class="bottom-gap">
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-3 col-sm-4 col-xs-12 fullscreen">
+        <img class="curve-down" src="Images/wave-lowgrey.svg" alt="curve-down" />
+        <div class="region region-wavelower">
+          <section id="block-block-265" class="block block-block grey-region-background hidden-xs contextual-links-region clearfix">
+            <div class="enviro-wave">
+              <div class="col-xl-10 col-md-10 col-sm-10">
+                <div class="envirologo-container">
+                  <div class="container-29by29 enviro_logo">
+                    <a href="https://29by29.aesseal.com" rel="nofollow" class="no-dash display-block">
+                      <img class="img-responsive by29" src="https://static.aesseal.com/graphics/29x29-logo.svg" alt="29by29 Logo" data-toggle="tooltip" data-placement="top" title="" data-original="£29 million by 2029 investment pledge" data-original-title="£29 million by 2029 investment pledge"></a>
+                  </div>
+                </div>
               </div>
             </div>
-          </header>
+          </section>
         </div>
       </div>
-
-
-      <div class="navigation_col">
-        <div class="action-menu text-center">
-          <div class="col-sm-2 col-xs-0 fullscreen">
-          </div>
-          <div class="col-sm-10 col-sm-offset-2 col-xs-12 no-padding">
-            <div class="region region-navigation-col fit-menu">
-
-              <section id="block-lang-dropdown-language" class="block block-lang-dropdown lang-switch clearfix">
-
-
-                <form class="lang_dropdown_form language" id="lang_dropdown_form_language" action="/en" method="post" accept-charset="UTF-8">
-                  <div>
-                    <div class="form-item form-item-lang-dropdown-select form-type-select form-group"><select class="lang-dropdown-select-element form-control form-select" id="lang-dropdown-select-language" style="width: 110px; display: none;"
-                        name="lang_dropdown_select">
-                        <option value="en" selected="selected">English</option>
-                        <option value="zh-hans">简体中文</option>
-                        <option value="fr">Français</option>
-                        <option value="de">Deutsch</option>
-                        <option value="it">Italiano</option>
-                        <option value="pl">Polski</option>
-                        <option value="ru">Русский</option>
-                        <option value="es">Español</option>
-                        <option value="tr">Türkçe</option>
-                      </select>
-                      <div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="lang_dropdown_select_language_chosen" style="width: 110px;"><a class="chosen-single">
-                          <input class="chosen-focus-input" type="text" autocomplete="off" readonly="">
-                          <span>English</span>
-                          <div><b></b></div>
-                        </a>
-                        <div class="chosen-drop">
-                          <div class="chosen-search">
-                            <input class="chosen-search-input" type="text" autocomplete="off" readonly="">
+    </div>
+    <div class="row">
+      <div class="col-sm-12 fullscreen">
+        <div class="region region-preface-lower container-fluid">
+          <div class="grey-region-background media-carousel-block news-media-carousel container-fluid">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 mobile-col-padding carousel-col-placement">
+              <div class="indicators-container">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-fade" data-slide-to="0" class="active hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Read the latest News">News</li>
+                  <li data-target="#carousel-fade" data-slide-to="1" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Environmental, social and corporate governance">ESG</li>
+                  <li data-target="#carousel-fade" data-slide-to="2" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Advanced Technology"><span class="hidden-xs">Advanced&nbsp;</span> Technology</li>
+                  <li data-target="#carousel-fade" data-slide-to="3" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Customer Service">Customer Service</li>
+                  <li data-target="#carousel-fade" data-slide-to="4" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Product Information">Product Info</li>
+                  <li class="dropdown visible-xs visible-sm hidden-lg hidden-md">
+                    <button class="btn drodown-toggle shadow-drop shadow-drop-btn" href="#" data-toggle="dropdown">
+                      Latest News <span class="caret"></span>
+                    </button>
+                    <ul class="shadow-drop-menu dropdown-menu" name="shadow-drop">
+                      <li data-target="#carousel-fade" data-value="Latest News" data-slide-to="0"><a role="tab" data-target="#carousel-fade" data-value="Latest News" data-slide-to="0" class="" title="Read the Latest News">Latest News</a></li>
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="1"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="1" class="" title="Environmental, social and corporate governance">ESG</a></li>
+                      <li data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2"><a role="tab" data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2" class="" title="Advanced Technology">Advanced Technology</a></li>
+                      <li data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3"><a role="tab" data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3" class="" title="Customer Service">Customer Service</a></li>
+                      <li data-target="#carousel-fade" data-value="Product Info" data-slide-to="4"><a role="tab" data-target="#carousel-fade" data-value="Product Info" data-slide-to="4" class="" title="Product Information">Product Info</a></li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+              <div class="shadow-container">
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane media-tab active" id="news-main">
+                    <div class="carousel slide media-carousel news-media-carousel" id="newsCarousel" data-interval="8000" data-ride="carousel" data-pause="hover">
+                      <div class="carousel-inner horizontal">
+                        <div class="item active">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-1">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/future-starts-here#timelapse" title="“Time lapse: Future proofing the environment">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/factoryofthefuture-sq.jpg" alt="Time lapse thumbnail" title="Time lapse: Future proofing the environment">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Time lapse: Future proofing the environment</p>
+                            </a>
                           </div>
-                          <ul class="chosen-results"></ul>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-2">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/in-memoriam-gordon-bridge" title="In Memory of Gordon Bridge">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/Gordon-Bridge-01-sq.jpg" alt="Gordon Bridge" title="In Memory of Gordon Bridge">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">In Memory of Gordon Bridge</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-3">
+                            <span class="wistia_embed wistia_async_kbkiu0u5vr popover=true popoverContent=link" style="display:inline;position:relative;">
+                              <a class="pillarVideo" href="#" title="Rapid video: Planet-saving potential of USA pulp and paper ">
+                                <div class="overlay-link position-rel">
+                                  <div class="social-box">
+                                    <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/VID-US-EVAP-WATER-SAVE.jpg" alt="USA Pulp and Paper Thumbnail" title="Rapid video: Planet-saving potential of USA pulp and paper ">
+                                    <div class="overlay-red">
+                                      <div class="overlay-caption text-center padding-1em">
+                                        <i class="fas fa-film fa-3x white-text"></i>
+                                        <p>View the Video</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <p class="standard-text margin-top">Rapid video: Planet-saving potential of USA pulp and paper </p>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-4">
+                            <a class="pillarArticle" href="/en/article/aesseal-receives-queens-award-sustainable-development" title="Rapid Video:How to save $2 million dollars … and the planet">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/QA-22_420.jpg" alt="Queens Award Flag" title="AESSEAL receives Queen’s Award for Sustainable Development">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the Article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">AESSEAL receives Queen’s Award for Sustainable Development</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-5">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/verified-beyond-net-zero" title="Verified: Beyond Net Zero (just like 18 million trees)">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/Water-management-system-installation-sq.jpg" alt="Water Management System Installation" title="Verified: Beyond Net Zero (just like 18 million trees)">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Verified: Beyond Net Zero (just like 18 million trees)</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-6">
+                            <a class="pillarArticle" href="/en/article/road-to-net-zero-paved-in-plastic" title="Road to Net Zero ‘paved in … plastic’?">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/WETLANDS_RD_9760-field-sq.jpg" alt="Plastic Road Paving" title="Road to Net Zero ‘paved in … plastic’?">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Road to Net Zero ‘paved in … plastic’?</p>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div><input type="hidden" name="en" value="/en">
-                    <input type="hidden" name="zh-hans" value="/zh-hans">
-                    <input type="hidden" name="fr" value="/fr">
-                    <input type="hidden" name="de" value="/de">
-                    <input type="hidden" name="it" value="/it">
-                    <input type="hidden" name="pl" value="/pl">
-                    <input type="hidden" name="ru" value="/ru">
-                    <input type="hidden" name="es" value="/es">
-                    <input type="hidden" name="tr" value="/tr">
-                    <noscript>
-                      <div>
-                        <button type="submit" id="edit-submit" name="op" value="Go" class="btn btn-default form-submit">Go</button>
-
+                    </div>
+                    <div class="carousel-controls">
+                      <a class="left prev-arrow-space carousel-control no-dash" href="#newsCarousel" role="button" data-slide="prev">
+                        <i class="fas fas fa-angle-left fa-3x carousel-btn-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right next-arrow-space carousel-control no-dash" href="#newsCarousel" role="button" data-slide="next">
+                        <i class="fas fa-angle-right fa-3x carousel-btn-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grey-region-background media-carousel-block cust-media-carousel container-fluid display-none">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 mobile-col-padding carousel-col-placement">
+              <div class="indicators-container">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-fade" data-slide-to="0" class="active hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Read the latest News">News</li>
+                  <li data-target="#carousel-fade" data-slide-to="1" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Environmental, social and corporate governance">ESG</li>
+                  <li data-target="#carousel-fade" data-slide-to="2" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Advanced Technology"><span class="hidden-xs">Advanced&nbsp;</span> Technology</li>
+                  <li data-target="#carousel-fade" data-slide-to="3" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Customer Service">Customer Service</li>
+                  <li data-target="#carousel-fade" data-slide-to="4" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Product Information">Product Info</li>
+                  <li class="dropdown visible-xs visible-sm hidden-lg hidden-md">
+                    <button class="btn drodown-toggle shadow-drop shadow-drop-btn" href="#" data-toggle="dropdown">
+                      Customer Service <span class="caret"></span>
+                    </button>
+                    <ul class="shadow-drop-menu dropdown-menu" name="shadow-drop">
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="0"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="0" class="" title="Read the Latest News">Latest News</a></li>
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="1"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="1" class="" title="Environmental, social and corporate governance">ESG</a></li>
+                      <li data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2"><a role="tab" data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2" class="" title="Advanced Technology">Advanced Technology</a></li>
+                      <li data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3"><a role="tab" data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3" class="" title="Customer Service">Customer Service</a></li>
+                      <li data-target="#carousel-fade" data-value="Product Info" data-slide-to="4"><a role="tab" data-target="#carousel-fade" data-value="Product Info" data-slide-to="4" class="" title="Product Information">Product Info</a></li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+              <div class="shadow-container">
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane media-tab active" id="cust-main">
+                    <div class="carousel slide media-carousel cust-media-carousel" id="custCarousel" data-interval="8000" data-ride="carousel" data-pause="hover">
+                      <div class="carousel-inner horizontal">
+                        <div class="item active">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-1">
+                            <a class="pillarArticle" href="/en/article/a-leader-customer-satisfaction-says-independent-survey" title="A leader in customer satisfaction, says independent survey">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/photo/squared/5Y7A1780.jpg" alt="Staff Member on the phone" title="A leader in customer satisfaction, says independent survey">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">A leader in customer satisfaction, says independent survey</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-2">
+                            <a class="pillarCases" href="/en/resources/case-studies/chemical-producer-saves-over-1-million-plant-downtime" title="Chemical Producer Saves Over £1.7 Million in Plant Downtime">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/cases/CS0089_sq.jpg" alt="CS0089 Case Study Thumbnail" title="Read how chemical producer saved over £1.7 million">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-briefcase fa-3x white-text"></i>
+                                      <p>View the case study</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Chemical Producer Saves Over £1.7 Million in Plant Downtime</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-3">
+                            <a class="pillarCases" href="/en/resources/case-studies/paper-producer-saves-more-one-million-dollars-year" title="Paper producer saves more than one million Dollars per year">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/photo/squared/pnp1017_Page_1.jpg" alt="pnp1017 Case Study Thumbnail" title="See how Paper Producer saved more $1 millon dollars per year">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-briefcase fa-3x white-text"></i>
+                                      <p>View the case study</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Paper producer saves more than one million Dollars per year</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-4">
+                            <a class="pillarService" href="/en/services/training" title="On site and online customer training">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/graphics/LN-UK-C-TRAINING_3d-book.jpg" alt="Training Brochure Cover" title="View the Training we offer">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-industry fa-3x white-text"></i>
+                                      <p>View the industry guide</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">On site and online customer training</p>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                    </noscript><input type="hidden" name="form_build_id" value="form-_amAQaX5G4UPCsB8G0TlMGB7kX3rgravAP7gacoCrdw">
-                    <input type="hidden" name="form_id" value="lang_dropdown_form">
+                    </div>
+                    <div class="carousel-controls">
+                      <a class="left prev-arrow-space carousel-control no-dash" href="#custCarousel" role="button" data-slide="prev">
+                        <i class="fas fas fa-angle-left fa-3x carousel-btn-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right next-arrow-space carousel-control no-dash" href="#custCarousel" role="button" data-slide="next">
+                        <i class="fas fa-angle-right fa-3x carousel-btn-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                   </div>
-                </form>
-              </section>
-              <section id="block-search-api-page-full-node-search" class="block block-search-api-page search-block clearfix">
-
-
-                <form action="/en" method="post" id="search-api-page-search-form-full-node-search" accept-charset="UTF-8">
-                  <div>
-                    <div class="form-item form-item-keys-4 form-type-textfield form-group"><input placeholder="Enter your keywords" class="form-control form-text" type="text" id="edit-keys-4" name="keys_4" value="" size="15" maxlength="128">
-                    </div><input type="hidden" name="id" value="4">
-                    <button type="submit" id="edit-submit-4" name="op" value="Search" class="btn btn-primary form-submit">Search</button>
-                    <input type="hidden" name="form_build_id" value="form-search">
-                    <input type="hidden" name="form_id" value="search">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grey-region-background media-carousel-block prod-media-carousel container-fluid display-none">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 mobile-col-padding carousel-col-placement">
+              <div class="indicators-container">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-fade" data-slide-to="0" class="active hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Read the latest News">News</li>
+                  <li data-target="#carousel-fade" data-slide-to="1" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Environmental, social and corporate governance">ESG</li>
+                  <li data-target="#carousel-fade" data-slide-to="2" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Advanced Technology"><span class="hidden-xs">Advanced&nbsp;</span> Technology</li>
+                  <li data-target="#carousel-fade" data-slide-to="3" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Customer Service">Customer Service</li>
+                  <li data-target="#carousel-fade" data-slide-to="4" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Product Information">Product Info</li>
+                  <li class="dropdown visible-xs visible-sm hidden-lg hidden-md">
+                    <button class="btn drodown-toggle shadow-drop shadow-drop-btn" href="#" data-toggle="dropdown">Product Information <span class="caret"></span>
+                    </button>
+                    <ul class="shadow-drop-menu dropdown-menu" name="shadow-drop">
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="0"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="0" class="" title="Read the Latest News">Latest News</a></li>
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="1"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="1" class="" title="Environmental, social and corporate governance">ESG</a></li>
+                      <li data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2"><a role="tab" data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2" class="" title="Advanced Technology">Advanced Technology</a></li>
+                      <li data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3"><a role="tab" data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3" class="" title="Customer Service">Customer Service</a></li>
+                      <li data-target="#carousel-fade" data-value="Product Info" data-slide-to="4"><a role="tab" data-target="#carousel-fade" data-value="Product Info" data-slide-to="4" class="" title="Product Information">Product Info</a></li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+              <div class="shadow-container">
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane media-tab active" id="prod-main">
+                    <div class="carousel slide media-carousel prod-media-carousel" id="prodCarousel" data-interval="8000" data-ride="carousel" data-pause="hover">
+                      <div class="carousel-inner horizontal">
+                        <div class="item active">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-1">
+                            <a class="pillarCases" href="https://www.aesseal.com/en/resources/case-studies/chemical-plant-saved-5k-year#csm?wvideo=xuswt3f3pl" title="Rapid video: Solving sticky problem saves Chemicals giant millions">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/cases/ch01454-vid-sq.jpg" alt="Saving 26.5 Million Gallons of Water thumbnail" title="Rapid video: Solving sticky problem saves Chemicals giant millions">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-briefcase fa-3x white-text"></i>
+                                      <p>View the Case Study</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Rapid video: Solving sticky problem saves Chemicals giant millions</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-2">
+                            <a class="pillarProduct" href="/en/product" title="Product Range">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://www.aesseal.com/sites/aesseal.com/files/styles/squarephone/public/productimage/CAPI74-FF.jpg" alt="CAPI 74" title="Click here to view Product Range">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-cogs fa-3x white-text"></i>
+                                      <p>Click here to view Product Range</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">View the Product Range</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-3">
+                            <a class="pillarBrochure" href="/en/resources/product-brochure" title="View our Product Brochures">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/graphics/LIT-UK-L-DISPandSISS_Page_1-sq.jpg" alt="DISP & SISS Brochure" title="Click here to view our Product Brochures">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-book-reader fa-3x white-text"></i>
+                                      <p>Click here to view our Product Brochures</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">View our Product Brochures</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-4">
+                            <a class="pillarBrochure" href="/en/resources/industry-guides" title="See Solutions for your Industry">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/graphics/1308-0-sq.jpg" alt="Oil & Gas Industry Guide" title="See Solutions for your Industry">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-industry fa-3x white-text"></i>
+                                      <p>Click here to view solutions for your industry</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">See Solutions for your Industry</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-5">
+                            <a class="pillarCases" href="/en/resources/case-studies" title="Real world applications">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/graphics/P66-weekend-breakdown-sq.jpg" alt="UK Oil Refinery Case Study" title="Real world applications">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-briefcase fa-3x white-text"></i>
+                                      <p>Click here to view more Case Studies</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Real world applications</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-6">
+                            <a class="pillarVideo" href="/en/resources/video" title="Product and educational videos">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/graphics/RDSX-Installation-Video-sq.jpg" alt="RDX Installation Video" title="Product and educational videos">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-film fa-3x white-text"></i>
+                                      <p>Product and educational videos</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Product and educational videos</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-controls">
+                      <a class="left prev-arrow-space carousel-control no-dash" href="#prodCarousel" role="button" data-slide="prev">
+                        <i class="fas fas fa-angle-left fa-3x carousel-btn-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right next-arrow-space carousel-control no-dash" href="#prodCarousel" role="button" data-slide="next">
+                        <i class="fas fa-angle-right fa-3x carousel-btn-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                   </div>
-                </form>
-              </section>
-              <section id="block-block-138" class="block block-block cust-portal clearfix">
-
-
-                <p><a href="#" rel="nofollow">Customer Portal</a>&nbsp;<a href="#"><i class="fas fa-sign-in-alt cust-portal-text"></i></a></p>
-              </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grey-region-background media-carousel-block sus-media-carousel container-fluid display-none">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 mobile-col-padding carousel-col-placement">
+              <div class="indicators-container">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-fade" data-slide-to="0" class="active hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Read the latest News">News</li>
+                  <li data-target="#carousel-fade" data-slide-to="1" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Environmental, social and corporate governance">ESG</li>
+                  <li data-target="#carousel-fade" data-slide-to="2" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Advanced Technology"><span class="hidden-xs">Advanced </span> Technology</li>
+                  <li data-target="#carousel-fade" data-slide-to="3" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Customer Service">Customer Service</li>
+                  <li data-target="#carousel-fade" data-slide-to="4" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Product Information">Product Info</li>
+                  <li class="dropdown visible-xs visible-sm hidden-lg hidden-md">
+                    <button class="btn drodown-toggle shadow-drop shadow-drop-btn" href="#" data-toggle="dropdown">
+                      ESG <span class="caret"></span>
+                    </button>
+                    <ul class="shadow-drop-menu dropdown-menu" name="shadow-drop">
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="0"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="0" class="" title="Read the Latest News">Latest News</a></li>
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="1"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="1" class="" title="Environmental, social and corporate governance">ESG</a></li>
+                      <li data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2"><a role="tab" data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2" class="" title="Advanced Technology">Advanced Technology</a></li>
+                      <li data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3"><a role="tab" data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3" class="" title="Customer Service">Customer Service</a></li>
+                      <li data-target="#carousel-fade" data-value="Product Info" data-slide-to="4"><a role="tab" data-target="#carousel-fade" data-value="Product Info" data-slide-to="4" class="" title="Product Information">Product Info</a></li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+              <div class="shadow-container">
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane media-tab active" id="sus-main">
+                    <div class="carousel slide media-carousel sus-media-carousel" id="susCarousel" data-interval="8000" data-ride="carousel" data-pause="hover">
+                      <div class="carousel-inner horizontal">
+                        <div class="item active">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-1">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/aesseal-receives-queens-award-sustainable-development" title="AESSEAL receives Queen’s Award for Sustainable Development">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/QA-22_420.jpg" alt="Queen's Award Flag" title="AESSEAL receives Queen’s Award for Sustainable Development">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">AESSEAL<sup>®</sup> receives Queen’s Award for Sustainable Development</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-2">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/verified-beyond-net-zero" title="Verified: Beyond Net Zero (just like 18 million trees)">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/Water-management-system-installation-sq.jpg" alt="Water Management System Installation" title="Verified: Beyond Net Zero (just like 18 million trees)">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Verified: Beyond Net Zero (just like 18 million trees)</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-3">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/world-water-day-spotlight-sustainable-sealing-pulp-and-paper" title="World Water Day: Spotlight on sustainable sealing in pulp and paper">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/Paper-Mill-marsh-sq.jpg" alt="Pulp and Paper Mill marsh land" title="World Water Day: Spotlight on sustainable sealing in pulp and paper">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">World Water Day: Spotlight on sustainable sealing in pulp and paper</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-4">
+                            <a class="pillarArticle" href="https://www.aesseal.com/en/article/future-starts-here" title="The future starts here">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/factory-Phase-5-External-Night-sq.jpg" alt="Render of new factory" title="The future starts here">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">The Factory of the Future starts here</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-5">
+                            <a class="pillarBrochure" href="https://aesdigitalbooks.s3.eu-west-1.amazonaws.com/29by29-01/index.html" title="£7 million and counting of planet-friendly investment">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/content-thumb/news/29by29-update.jpg" alt="29by29 Update" title="£7 million and counting of planet-friendly investment">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-book-reader fa-3x white-text"></i>
+                                      <p>View the Brochure</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">£7 million and counting of planet-friendly investment</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-6">
+                            <a class="pillarPolicy" href="/en/resources/industry-guides/policy-prevent-global-warming" title="Investment Policy to Prevent Global Warming">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/graphics/gwpolicy_3d_cover.jpg" alt="Investment Policy to global warming document" title="Read our Investment Policy to Prevent Global Warming">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-calendar-check fa-3x white-text"></i>
+                                      <p>View the policy</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Investment Policy to Prevent Global Warming</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-controls">
+                      <a class="left prev-arrow-space carousel-control no-dash" href="#susCarousel" role="button" data-slide="prev">
+                        <i class="fas fa-angle-left fa-3x carousel-btn-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right next-arrow-space carousel-control no-dash" href="#susCarousel" role="button" data-slide="next">
+                        <i class="fas fa-angle-right fa-3x carousel-btn-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="grey-region-background media-carousel-block tech-media-carousel container-fluid display-none">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 mobile-col-padding carousel-col-placement">
+              <div class="indicators-container">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-fade" data-slide-to="0" class="active hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Read the latest News">News</li>
+                  <li data-target="#carousel-fade" data-slide-to="1" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Environmental, social and corporate governance">ESG</li>
+                  <li data-target="#carousel-fade" data-slide-to="2" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Advanced Technology"><span class="hidden-xs">Advanced&nbsp;</span> Technology</li>
+                  <li data-target="#carousel-fade" data-slide-to="3" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Customer Service">Customer Service</li>
+                  <li data-target="#carousel-fade" data-slide-to="4" class="hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Product Information">Product Info</li>
+                  <li class="dropdown visible-xs visible-sm hidden-lg hidden-md">
+                    <button class="btn drodown-toggle shadow-drop shadow-drop-btn" href="#" data-toggle="dropdown">
+                      Advanced Technology <span class="caret"></span>
+                    </button>
+                    <ul class="shadow-drop-menu dropdown-menu" name="shadow-drop">
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="0"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="0" class="" title="Read the Latest News">Latest News</a></li>
+                      <li data-target="#carousel-fade" data-value="ESG" data-slide-to="1"><a role="tab" data-target="#carousel-fade" data-value="ESG" data-slide-to="1" class="" title="Environmental, social and corporate governance">ESG</a></li>
+                      <li data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2"><a role="tab" data-target="#carousel-fade" data-value="Advanced Technology" data-slide-to="2" class="" title="Advanced Technology">Advanced Technology</a></li>
+                      <li data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3"><a role="tab" data-target="#carousel-fade" data-value="Customer Service" data-slide-to="3" class="" title="Customer Service">Customer Service</a></li>
+                      <li data-target="#carousel-fade" data-value="Product Info" data-slide-to="4"><a role="tab" data-target="#carousel-fade" data-value="Product Info" data-slide-to="4" class="" title="Product Information">Product Info</a></li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+              <div class="shadow-container">
+                <div class="tab-content">
+                  <!-- Tech Main Carousel -->
+                  <div role="tabpanel" class="tab-pane media-tab active" id="tech-main">
+                    <div class="carousel slide media-carousel tech-media-carousel" id="techCarousel" data-interval="8000" data-ride="carousel" data-pause="hover">
+                      <div class="carousel-inner horizontal">
+                        <div class="item active">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-1">
+                            <a class="pillarArticle" href="/en/article/12th-queens-award-enterprise-innovation" title="AESSEAL wins another Queen’s Award for Enterprise">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/photo/squared/QA_1336X744.jpg" alt="Queens Award flag" title="AESSEAL wins another Queen’s Award for Enterprise">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">AESSEAL wins another Queen’s Award for Enterprise</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-2">
+                            <a class="pillarArticle" href="/en/article/aesseal-investment-dry-gas-compressor-seals" title="AESSEAL investment in Dry Gas Compressor Seals">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/photo/squared/Compressor-Dry-Gas-Seal-Test-Rig.jpg"
+                                    alt="New Compressor Dry Gas Seal Test Rig capable of testing seals up to 380mm (14.96”) diameter shaft diameter" title="AESSEAL investment in Dry Gas Compressor Seals">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-newspaper fa-3x white-text"></i>
+                                      <p>View the article</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">AESSEAL investment in Dry Gas Compressor Seals</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-3">
+                            <a class="pillarVideo" href="/en/resources/video/aes-super-cell" title="Meet the AES Super Cell! A fully automated robot">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/photo/squared/VID-UK-AUTOMATION_CELL_02.jpg" alt="AES Super Cell thumbnail" title="Meet the AES Super Cell">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-film fa-3x white-text"></i>
+                                      <p>View the video</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Meet the AES Super Cell! A fully automated robot</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" id="slide-4">
+                            <a class="pillarBrochure" href="/en/resources/product-brochure/turbomachinery-technology" title="Turbomachinery Technology">
+                              <div class="overlay-link position-rel">
+                                <div class="social-box">
+                                  <img class="img-responsive center-block lazyload shadow-background" src="https://static.aesseal.com/photo/squared/LN-UK-TURBO-02b_Page_01.jpg" alt="Turbomachinery Technology Brochure Cover" title="Read Turbomachinery Technology Brochure">
+                                  <div class="overlay-red">
+                                    <div class="overlay-caption text-center padding-1em">
+                                      <i class="fas fa-book-reader fa-3x white-text fa-3x"></i>
+                                      <p>View the brochure</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="standard-text margin-top">Turbomachinery Technology</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-controls">
+                      <a class="left prev-arrow-space carousel-control no-dash" href="#techCarousel" role="button" data-slide="prev">
+                        <i class="fas fas fa-angle-left fa-3x carousel-btn-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right next-arrow-space carousel-control no-dash" href="#techCarousel" role="button" data-slide="next">
+                        <i class="fas fa-angle-right fa-3x carousel-btn-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="socialmedia text-center hidden-lg hidden-md hidden-sm visible-xs">
+            <ul>
+              <li> <a href="https://twitter.com/AESSEALplc" target="_self" data-toggle="tooltip" data-placement="top" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
+              <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" data-toggle="tooltip" data-placement="top" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
+              <li class="contact_icon"> <a href="/contact-us" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
+              <li class="contact_icon" style="display: none;"> <a href="/contact-us" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
+              <li> <a href="/locations" target="_self" data-toggle="tooltip" data-placement="top" title="Browse all Locations"> <i class="fas fa-globe-americas"></i></a></li>
+            </ul>
+            <div class="social-id">
+              <p class="fade_text">Find Us</p>
+              <p class="fade_text">Follow Us</p>
+              <p class="fade_text">Contact Us</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-  <div class="preface front__flex-margin">
-    <div class="flex-container">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="Images/AESGlobal.png" class="img-responsive " alt="Global">
-            <p class="flex-header visible-desktop visible-md visible-lg">Global</p>
-            <p class="flex-caption visible-desktop visible-md visible-lg">We operate from 230 locations worldwide, and supply customers in all sectors, and in some 104 countries</p>
-          </li>
-          <li>
-            <img src="Images/Modular.png" class="img-responsive" alt="Modular">
-            <p class="flex-header visible-desktop visible-md visible-lg">Modular</p>
-            <p class="flex-caption visible-desktop visible-md visible-lg">Our patented modular seals technology means we’re able to respond to even the most demanding technical challenge or delivery deadline</p>
-          </li>
-          <li>
-            <img src="Images/Simplicity.png" class="img-responsive" alt="Simplicity">
-            <p class="flex-header visible-desktop visible-md visible-lg">Simplicity</p>
-            <p class="flex-caption visible-desktop visible-md visible-lg">Our product inventory and modular seals technology mean a streamlined ordering process and quicker delivery</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="row wavelower row-eq-height">
-    <div class="col-md-9 col-sm-8 col-xs-0 fullscreen">
-      <div class="bottom-gap">
-      </div>
-    </div>
-
-    <div class="col-md-3 col-sm-4 col-xs-12 fullscreen">
-
-      <img class="curve-down" src="Images/wave-lower.svg" img alt="curve-down"></img>
-
-      <div class="socialmedia text-center">
-        <ul>
-          <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
-          <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
-          <li class="contact_icon"> <a href="#" target="_self" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
-          <li class="contact_icon" style="display:none"> <a href="#" target="_self" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
-          <li> <a href="#" target="_self" title="Browse all Locations"> <i class="fas fa-globe-americas"></i></a></li>
-        </ul>
-        <div class="social-id">
-          <p class="fade_text">Find Us</p>
-          <p class="fade_text">Follow Us</p>
-          <p class="fade_text">Contact Us</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  </div>
   </div>
 
   <div class="container-fluid">

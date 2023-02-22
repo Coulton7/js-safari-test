@@ -42,44 +42,45 @@
     $('.newsslider').flexslider({
       controlNav: false,
       directionNav: false,
-      start: function(slider){
+      start: function(slider) {
         var curSlide = slider.find("li.flex-active-slide");
         var id = ($(curSlide).attr("id"));
         var content = ($(curSlide, id).attr("data-type"));
         var ele = '<span class="headline">' + content.split('').join('</span><span class="headline">') + '</span>';
 
-        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
-            $(this).delay(50 * i).css({
-                display: 'inline',
-                opacity: 0
-            }).animate({
-                opacity: 1
-            }, 50);
+        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function(i) {
+          $(this).delay(50 * i).css({
+            display: 'inline',
+            opacity: 0
+          }).animate({
+            opacity: 1
+          }, 50);
         });
       },
-      before: function(slider){ $("span.headline").remove(); },
-      after: function(slider){
+      before: function(slider) {
+        $("span.headline").remove();
+      },
+      after: function(slider) {
 
-          var curSlide = slider.find("li.flex-active-slide");
-          var id = ($(curSlide).attr("id"));
-          var content = ($(curSlide, id).attr("data-type"));
+        var curSlide = slider.find("li.flex-active-slide");
+        var id = ($(curSlide).attr("id"));
+        var content = ($(curSlide, id).attr("data-type"));
 
-          var ele = '<span class="headline">' + content.split('').join('</span><span class="headline">') + '</span>';
+        var ele = '<span class="headline">' + content.split('').join('</span><span class="headline">') + '</span>';
 
-          $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function (i) {
-              $(this).delay(50 * i).css({
-                  display: 'inline',
-                  opacity: 0
-              }).animate({
-                  opacity: 1
-              }, 50);
-              });
+        $(ele).hide().appendTo($('.flex-active-slide p.typewrite')).each(function(i) {
+          $(this).delay(50 * i).css({
+            display: 'inline',
+            opacity: 0
+          }).animate({
+            opacity: 1
+          }, 50);
+        });
       },
       animation: "fade",
       slideshowSpeed: 10000,
       easing: "swing",
       animationLoop: true,
-
     });
 
     $('.product-slider').flexslider({
@@ -98,6 +99,15 @@
     $('.base-slider').flexslider({
       controlNav: false,
       directionNav: false
+    });
+
+    $('.text-slider').flexslider({
+      controlNav: false,
+      directionNav: false,
+      animation: "fade",
+      easing: "swing",
+      animationLoop: true,
+      slideshowSpeed: 7000
     });
 
   });

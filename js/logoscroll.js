@@ -10,7 +10,7 @@
           var scrollPercent = windowScrollTop / windowHeight;
 
           self.find('.textlogo, .section-shadow-menu, .enquiry-icon').css({
-            opacity: -1.03 + scrollPercent * 4.5
+            opacity: -1.03 + scrollPercent * 4
           });
 
         }
@@ -31,16 +31,33 @@
 })(jQuery);
 
 //initialize
-jQuery(window).width(function(e) {
+$(window).width(function(e) {
 
-  jQuery(document).ready(function() {
-    if (jQuery(window).width() > 992) {
+  $(document).ready(function() {
+    if ($(window).width() > 992) {
 
-      jQuery('body').waveFade();
+      $('body').waveFade();
     } else {
-      jQuery('.textlogo, .section-shadow-menu, .enquiry-icon').css({
+      $('.textlogo, .section-shadow-menu, .enquiry-icon').css({
         "opacity": "1"
       });
     }
+
+    $(window).scroll(function() {
+      var s = $(window).scrollTop(),
+      d = $(document).height(),
+      c = $(window).height();
+
+      var scrollAmount = (s/(d-c)) * 100;
+      var opacity = scrollAmount/100;
+      $('.navbar-nav').css({"background-color": "rgba(255,255,255,"+opacity+")"});
+
+      if (opacity >= 0.55) {
+        $('.navbar-nav>li>a').addClass('normText');
+      }
+      else if (opacity < 0.55) {
+        $('.navbar-nav>li>a').removeClass('normText');
+      }
+    })
   });
 });
