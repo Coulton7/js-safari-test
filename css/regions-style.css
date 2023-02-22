@@ -623,7 +623,7 @@ html {
   .navbar-nav {
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255, 1);
     padding-left: 12em;
   }
 
