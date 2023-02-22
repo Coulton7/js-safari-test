@@ -64,24 +64,6 @@ a.no-underline :hover {
 }
 
 .flex-header {
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -1075,7 +1076,7 @@ blockquote {
-  
-  color: #ffffff;
-}
-.flex-header {
   color: #ffffff;
   position: relative;
   bottom: unset;
@@ -904,21 +886,6 @@ blockquote {
   {
   width: 33%;
   display: block;
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -3658,7 +3659,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
-  
 }
 .view-packing-products-browser .views-exposed-widgets .views-widget-filter-field_material_value_i18n, .view-packing-products-browser .views-exposed-widgets .views-widget-filter-field_composition_value_i18n, .view-packing-products-browser .views-exposed-widgets .views-widget-filter-field_suitability_value_i18n {
   display: flex;
@@ -3062,21 +3029,6 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   .sustainability-advert img, .sustainability-advert-home img, .rel-logos-wave img {
     max-width: 75%;
   }
-
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -5063,7 +5064,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   
   .slider-timer {
     bottom: 4.25em;
@@ -4206,21 +4158,6 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   }
 
   .base-timer {
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -5528,7 +5529,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
-  
     height: 7.5em;
     width: 7.5em;
   }
