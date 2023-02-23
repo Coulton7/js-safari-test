@@ -56,7 +56,7 @@ a.standard-text:hover{
 }
 
 .blue-text{
-  color: #002a5b;
+  color: #002a5b!important;
 }
 
 .lightblue-text{
