@@ -3701,6 +3701,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #012e58;
+    background-blend-mode: multiply;
     animation: none;
     background-position: bottom right;
     padding-top: 3em;
@@ -4266,6 +4267,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #012e58;
+    background-blend-mode: multiply;
     background-position: bottom right;
     animation: none;
     padding-top: 3em;
