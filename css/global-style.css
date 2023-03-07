@@ -3701,9 +3701,9 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: multiply;
+    background-blend-mode: unset;
     animation: none;
-    background-position: 40% 100%;
+    background-position: 45% 100%;
     padding-top: 3em;
   }
   #carousel-fade .carousel-inner .item:nth-child(2) {
@@ -4267,8 +4267,8 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
-    background-blend-mode: multiply;
-    background-position: 40% 100%;
+    background-blend-mode: unset;
+    background-position: 45% 100%;
     animation: none;
     padding-top: 3em;
   }
