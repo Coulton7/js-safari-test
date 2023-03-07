@@ -3754,7 +3754,25 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     color: #ffffff;
   }
 
-  .block-labtectaenquiry{
+  .btn-mobile-lightblue {
+    list-style-type: none;
+    display: inline-block;
+    background-color: #338FBC;
+    color: #ffffff;
+    border-radius: 30px;
+    border: 2px solid transparent!important;
+    box-shadow: none;
+  }
+
+  .btn-mobile-lightblue:hover, .btn-mobile-lightblue:focus {
+    background-color: #2e80a8;
+    margin-bottom: 0;
+    color: #ffffff;
+    border: 2px solid #ffffff!important;
+    white-space: normal;
+  }
+
+  .block-labtectaenquiry {
     background-size: 100%;
   }
 }
