@@ -3751,7 +3751,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   }
 
   .mobile-white-text {
-    color: #ffffff;
+    color: #ffffff!important;
   }
 
   .btn-mobile-lightblue {
