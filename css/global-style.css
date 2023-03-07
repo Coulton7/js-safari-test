@@ -3698,12 +3698,12 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/oilandgas-steam-waste.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: multiply;
     animation: none;
-    background-position: bottom right;
+    background-position: 40% 100%;
     padding-top: 3em;
   }
   #carousel-fade .carousel-inner .item:nth-child(2) {
@@ -4264,11 +4264,11 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/oilandgas-steam-waste.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
     background-blend-mode: multiply;
-    background-position: bottom right;
+    background-position: 40% 100%;
     animation: none;
     padding-top: 3em;
   }
