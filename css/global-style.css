@@ -2786,6 +2786,9 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   cursor: pointer;
 }
 
+.show {
+  display: block!important;
+}
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-fade .carousel-inner>.item.next,
