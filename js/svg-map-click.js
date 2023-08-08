@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".location-pop-up").modal("show");
     document.querySelector(this).classList.add("on");
     document.querySelector("body").classList.add("noscroll");
-    document.querySelector(".location-pop-up").on("hidden.bs.modal", function () {
+    document.querySelector(".location-pop-up").addEventListener("hidden.bs.modal", event => {
         allRegions.classList.remove("on");
         document.querySelector("body").classList.remove("noscroll");
 
