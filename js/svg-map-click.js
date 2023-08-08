@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var allRegions = document.querySelectorAll("#Lands > *");
+  const locModal = new bootstrap.Modal(document.querySelector('.loc-modal'), options);
   allRegions.addEventListener("click", function () {
     var link = document.querySelector(this).getAttribute("id");
     var state;
@@ -284,8 +285,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     allRegions.classList.remove("on");
-    document.querySelector(".location-pop-up").modal("show");
-    document.querySelector(this).classList.add("on");
+    locModal.show();
+    allRegions.classList.add("on");
     document.querySelector("body").classList.add("noscroll");
     document.querySelector(".location-pop-up").addEventListener("hidden.bs.modal", event => {
         allRegions.classList.remove("on");
