@@ -1,580 +1,575 @@
-(function($) {
-  $(document).ready(function() {
-    var allRegions = $("#Lands > *");
-    allRegions.on("click", function() {
-      var link = ($(this).attr('id'));
-      var state;
-      switch(true){
-
-      case(link == "Land-Maine"):
+document.addEventListener("DOMContentLoaded", function () {
+  var allRegions = document.querySelectorAll("#Lands > *");
+  allRegions.addEventListener("click", function () {
+    var link = document.querySelector(this).getAttribute("id");
+    var state;
+    switch (true) {
+      case link == "Land-Maine":
         state = "Maine";
-        $('.Fairfield').addClass('show');
-        $('.ME').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".ME").classList.add("show");
         break;
-      case(link == "Land-NH"):
+      case link == "Land-NH":
         state = "New Hampshire";
-        $('.Fairfield').addClass('show');
-        $('.NH').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".NH").classList.add("show");
         break;
-      case(link == "Land-Vt"):
+      case link == "Land-Vt":
         state = "Vermont";
-        $('.Fairfield').addClass('show');
-        $('.VT').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".VT").classList.add("show");
         break;
-      case(link == "Land-NewYork"):
+      case link == "Land-NewYork":
         state = "New York";
-        $('.Fairfield').addClass('show');
-        $('.NY').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".NY").classList.add("show");
         break;
-      case(link == "Land-NewYork_2"):
+      case link == "Land-NewYork_2":
         state = "New York";
-        $('.Fairfield').addClass('show');
-        $('.NY').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".NY").classList.add("show");
         break;
-      case(link == "Land-Mass"):
+      case link == "Land-Mass":
         state = "Massachusetts";
-        $('.Fairfield').addClass('show');
-        $('.MA').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".MA").classList.add("show");
         break;
-      case(link == "Land-Conn"):
+      case link == "Land-Conn":
         state = "Connecticut";
-        $('.Fairfield').addClass('show');
-        $('.CT').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".CT").classList.add("show");
         break;
-      case(link == "Land-Pennsylvania"):
+      case link == "Land-Pennsylvania":
         state = "Pennsylvania";
-        $('.Fairfield').addClass('show');
-        $('.PA').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".PA").classList.add("show");
         break;
-      case(link == "Land-RI"):
+      case link == "Land-RI":
         state = "Rhode Island";
-        $('.Fairfield').addClass('show');
-        $('.RI').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".RI").classList.add("show");
         break;
-      case(link == "Land-NewJersey"):
+      case link == "Land-NewJersey":
         state = "New Jersey";
-        $('.Fairfield').addClass('show');
-        $('.NJ').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".NJ").classList.add("show");
         break;
-      case(link == "Land-Del"):
+      case link == "Land-Del":
         state = "Delaware";
-        $('.Fairfield').addClass('show');
-        $('.DE').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".DE").classList.add("show");
         break;
-      case(link == "Land-Md"):
+      case link == "Land-Md":
         state = "Maryland";
-        $('.Fairfield').addClass('show');
-        $('.MD').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".MD").classList.add("show");
         break;
-      case(link == "Land-WestVirginia"):
+      case link == "Land-WestVirginia":
         state = "West Virginia";
-        $('.Fairfield').addClass('show');
-        $('.WV').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".WV").classList.add("show");
         break;
-      case(link == "Land-Virginia_1_"):
+      case link == "Land-Virginia_1_":
         state = "Virginia";
-        $('.Fairfield').addClass('show');
-        $('.VA').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".VA").classList.add("show");
         break;
-      case(link == "Land-Virginia_2_"):
+      case link == "Land-Virginia_2_":
         state = "Virginia";
-        $('.Fairfield').addClass('show');
-        $('.VA').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".VA").classList.add("show");
         break;
-      case(link == "Land-NorthCarolina_1_"):
+      case link == "Land-NorthCarolina_1_":
         state = "North Carolina";
-        $('.Rockford').addClass('show');
-        $('.NC').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".NC").classList.add("show");
         break;
-      case(link == "Land-SouthCarolina"):
+      case link == "Land-SouthCarolina":
         state = "South Carolina";
-        $('.Rockford').addClass('show');
-        $('.SC').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".SC").classList.add("show");
         break;
-      case(link == "Land-Georgia"):
+      case link == "Land-Georgia":
         state = "Georgia";
-        $('.Rockford').addClass('show');
-        $('.GA').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".GA").classList.add("show");
         break;
-      case(link == "Land-Florida"):
+      case link == "Land-Florida":
         state = "Florida";
-        $('.Rockford').addClass('show');
-        $('.FL').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".FL").classList.add("show");
         break;
-      case(link == "Land-Alabama"):
+      case link == "Land-Alabama":
         state = "Alabama";
-        $('.Rockford').addClass('show');
-        $('.AL').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".AL").classList.add("show");
         break;
-      case(link == "Land-Mississippi"):
+      case link == "Land-Mississippi":
         state = "Mississippi";
-        $('.Rockford').addClass('show');
-        $('.MS').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".MS").classList.add("show");
         break;
-      case(link == "Land-Tennessee"):
+      case link == "Land-Tennessee":
         state = "Tennessee";
-        $('.Rockford').addClass('show');
-        $('.Kingsport').addClass('show');
-        $('.TN').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".Kingsport").classList.add("show");
+        document.querySelector(".TN").classList.add("show");
         break;
-      case(link == "Land-Kentucky"):
+      case link == "Land-Kentucky":
         state = "Kentucky";
-        $('.Rockford').addClass('show');
-        $('.KY').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".KY").classList.add("show");
         break;
-      case(link == "Land-Ohio"):
+      case link == "Land-Ohio":
         state = "Ohio";
-        $('.Rockford').addClass('show');
-        $('.OH').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".OH").classList.add("show");
         break;
-      case(link == "Land-Michigan_1_"):
+      case link == "Land-Michigan_1_":
         state = "Michigan";
-        $('.Fairfield').addClass('show');
-        $('.MI').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".MI").classList.add("show");
         break;
-      case(link == "Land-Michigan_2_"):
+      case link == "Land-Michigan_2_":
         state = "Michigan";
-        $('.Fairfield').addClass('show');
-        $('.MI').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".MI").classList.add("show");
         break;
-      case(link == "Land-Michigan_3_"):
+      case link == "Land-Michigan_3_":
         state = "Michigan";
-        $('.Fairfield').addClass('show');
-        $('.MI').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".MI").classList.add("show");
         break;
-      case(link == "Land-Indiana"):
+      case link == "Land-Indiana":
         state = "Indiana";
-        $('.Lombard').addClass('show');
-        $('.IN').addClass('show');
+        document.querySelector(".Lombard").classList.add("show");
+        document.querySelector(".IN").classList.add("show");
         break;
-      case(link == "Land-Illinois"):
+      case link == "Land-Illinois":
         state = "Illinois";
-        $('.Lombard').addClass('show');
-        $('.IL').addClass('show');
+        document.querySelector(".Lombard").classList.add("show");
+        document.querySelector(".IL").classList.add("show");
         break;
-      case(link == "Land-Wisconsin"):
+      case link == "Land-Wisconsin":
         state = "Wisconsin";
-        $('.Fairfield').addClass('show');
-        $('.Lombard').addClass('show');
-        $('.WI').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".Lombard").classList.add("show");
+        document.querySelector(".WI").classList.add("show");
         break;
-      case(link == "Land-Minnesota"):
+      case link == "Land-Minnesota":
         state = "Minnesota";
-        $('.Fairfield').addClass('show');
-        $('.MN').addClass('show');
+        document.querySelector(".Fairfield").classList.add("show");
+        document.querySelector(".MN").classList.add("show");
         break;
-      case(link == "Land-Iowa"):
+      case link == "Land-Iowa":
         state = "Iowa";
-        $('.Marion').addClass('show');
-        $('.IA').addClass('show');
+        document.querySelector(".Marion").classList.add("show");
+        document.querySelector(".IA").classList.add("show");
         break;
-      case(link == "Land-Missouri"):
+      case link == "Land-Missouri":
         state = "Missouri";
-        $('.Marion').addClass('show');
-        $('.MO').addClass('show');
+        document.querySelector(".Marion").classList.add("show");
+        document.querySelector(".MO").classList.add("show");
         break;
-      case(link == "Land-Arkansas"):
+      case link == "Land-Arkansas":
         state = "Arkansas";
-        $('.Rockford').addClass('show');
-        $('.AR').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".AR").classList.add("show");
         break;
-      case(link == "Land-Louisiana"):
+      case link == "Land-Louisiana":
         state = "Louisiana";
-        $('.Rockford').addClass('show');
-        $('.LA').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".LA").classList.add("show");
         break;
-      case(link == "Land-Texas"):
+      case link == "Land-Texas":
         state = "Texas";
-        $('.Corpus').addClass('show');
-        $('.Odessa').addClass('show');
-        $('.TX').addClass('show');
+        document.querySelector(".Corpus").classList.add("show");
+        document.querySelector(".Odessa").classList.add("show");
+        document.querySelector(".TX").classList.add("show");
         break;
-      case(link == "Land-Oklahoma"):
+      case link == "Land-Oklahoma":
         state = "Oklahoma";
-        $('.Rockford').addClass('show');
-        $('.OK').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".OK").classList.add("show");
         break;
-      case(link == "Land-Kansas"):
+      case link == "Land-Kansas":
         state = "Kansas";
-        $('.Marion').addClass('show');
-        $('.KS').addClass('show');
+        document.querySelector(".Marion").classList.add("show");
+        document.querySelector(".KS").classList.add("show");
         break;
-      case(link == "Land-Nebraska"):
+      case link == "Land-Nebraska":
         state = "Nebraska";
-        $('.Marion').addClass('show');
-        $('.NE').addClass('show');
+        document.querySelector(".Marion").classList.add("show");
+        document.querySelector(".NE").classList.add("show");
         break;
-      case(link =="Land-SouthDakota"):
+      case link == "Land-SouthDakota":
         state = "South Dakota";
-        $('.Marion').addClass('show');
-        $('.SD').addClass('show');
+        document.querySelector(".Marion").classList.add("show");
+        document.querySelector(".SD").classList.add("show");
         break;
-      case(link == "Land-NorthDakota"):
+      case link == "Land-NorthDakota":
         state = "North Dakota";
-        $('.Marion').addClass('show');
-        $('.ND').addClass('show');
+        document.querySelector(".Marion").classList.add("show");
+        document.querySelector(".ND").classList.add("show");
         break;
-      case(link == "Land-Montana"):
+      case link == "Land-Montana":
         state = "Montana";
-        $('.Longview').addClass('show');
-        $('.MT').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".MT").classList.add("show");
         break;
-      case(link == "Land-Wyoming"):
+      case link == "Land-Wyoming":
         state = "Wyoming";
-        $('.Longview').addClass('show');
-        $('.WY').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".WY").classList.add("show");
         break;
-      case(link == "Land-Colorado"):
+      case link == "Land-Colorado":
         state = "Colorado";
-        $('.Longview').addClass('show');
-        $('.CO').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".CO").classList.add("show");
         break;
-      case(link == "Land-NewMexico"):
+      case link == "Land-NewMexico":
         state = "New Mexico";
-        $('.Odessa').addClass('show');
-        $('.NM').addClass('show');
+        document.querySelector(".Odessa").classList.add("show");
+        document.querySelector(".NM").classList.add("show");
         break;
-      case(link == "Land-Arizona"):
+      case link == "Land-Arizona":
         state = "Arizona";
-        $('.Rockford').addClass('show');
-        $('.AZ').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".AZ").classList.add("show");
         break;
-      case(link == "Land-Utah"):
+      case link == "Land-Utah":
         state = "Utah";
-        $('.Longview').addClass('show');
-        $('.UT').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".UT").classList.add("show");
         break;
-      case(link == "Land-Idaho"):
+      case link == "Land-Idaho":
         state = "Idaho";
-        $('.Longview').addClass('show');
-        $('.ID').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".ID").classList.add("show");
         break;
-      case(link == "Land-Washington"):
+      case link == "Land-Washington":
         state = "Washington";
-        $('.Longview').addClass('show');
-        $('.WA').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".WA").classList.add("show");
         break;
-      case(link == "Land-Oregona"):
+      case link == "Land-Oregona":
         state = "Oregon";
-        $('.Longview').addClass('show');
-        $('.OR').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".OR").classList.add("show");
         break;
-      case(link == "Land-Nevada"):
+      case link == "Land-Nevada":
         state = "Nevada";
-        $('.Longview').addClass('show');
-        $('.NV').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".NV").classList.add("show");
         break;
-      case(link == "Land-California"):
+      case link == "Land-California":
         state = "California";
-        $('.Rockford').addClass('show');
-        $('.CA').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".CA").classList.add("show");
         break;
-      case(link == "Land-Alaska"):
+      case link == "Land-Alaska":
         state = "Alaska";
-        $('.Longview').addClass('show');
-        $('.AK').addClass('show');
+        document.querySelector(".Longview").classList.add("show");
+        document.querySelector(".AK").classList.add("show");
         break;
-      case(link == "Land-Hawaii"):
+      case link == "Land-Hawaii":
         state = "Hawaii";
-        $('.Rockford').addClass('show');
-        $('.HI').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
+        document.querySelector(".HI").classList.add("show");
         break;
       default:
         state = "US State";
-        $('.Rockford').addClass('show');
+        document.querySelector(".Rockford").classList.add("show");
         break;
-      }
+    }
 
-      allRegions.removeClass("on");
-      $('.location-pop-up').modal('show');
-      $(this).addClass("on");
-      $('body').addClass("noscroll");
-      $('.location-pop-up').on("hidden.bs.modal", function() {
-        allRegions.removeClass("on");
-        $('body').removeClass("noscroll");
+    allRegions.classList.remove("on");
+    document.querySelector(".location-pop-up").modal("show");
+    document.querySelector(this).classList.add("on");
+    document.querySelector("body").classList.add("noscroll");
+    document.querySelector(".location-pop-up").on("hidden.bs.modal", function () {
+        allRegions.classList.remove("on");
+        document.querySelector("body").classList.remove("noscroll");
 
-
-        switch(true) {
-
-          case(link == "Land-Maine"):
+        switch (true) {
+          case link == "Land-Maine":
             state = "Maine";
-            $('.Fairfield').removeClass('show');
-            $('.ME').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".ME").classList.remove("show");
             break;
-          case(link == "Land-NH"):
+          case link == "Land-NH":
             state = "New Hampshire";
-            $('.Fairfield').removeClass('show');
-            $('.NH').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".NH").classList.remove("show");
             break;
-          case(link == "Land-Vt"):
+          case link == "Land-Vt":
             state = "Vermont";
-            $('.Fairfield').removeClass('show');
-            $('.VT').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".VT").classList.remove("show");
             break;
-          case(link == "Land-NewYork"):
+          case link == "Land-NewYork":
             state = "New York";
-            $('.Fairfield').removeClass('show');
-            $('.NY').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".NY").classList.remove("show");
             break;
-          case(link == "Land-NewYork_2"):
+          case link == "Land-NewYork_2":
             state = "New York";
-            $('.Fairfield').removeClass('show');
-            $('.NY').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".NY").classList.remove("show");
             break;
-          case(link == "Land-Mass"):
+          case link == "Land-Mass":
             state = "Massachusetts";
-            $('.Fairfield').removeClass('show');
-            $('.MA').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".MA").classList.remove("show");
             break;
-          case(link == "Land-Conn"):
+          case link == "Land-Conn":
             state = "Connecticut";
-            $('.Fairfield').removeClass('show');
-            $('.CT').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".CT").classList.remove("show");
             break;
-          case(link == "Land-Pennsylvania"):
+          case link == "Land-Pennsylvania":
             state = "Pennsylvania";
-            $('.Fairfield').removeClass('show');
-            $('.PA').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".PA").classList.remove("show");
             break;
-          case(link == "Land-RI"):
+          case link == "Land-RI":
             state = "Rhode Island";
-            $('.Fairfield').removeClass('show');
-            $('.RI').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".RI").classList.remove("show");
             break;
-          case(link == "Land-NewJersey"):
+          case link == "Land-NewJersey":
             state = "New Jersey";
-            $('.Fairfield').removeClass('show');
-            $('.NJ').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".NJ").classList.remove("show");
             break;
-          case(link == "Land-Del"):
+          case link == "Land-Del":
             state = "Delaware";
-            $('.Fairfield').removeClass('show');
-            $('.DE').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".DE").classList.remove("show");
             break;
-          case(link == "Land-Md"):
+          case link == "Land-Md":
             state = "Maryland";
-            $('.Fairfield').removeClass('show');
-            $('.MD').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".MD").classList.remove("show");
             break;
-          case(link == "Land-WestVirginia"):
+          case link == "Land-WestVirginia":
             state = "West Virginia";
-            $('.Fairfield').removeClass('show');
-            $('.WV').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".WV").classList.remove("show");
             break;
-          case(link == "Land-Virginia_1_"):
+          case link == "Land-Virginia_1_":
             state = "Virginia";
-            $('.Fairfield').removeClass('show');
-            $('.VA').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".VA").classList.remove("show");
             break;
-          case(link == "Land-Virginia_2_"):
+          case link == "Land-Virginia_2_":
             state = "Virginia";
-            $('.Fairfield').removeClass('show');
-            $('.VA').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".VA").classList.remove("show");
             break;
-          case(link == "Land-NorthCarolina_1_"):
+          case link == "Land-NorthCarolina_1_":
             state = "North Carolina";
-            $('.Rockford').removeClass('show');
-            $('.NC').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".NC").classList.remove("show");
             break;
-          case(link == "Land-SouthCarolina"):
+          case link == "Land-SouthCarolina":
             state = "South Carolina";
-            $('.Rockford').removeClass('show');
-            $('.SC').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".SC").classList.remove("show");
             break;
-          case(link == "Land-Georgia"):
+          case link == "Land-Georgia":
             state = "Georgia";
-            $('.Rockford').removeClass('show');
-            $('.GA').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".GA").classList.remove("show");
             break;
-          case(link == "Land-Florida"):
+          case link == "Land-Florida":
             state = "Florida";
-            $('.Rockford').removeClass('show');
-            $('.FL').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".FL").classList.remove("show");
             break;
-          case(link == "Land-Alabama"):
+          case link == "Land-Alabama":
             state = "Alabama";
-            $('.Rockford').removeClass('show');
-            $('.AL').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".AL").classList.remove("show");
             break;
-          case(link == "Land-Mississippi"):
+          case link == "Land-Mississippi":
             state = "Mississippi";
-            $('.Rockford').removeClass('show');
-            $('.MS').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".MS").classList.remove("show");
             break;
-          case(link == "Land-Tennessee"):
+          case link == "Land-Tennessee":
             state = "Tennessee";
-            $('.Rockford').removeClass('show');
-            $('.Kingsport').removeClass('show');
-            $('.TN').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".Kingsport").classList.remove("show");
+            document.querySelector(".TN").classList.remove("show");
             break;
-          case(link == "Land-Kentucky"):
+          case link == "Land-Kentucky":
             state = "Kentucky";
-            $('.Rockford').removeClass('show');
-            $('.KY').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".KY").classList.remove("show");
             break;
-          case(link == "Land-Ohio"):
+          case link == "Land-Ohio":
             state = "Ohio";
-            $('.Rockford').removeClass('show');
-            $('.OH').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".OH").classList.remove("show");
             break;
-          case(link == "Land-Michigan_1_"):
+          case link == "Land-Michigan_1_":
             state = "Michigan";
-            $('.Fairfield').removeClass('show');
-            $('.MI').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".MI").classList.remove("show");
             break;
-          case(link == "Land-Michigan_2_"):
+          case link == "Land-Michigan_2_":
             state = "Michigan";
-            $('.Fairfield').removeClass('show');
-            $('.MI').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".MI").classList.remove("show");
             break;
-          case(link == "Land-Michigan_3_"):
+          case link == "Land-Michigan_3_":
             state = "Michigan";
-            $('.Fairfield').removeClass('show');
-            $('.MI').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".MI").classList.remove("show");
             break;
-          case(link == "Land-Indiana"):
+          case link == "Land-Indiana":
             state = "Indiana";
-            $('.Lombard').removeClass('show');
-            $('.IN').removeClass('show');
+            document.querySelector(".Lombard").classList.remove("show");
+            document.querySelector(".IN").classList.remove("show");
             break;
-          case(link == "Land-Illinois"):
+          case link == "Land-Illinois":
             state = "Illinois";
-            $('.Lombard').removeClass('show');
-            $('.IL').removeClass('show');
+            document.querySelector(".Lombard").classList.remove("show");
+            document.querySelector(".IL").classList.remove("show");
             break;
-          case(link == "Land-Wisconsin"):
+          case link == "Land-Wisconsin":
             state = "Wisconsin";
-            $('.Fairfield').removeClass('show');
-            $('.Lombard').removeClass('show');
-            $('.WI').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".Lombard").classList.remove("show");
+            document.querySelector(".WI").classList.remove("show");
             break;
-          case(link == "Land-Minnesota"):
+          case link == "Land-Minnesota":
             state = "Minnesota";
-            $('.Fairfield').removeClass('show');
-            $('.MN').removeClass('show');
+            document.querySelector(".Fairfield").classList.remove("show");
+            document.querySelector(".MN").classList.remove("show");
             break;
-          case(link == "Land-Iowa"):
+          case link == "Land-Iowa":
             state = "Iowa";
-            $('.Marion').removeClass('show');
-            $('.IA').removeClass('show');
+            document.querySelector(".Marion").classList.remove("show");
+            document.querySelector(".IA").classList.remove("show");
             break;
-          case(link == "Land-Missouri"):
+          case link == "Land-Missouri":
             state = "Missouri";
-            $('.Marion').removeClass('show');
-            $('.MO').removeClass('show');
+            document.querySelector(".Marion").classList.remove("show");
+            document.querySelector(".MO").classList.remove("show");
             break;
-          case(link == "Land-Arkansas"):
+          case link == "Land-Arkansas":
             state = "Arkansas";
-            $('.Rockford').removeClass('show');
-            $('.AR').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".AR").classList.remove("show");
             break;
-          case(link == "Land-Louisiana"):
+          case link == "Land-Louisiana":
             state = "Louisiana";
-            $('.Rockford').removeClass('show');
-            $('.LA').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".LA").classList.remove("show");
             break;
-          case(link == "Land-Texas"):
+          case link == "Land-Texas":
             state = "Texas";
-            $('.Corpus').removeClass('show');
-            $('.Odessa').removeClass('show');
-            $('.TX').removeClass('show');
+            document.querySelector(".Corpus").classList.remove("show");
+            document.querySelector(".Odessa").classList.remove("show");
+            document.querySelector(".TX").classList.remove("show");
             break;
-          case(link == "Land-Oklahoma"):
+          case link == "Land-Oklahoma":
             state = "Oklahoma";
-            $('.Rockford').removeClass('show');
-            $('.OK').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".OK").classList.remove("show");
             break;
-          case(link == "Land-Kansas"):
+          case link == "Land-Kansas":
             state = "Kansas";
-            $('.Marion').removeClass('show');
-            $('.KS').removeClass('show');
+            document.querySelector(".Marion").classList.remove("show");
+            document.querySelector(".KS").classList.remove("show");
             break;
-          case(link == "Land-Nebraska"):
+          case link == "Land-Nebraska":
             state = "Nebraska";
-            $('.Marion').removeClass('show');
-            $('.NE').removeClass('show');
+            document.querySelector(".Marion").classList.remove("show");
+            document.querySelector(".NE").classList.remove("show");
             break;
-          case(link =="Land-SouthDakota"):
+          case link == "Land-SouthDakota":
             state = "South Dakota";
-            $('.Marion').removeClass('show');
-            $('.SD').removeClass('show');
+            document.querySelector(".Marion").classList.remove("show");
+            document.querySelector(".SD").classList.remove("show");
             break;
-          case(link == "Land-NorthDakota"):
+          case link == "Land-NorthDakota":
             state = "North Dakota";
-            $('.Marion').removeClass('show');
-            $('.ND').removeClass('show');
+            document.querySelector(".Marion").classList.remove("show");
+            document.querySelector(".ND").classList.remove("show");
             break;
-          case(link == "Land-Montana"):
+          case link == "Land-Montana":
             state = "Montana";
-            $('.Longview').removeClass('show');
-            $('.MT').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".MT").classList.remove("show");
             break;
-          case(link == "Land-Wyoming"):
+          case link == "Land-Wyoming":
             state = "Wyoming";
-            $('.Longview').removeClass('show');
-            $('.WY').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".WY").classList.remove("show");
             break;
-          case(link == "Land-Colorado"):
+          case link == "Land-Colorado":
             state = "Colorado";
-            $('.Longview').removeClass('show');
-            $('.CO').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".CO").classList.remove("show");
             break;
-          case(link == "Land-NewMexico"):
+          case link == "Land-NewMexico":
             state = "New Mexico";
-            $('.Odessa').removeClass('show');
-            $('.NM').removeClass('show');
+            document.querySelector(".Odessa").classList.remove("show");
+            document.querySelector(".NM").classList.remove("show");
             break;
-          case(link == "Land-Arizona"):
+          case link == "Land-Arizona":
             state = "Arizona";
-            $('.Rockford').removeClass('show');
-            $('.AZ').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".AZ").classList.remove("show");
             break;
-          case(link == "Land-Utah"):
+          case link == "Land-Utah":
             state = "Utah";
-            $('.Longview').removeClass('show');
-            $('.UT').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".UT").classList.remove("show");
             break;
-          case(link == "Land-Idaho"):
+          case link == "Land-Idaho":
             state = "Idaho";
-            $('.Longview').removeClass('show');
-            $('.ID').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".ID").classList.remove("show");
             break;
-          case(link == "Land-Washington"):
+          case link == "Land-Washington":
             state = "Washington";
-            $('.Longview').removeClass('show');
-            $('.WA').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".WA").classList.remove("show");
             break;
-          case(link == "Land-Oregona"):
+          case link == "Land-Oregona":
             state = "Oregon";
-            $('.Longview').removeClass('show');
-            $('.OR').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".OR").classList.remove("show");
             break;
-          case(link == "Land-Nevada"):
+          case link == "Land-Nevada":
             state = "Nevada";
-            $('.Longview').removeClass('show');
-            $('.NV').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".NV").classList.remove("show");
             break;
-          case(link == "Land-California"):
+          case link == "Land-California":
             state = "California";
-            $('.Rockford').removeClass('show');
-            $('.CA').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".CA").classList.remove("show");
             break;
-          case(link == "Land-Alaska"):
+          case link == "Land-Alaska":
             state = "Alaska";
-            $('.Longview').removeClass('show');
-            $('.AK').removeClass('show');
+            document.querySelector(".Longview").classList.remove("show");
+            document.querySelector(".AK").classList.remove("show");
             break;
-          case(link == "Land-Hawaii"):
+          case link == "Land-Hawaii":
             state = "Hawaii";
-            $('.Rockford').removeClass('show');
-            $('.HI').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
+            document.querySelector(".HI").classList.remove("show");
             break;
           default:
             state = "US State";
-            $('.Rockford').removeClass('show');
+            document.querySelector(".Rockford").classList.remove("show");
             break;
-          }
-        });
-    });
+        }
+      });
   });
-})(jQuery);
+});
