@@ -2732,6 +2732,15 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   bottom: 0;
   max-height: 100%;
 }
+
+#Map>*:hover, #Map>g>path:hover, #Lands>*:hover, #Lands>g>path:hover {
+  fill: #002a5b !important;
+  stroke: #004a8c;
+  stroke-width: 2;
+  cursor: pointer;
+}
+
+
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-fade .carousel-inner>.item.next,
   .carousel-fade .carousel-inner>.item.active.right {
