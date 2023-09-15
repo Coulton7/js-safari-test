@@ -2060,7 +2060,7 @@ a.menu-box:hover img {
   background-color: #e5e5e7;
 }
 #carousel-fade .carousel-inner .item:nth-child(1) {
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-color: #012e58;
 }
 #carousel-fade .carousel-inner .item:nth-child(2) {
@@ -3769,12 +3769,11 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
 
   #carousel-fade .carousel-inner .item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: repeat;
     background-color: #012e58;
     background-blend-mode: unset;
     animation: none;
-    background-position: 45% 100%;
     padding-top: 3em;
   }
   #carousel-fade .carousel-inner .item:nth-child(2) {
@@ -4335,11 +4334,10 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
     background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: repeat;
     background-color: #012e58;
     background-blend-mode: unset;
-    background-position: 45% 100%;
     animation: none;
     padding-top: 3em;
   }
@@ -4728,8 +4726,9 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     min-height: 32em;
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(https://static.aesseal.com/photo/wavehead/Environment-photo-grid.jpg);
+    background-repeat: repeat;
+    background-size: auto;
     background-color: #012e58;
     background-blend-mode: unset;
     background-position: 0 10%;
