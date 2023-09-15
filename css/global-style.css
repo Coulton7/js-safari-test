@@ -2790,6 +2790,18 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   display: block!important;
 }
 
+#video-background {
+  position: absolute;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-fade .carousel-inner>.item.next,
   .carousel-fade .carousel-inner>.item.active.right {
