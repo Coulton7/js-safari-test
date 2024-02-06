@@ -2817,6 +2817,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   display: block;
   overscroll-behavior: contain;
   overflow-y: scroll;
+  z-index: 1029;
 }
 
 .location-overlay {
