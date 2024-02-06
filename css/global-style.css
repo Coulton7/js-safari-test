@@ -2811,6 +2811,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   -webkit-backdrop-filter: blur(10px);
   display: block;
   overscroll-behavior: contain;
+  overflow-y: scroll;
 }
 
 .location-overlay {
