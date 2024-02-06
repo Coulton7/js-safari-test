@@ -2835,7 +2835,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
 .location-overlay-content {
   text-align: left;
   height: 60vh;
-  position: relative;
+  position: static;
   top: 30%;
 }
 
