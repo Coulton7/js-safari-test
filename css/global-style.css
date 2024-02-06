@@ -47,6 +47,12 @@ body.navbar-is-fixed-top.navbar-administration .navbar, body.navbar-is-fixed-top
   z-index: 1030;
   position: relative;
 }
+
+body.noscroll{
+  position: fixed;
+  overflow: hidden;
+}
+
 a.no-underline {
   border-bottom: none;
 }
