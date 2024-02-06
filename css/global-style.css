@@ -2211,7 +2211,7 @@ a.btn-transparent {
   display: inline-flex;
   align-items: center;
 }
-.black-overlay {
+.black-overlay, .location-overlay {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   color: #ffffff;
