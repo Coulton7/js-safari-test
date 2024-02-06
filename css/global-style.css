@@ -2790,6 +2790,27 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   display: block!important;
 }
 
+.location-overlay {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  inset: 0;
+  overflow: scroll;
+  overscroll-behavior: contain;
+}
+
+.location-overlay-content {
+  text-align: left;
+  height: 60vh;
+  position: relative;
+  top: 30%;
+}
+
+
 #video-background {
   position: absolute;
   height: auto;
