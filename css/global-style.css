@@ -2820,17 +2820,9 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   z-index: 1029;
 }
 
-.location-overlay {
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  inset: 0;
-  overflow-y: scroll;
-  overscroll-behavior: contain;
+.location-overlay-content {
+  background-color: none;
+  position: static;
 }
 
 .location-overlay-content {
