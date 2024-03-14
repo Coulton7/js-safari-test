@@ -3810,6 +3810,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   }
 
   #carousel-fade .carousel-inner .item:nth-child(1) {
+    background-image: url(Images/banner/system-sentry-carousel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
@@ -4374,6 +4375,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     display: flex;
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
+    background-image: url(Images/banner/system-sentry-carousel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #012e58;
@@ -4756,6 +4758,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
     min-height: 32em;
   }
   #carousel-fade .carousel-inner .item:nth-child(1) {
+    background-image: url(Images/banner/system-sentry-carousel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #012e58;
