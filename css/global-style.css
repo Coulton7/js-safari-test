@@ -2765,7 +2765,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   width: 100%;
 }
 
-#Map>g:hover>g>path, #Lands>*:hover, #Lands>g>path:hover {
+#Map>*:hover, #Map>g>path:hover, #Lands>*:hover, #Lands>g>path:hover {
   fill: #002a5b !important;
   stroke: #004a8c;
   stroke-width: 2;
