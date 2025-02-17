@@ -2765,7 +2765,7 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
   width: 100%;
 }
 
-#Map>*:hover, #Map>g>path:hover, #Lands>*:hover, #Lands>g>path:hover {
+#Map>g:hover>path, #Lands>*:hover, #Lands>g>path:hover {
   fill: #002a5b !important;
   stroke: #004a8c;
   stroke-width: 2;
@@ -2782,13 +2782,6 @@ blockquote.transparent-50:before, blockquote.transparent-50:after {
 
 .location-pop-up .row-eq-height.show {
   display: flex !important;
-}
-
-#Map>*:hover, #Map>g>path:hover, #Lands>*:hover, #Lands>g>path:hover {
-  fill: #002a5b !important;
-  stroke: #004a8c;
-  stroke-width: 2;
-  cursor: pointer;
 }
 
 .show {
